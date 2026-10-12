@@ -1,0 +1,49 @@
+variant,dropped,quantity,estimate,lo,hi
+all,,r_hi,20.0,14.831704,24.825036
+all,,f_hi,7.5,5.489884,9.414612
+all,,q_hi,27.0,20.034101,33.497293
+all,,p_hi,0.46,0.382631,0.506147
+all,,r_en,12.5,9.518425,17.213553
+all,,f_en,0.4,-1.774039,3.454524
+all,,q_en,40.0,32.993903,47.722733
+all,,p_en,0.3,0.253867,0.361304
+all,,delta,7.52,1.689286,14.366154
+all,,forced_share,7.1,4.711002,9.842112
+all,,opportunity_share,-4.94,-8.61973,-1.413905
+all,,choice_share,5.36,1.35727,8.941767
+drop_largest_hi,hi:synthetic_text_hi,r_hi,18.384225,13.215929,23.209261
+drop_largest_hi,hi:synthetic_text_hi,f_hi,7.158547,5.148431,9.073159
+drop_largest_hi,hi:synthetic_text_hi,q_hi,28.580874,21.614975,35.078167
+drop_largest_hi,hi:synthetic_text_hi,p_hi,0.512492,0.435123,0.558639
+drop_largest_hi,hi:synthetic_text_hi,r_en,13.265401,10.283826,17.978954
+drop_largest_hi,hi:synthetic_text_hi,f_en,0.346232,-1.827807,3.400757
+drop_largest_hi,hi:synthetic_text_hi,q_en,38.444302,31.438205,46.167035
+drop_largest_hi,hi:synthetic_text_hi,p_en,0.376133,0.329999,0.437437
+drop_largest_hi,hi:synthetic_text_hi,delta,7.452811,1.622098,14.298965
+drop_largest_hi,hi:synthetic_text_hi,forced_share,6.557648,4.168649,9.299759
+drop_largest_hi,hi:synthetic_text_hi,opportunity_share,-4.508104,-8.187834,-0.982009
+drop_largest_hi,hi:synthetic_text_hi,choice_share,5.941681,1.938951,9.523448
+drop_largest_en,en:synthetic_text_en,r_hi,20.101809,14.933513,24.926845
+drop_largest_en,en:synthetic_text_en,f_hi,6.854462,4.844346,8.769074
+drop_largest_en,en:synthetic_text_en,q_hi,27.26322,20.297321,33.760513
+drop_largest_en,en:synthetic_text_en,p_hi,0.399645,0.322276,0.445793
+drop_largest_en,en:synthetic_text_en,r_en,12.481269,9.499694,17.194822
+drop_largest_en,en:synthetic_text_en,f_en,0.443673,-1.730366,3.498197
+drop_largest_en,en:synthetic_text_en,q_en,40.681408,33.675311,48.404141
+drop_largest_en,en:synthetic_text_en,p_en,0.346538,0.300405,0.407843
+drop_largest_en,en:synthetic_text_en,delta,8.592309,2.761596,15.438463
+drop_largest_en,en:synthetic_text_en,forced_share,6.577547,4.188548,9.319658
+drop_largest_en,en:synthetic_text_en,opportunity_share,-4.64774,-8.327469,-1.121645
+drop_largest_en,en:synthetic_text_en,choice_share,5.505498,1.502768,9.087264
+drop_largest_both,hi:synthetic_text_hi; en:synthetic_text_en,r_hi,17.366371,12.198075,22.191407
+drop_largest_both,hi:synthetic_text_hi; en:synthetic_text_en,f_hi,7.320256,5.31014,9.234868
+drop_largest_both,hi:synthetic_text_hi; en:synthetic_text_en,q_hi,25.978547,19.012648,32.47584
+drop_largest_both,hi:synthetic_text_hi; en:synthetic_text_en,p_hi,0.496773,0.419405,0.542921
+drop_largest_both,hi:synthetic_text_hi; en:synthetic_text_en,r_en,12.568603,9.587027,17.282155
+drop_largest_both,hi:synthetic_text_hi; en:synthetic_text_en,f_en,0.490619,-1.68342,3.545144
+drop_largest_both,hi:synthetic_text_hi; en:synthetic_text_en,q_en,45.636404,38.630307,53.359137
+drop_largest_both,hi:synthetic_text_hi; en:synthetic_text_en,p_en,0.298736,0.252603,0.360041
+drop_largest_both,hi:synthetic_text_hi; en:synthetic_text_en,delta,7.694999,1.864285,14.541153
+drop_largest_both,hi:synthetic_text_hi; en:synthetic_text_en,forced_share,7.909138,5.520139,10.651249
+drop_largest_both,hi:synthetic_text_hi; en:synthetic_text_en,opportunity_share,-4.979082,-8.658811,-1.452987
+drop_largest_both,hi:synthetic_text_hi; en:synthetic_text_en,choice_share,4.850818,0.848088,8.432584

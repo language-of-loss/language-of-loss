@@ -1,0 +1,9 @@
+field,n_units,n_both_coded,n_agree,pct_agree,alpha_nominal,n_out_of_codebook,status
+orientation,600,600,452,75.3,0.561,3,"SYNTHETIC placeholder, not data"
+experiencer,600,600,437,72.8,0.652,0,"SYNTHETIC placeholder, not data"
+predicate_type,600,600,470,78.3,0.586,2,"SYNTHETIC placeholder, not data"
+target,600,600,491,81.8,0.639,1,"SYNTHETIC placeholder, not data"
+process,600,600,450,75.0,0.709,1,"SYNTHETIC placeholder, not data"
+function,600,600,427,71.2,0.692,1,"SYNTHETIC placeholder, not data"
+grammar_forced,600,600,440,73.3,0.749,0,"SYNTHETIC placeholder, not data"
+dative_alternative_available,600,600,484,80.7,0.774,2,"SYNTHETIC placeholder, not data"

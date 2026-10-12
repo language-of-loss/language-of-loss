@@ -1,0 +1,2 @@
+term,method,estimate,se,z,p,n_texts,note,status,split,eligibility_sha256
+hindi,,,,,,38,refused: no codebook agreement statistics (results/agreement/agreement_summary_gold_sheet_v1.csv with >= 1 field coded by both coders and a finite alpha; study protocol: no hypothesis test before human annotation and agreement statistics),"dev smoke, not a result",dev,7fecf9705bc01c4a24d7a48f6c4d81115e989a5d4b72bbf2469423efe5b21987

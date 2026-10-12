@@ -1,0 +1,13 @@
+term,estimate,se,stat,df,p,estimator,ci_lo,ci_hi,run,split,subset,n_clauses,n_texts,singular,converged,odds_ratio,status
+(Intercept),-1.583004,0.119428,-13.25484,,0.0,"glmer (conditional, model-based SE)",-1.817079,-1.348928,run1,confirmatory,all,6400,190,False,True,0.205357,"SYNTHETIC placeholder, not data"
+hindi,0.441264,0.127648,3.456878,,0.000546,"glmer (conditional, model-based SE)",0.191078,0.691449,run1,confirmatory,all,6400,190,False,True,1.554671,"SYNTHETIC placeholder, not data"
+log_clauses,0.029261,0.087897,0.332894,,0.739214,"glmer (conditional, model-based SE)",-0.143015,0.201536,run1,confirmatory,all,6400,190,False,True,1.029693,"SYNTHETIC placeholder, not data"
+loss_typesibling,0.111583,0.107086,1.041994,,0.297414,"glmer (conditional, model-based SE)",-0.098302,0.321468,run1,confirmatory,all,6400,190,False,True,1.118047,"SYNTHETIC placeholder, not data"
+loss_typespouse,-0.13872,0.097482,-1.423031,,0.154727,"glmer (conditional, model-based SE)",-0.329782,0.052341,run1,confirmatory,all,6400,190,False,True,0.870471,"SYNTHETIC placeholder, not data"
+loss_typeother,0.009192,0.152899,0.060116,,0.952063,"glmer (conditional, model-based SE)",-0.290484,0.308868,run1,confirmatory,all,6400,190,False,True,1.009234,"SYNTHETIC placeholder, not data"
+(Intercept),-1.567003,0.157739,-9.93417,63.903304,0.0,glm + CR2 cluster-robust (marginal),-1.88248,-1.251525,run1,confirmatory,all,6400,190,False,True,0.20867,"SYNTHETIC placeholder, not data"
+hindi,0.514055,0.198391,2.591118,149.296543,0.009566,glm + CR2 cluster-robust (marginal),0.117273,0.910837,run1,confirmatory,all,6400,190,False,True,1.672057,"SYNTHETIC placeholder, not data"
+log_clauses,0.058476,0.17954,0.325698,104.481993,0.744653,glm + CR2 cluster-robust (marginal),-0.300604,0.417556,run1,confirmatory,all,6400,190,False,True,1.060219,"SYNTHETIC placeholder, not data"
+loss_typesibling,0.138082,0.110475,1.249895,59.7666,0.211338,glm + CR2 cluster-robust (marginal),-0.082868,0.359031,run1,confirmatory,all,6400,190,False,True,1.148069,"SYNTHETIC placeholder, not data"
+loss_typespouse,-0.203851,0.119874,-1.700537,58.152769,0.08903,glm + CR2 cluster-robust (marginal),-0.443599,0.035898,run1,confirmatory,all,6400,190,False,True,0.815584,"SYNTHETIC placeholder, not data"
+loss_typeother,0.029968,0.142179,0.210778,87.353176,0.833061,glm + CR2 cluster-robust (marginal),-0.25439,0.314326,run1,confirmatory,all,6400,190,False,True,1.030422,"SYNTHETIC placeholder, not data"

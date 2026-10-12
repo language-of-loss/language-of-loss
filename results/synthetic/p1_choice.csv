@@ -1,0 +1,4 @@
+quantity,lang,estimate,lo,hi,k,n,n_texts,test,p,status,split,eligibility_sha256
+dative_choice_rate,hi,0.21,0.15,0.28,63,300,80,,,"SYNTHETIC placeholder, not data",dev,synthetic
+forced_baseline_dative_share,hi,0.12,0.08,0.17,24,200,60,,,"SYNTHETIC placeholder, not data",dev,synthetic
+binomial_test_vs_forced_baseline,hi,0.21,,,63,300,80,"exact binomial, one-sided, H0 rate = forced baseline",0.0001,"SYNTHETIC placeholder, not data",dev,synthetic

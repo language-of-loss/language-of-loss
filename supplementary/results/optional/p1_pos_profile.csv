@@ -1,0 +1,11 @@
+lang,category,count,n_tokens,n_texts,per_1000,lo,hi,status,split,eligibility_sha256
+hi,emotion_verb,18,27392,15,0.657126,0.299007,1.11236,"dev smoke, not a result",dev,7fecf9705bc01c4a24d7a48f6c4d81115e989a5d4b72bbf2469423efe5b21987
+hi,emotion_adjective,22,27392,15,0.803154,0.23296,2.16199,"dev smoke, not a result",dev,7fecf9705bc01c4a24d7a48f6c4d81115e989a5d4b72bbf2469423efe5b21987
+hi,emotion_noun,44,27392,15,1.60631,0.906563,2.75112,"dev smoke, not a result",dev,7fecf9705bc01c4a24d7a48f6c4d81115e989a5d4b72bbf2469423efe5b21987
+hi,agentive_self,18,27392,15,0.657126,0.290616,1.62946,"dev smoke, not a result",dev,7fecf9705bc01c4a24d7a48f6c4d81115e989a5d4b72bbf2469423efe5b21987
+en,emotion_verb,111,26517,23,4.18599,2.99735,5.82568,"dev smoke, not a result",dev,7fecf9705bc01c4a24d7a48f6c4d81115e989a5d4b72bbf2469423efe5b21987
+en,emotion_adjective,37,26517,23,1.39533,0.873117,2.03266,"dev smoke, not a result",dev,7fecf9705bc01c4a24d7a48f6c4d81115e989a5d4b72bbf2469423efe5b21987
+en,emotion_noun,0,26517,23,0.0,0.0,0.0,"dev smoke, not a result",dev,7fecf9705bc01c4a24d7a48f6c4d81115e989a5d4b72bbf2469423efe5b21987
+en,agentive_self,63,26517,23,2.37583,1.42856,3.90949,"dev smoke, not a result",dev,7fecf9705bc01c4a24d7a48f6c4d81115e989a5d4b72bbf2469423efe5b21987
+hi,unclassified,1,27392,,,,,"dev smoke, not a result",dev,7fecf9705bc01c4a24d7a48f6c4d81115e989a5d4b72bbf2469423efe5b21987
+en,unclassified,0,26517,,,,,"dev smoke, not a result",dev,7fecf9705bc01c4a24d7a48f6c4d81115e989a5d4b72bbf2469423efe5b21987

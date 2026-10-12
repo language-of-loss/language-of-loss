@@ -1,0 +1,42 @@
+lang,sentence,decision,predicate,rule_id
+hi,मुझे माँ की बहुत याद आती है।,forced_dative,याद+आ,HI-F01
+hi,मुझे लगा कि वे लौट आएँगे।,NA,लग,HI-NA-NONEMO
+hi,मुझे उनकी आख़िरी चिट्ठी मिली।,NA,मिल,HI-NA-NONEMO
+hi,मुझे थोड़ा समय चाहिए।,NA,चाहिए,HI-NA-NONEMO
+hi,मुझे पता था कि वे बीमार हैं।,NA,पता+हो,HI-NA-NONEMO
+hi,उस रात मुझे नींद नहीं आई।,forced_dative,नींद+आ,HI-F06
+hi,मुझे अस्पताल जाना पड़ा।,NA,INF+पड,HI-NA-NONEMO
+hi,पापा के जाने पर मुझे बहुत दुख हुआ।,chosen_dative,दुख+हो,HI-C01
+hi,उनके जाने के बाद मुझे बहुत बुरा लगा।,chosen_dative,बुरा+लग,HI-C16
+hi,मुझे डर लगा।,chosen_dative,डर+लग,HI-C02
+hi,मुझे रोना आ गया।,chosen_dative,रोना+आ,HI-C03
+hi,माँ को बहुत गुस्सा आया।,chosen_dative,गुस्सा+आ,HI-C05
+hi,मुझे उनकी बहुत चिंता थी।,chosen_dative,चिंता+हो,HI-C06
+hi,मैंने उसे अस्पताल में देखा।,NA,,HI-NA-OBJ
+hi,पापा पिछले साल चले गए।,NA,,HI-NA
+hi,मैं बहुत दुखी हूँ।,chosen_nominative,दुखी+हो,HI-N01
+hi,मैं ख़ुश नहीं हूँ।,chosen_nominative,खुश+हो,HI-N05
+hi,मैं बेचैन हो गया।,chosen_nominative,बेचैन+हो,HI-N06
+hi,माँ के जाने के बाद मैं बहुत रोया।,chosen_nominative,रो,HI-N14
+hi,वह डरा हुआ था।,chosen_nominative,डर,HI-N13
+hi,पापा बहुत घबरा गए।,chosen_nominative,घबरा,HI-N15
+hi,मैं उनकी चिंता करती थी।,chosen_nominative,चिंता+कर,HI-NK-C06
+hi,वे रात भर तड़पते रहे।,forced_nominative,तडप,HI-N19
+hi,मैं अंदर से टूटा हुआ था।,forced_nominative,टूट,HI-N21
+hi,हम उन्हें बहुत याद करते हैं।,forced_nominative,याद+कर,HI-N22
+hi,मैंने उनकी कमी महसूस की।,review,महसूस+कर,HI-NK-R01
+hi,बहुत उदास थी।,NA,,HI-NA-NOM-NOSUBJ
+hi,दिल टूट गया।,NA,,HI-NA-NOM-NONPERSON
+hi,मैं जानता था कि वे बीमार हैं।,NA,,HI-NA
+en,I miss her every day.,forced_nominative,miss,EN-NOM
+en,It hurt me to see him like that.,chosen_impersonal,hurt,EN-IMP-IT
+en,It felt like the world had stopped.,NA,,EN-NA-NONEMO
+en,I was devastated.,chosen_nominative,devastated,EN-NOM
+en,Her death devastated me.,chosen_impersonal,devastate,EN-STIM
+en,My heart ached for weeks.,chosen_impersonal,ache,EN-BODY
+en,I felt lost without her.,review,feel,EN-FEEL-R
+en,I felt sad after the funeral.,chosen_nominative,feel,EN-NOM
+en,I felt that she was right.,NA,,EN-NA-NONEMO
+en,The silence was unbearable.,NA,,EN-NA-IMP-NOEXP
+en,It was unbearable for me.,forced_impersonal,unbearable,EN-IMP-IT
+en,We drove to the hospital.,NA,,EN-NA

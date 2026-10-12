@@ -1,0 +1,13 @@
+lang,split,rule_id,decision,sites,finite_clauses,per_100
+en,all,EN-FEEL-R,review,2,9226,0.022
+en,all,EN-NOM,chosen_nominative,27,9226,0.293
+en,all,EN-NOSUBJ,review,2,9226,0.022
+en,dev,EN-NOM,chosen_nominative,6,3289,0.182
+hi,all,HI-C02,chosen_dative,4,12955,0.031
+hi,all,HI-C08,chosen_dative,1,12955,0.008
+hi,all,HI-C16,chosen_dative,23,12955,0.178
+hi,all,HI-NA-NONEMO,NA,109,12955,0.841
+hi,all,HI-R03,review,1,12955,0.008
+hi,all,HI-R06,review,3,12955,0.023
+hi,dev,HI-C16,chosen_dative,1,3118,0.032
+hi,dev,HI-NA-NONEMO,NA,22,3118,0.706

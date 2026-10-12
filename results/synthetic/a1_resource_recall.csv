@@ -1,0 +1,13 @@
+definition,resource,quantity,estimate,lo,hi,n_items,status
+strict,lexicon,recall_native_only,0.776973,0.695519,0.844766,120,"SYNTHETIC placeholder, not data"
+strict,lexicon,recall_translatable,0.818957,0.757498,0.885195,260,"SYNTHETIC placeholder, not data"
+strict,lexicon,gap_translatable_minus_native,0.03,-0.047423,0.133707,380,"SYNTHETIC placeholder, not data"
+strict,nrc_hi,recall_native_only,0.329743,0.274311,0.383377,120,"SYNTHETIC placeholder, not data"
+strict,nrc_hi,recall_translatable,0.608873,0.54613,0.681062,260,"SYNTHETIC placeholder, not data"
+strict,nrc_hi,gap_translatable_minus_native,0.31,0.196943,0.377262,380,"SYNTHETIC placeholder, not data"
+tolerated,lexicon,recall_native_only,0.770879,0.694708,0.833657,120,"SYNTHETIC placeholder, not data"
+tolerated,lexicon,recall_translatable,0.822609,0.759986,0.897267,260,"SYNTHETIC placeholder, not data"
+tolerated,lexicon,gap_translatable_minus_native,0.03,-0.045856,0.108134,380,"SYNTHETIC placeholder, not data"
+tolerated,nrc_hi,recall_native_only,0.305535,0.253581,0.36928,120,"SYNTHETIC placeholder, not data"
+tolerated,nrc_hi,recall_translatable,0.615977,0.534005,0.694457,260,"SYNTHETIC placeholder, not data"
+tolerated,nrc_hi,gap_translatable_minus_native,0.31,0.222879,0.41278,380,"SYNTHETIC placeholder, not data"

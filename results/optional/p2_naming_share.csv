@@ -1,0 +1,9 @@
+lang,quantity,estimate,lo,hi,n_texts,dropped_texts,status,split,eligibility_sha256
+hi,mean_text_naming_share,0.0355353,0.019543,0.0518281,15,0,"dev smoke, not a result",dev,7fecf9705bc01c4a24d7a48f6c4d81115e989a5d4b72bbf2469423efe5b21987
+hi,pooled_naming_share,0.0361217,0.0248956,0.0463718,15,0,"dev smoke, not a result",dev,7fecf9705bc01c4a24d7a48f6c4d81115e989a5d4b72bbf2469423efe5b21987
+hi,pooled_absence_memory_duty_share,0.310837,0.262513,0.381145,15,0,"dev smoke, not a result",dev,7fecf9705bc01c4a24d7a48f6c4d81115e989a5d4b72bbf2469423efe5b21987
+hi,pooled_naming_share_excl_gf,0.0524862,0.0365834,0.0650419,15,0,"dev smoke, not a result",dev,7fecf9705bc01c4a24d7a48f6c4d81115e989a5d4b72bbf2469423efe5b21987
+en,mean_text_naming_share,0.216636,0.167577,0.274309,23,0,"dev smoke, not a result",dev,7fecf9705bc01c4a24d7a48f6c4d81115e989a5d4b72bbf2469423efe5b21987
+en,pooled_naming_share,0.248509,0.192622,0.317714,23,0,"dev smoke, not a result",dev,7fecf9705bc01c4a24d7a48f6c4d81115e989a5d4b72bbf2469423efe5b21987
+en,pooled_absence_memory_duty_share,0.429423,0.370655,0.497127,23,0,"dev smoke, not a result",dev,7fecf9705bc01c4a24d7a48f6c4d81115e989a5d4b72bbf2469423efe5b21987
+en,pooled_naming_share_excl_gf,0.248509,0.192622,0.317714,23,0,"dev smoke, not a result",dev,7fecf9705bc01c4a24d7a48f6c4d81115e989a5d4b72bbf2469423efe5b21987

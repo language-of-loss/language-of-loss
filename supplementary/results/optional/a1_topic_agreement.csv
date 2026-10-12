@@ -1,0 +1,2 @@
+ari,nmi,n_docs,topics_native,topics_translated,outliers_native,outliers_translated,embedding,note,status
+0.0249608,0.169413,50,3,7,5,5,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,documents = the sampled clauses in the dry run; texts on the gold run,"dry run (50 dev clauses; reference = our lexicon's matches): pipeline check, not a result"

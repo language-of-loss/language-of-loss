@@ -1,0 +1,7 @@
+field,lang,n,n_agree,accuracy,lo,hi,threshold,result,status
+grammar_forced,hi,100,74,0.74,0.6463,0.816,0.8,fail,"reviewed machine-prefilled labels (adjudicated = agreed fields + majority with a third language-model coder; no human adjudication)"
+grammar_forced,en,100,95,0.95,0.8882,0.9785,0.8,pass,"reviewed machine-prefilled labels (adjudicated = agreed fields + majority with a third language-model coder; no human adjudication)"
+grammar_forced,all,200,169,0.845,0.7884,0.8886,0.8,pass,"reviewed machine-prefilled labels (adjudicated = agreed fields + majority with a third language-model coder; no human adjudication)"
+dative_alternative_available,hi,100,84,0.84,0.7558,0.899,0.8,pass,"reviewed machine-prefilled labels (adjudicated = agreed fields + majority with a third language-model coder; no human adjudication)"
+dative_alternative_available,en,100,95,0.95,0.8882,0.9785,0.8,pass,"reviewed machine-prefilled labels (adjudicated = agreed fields + majority with a third language-model coder; no human adjudication)"
+dative_alternative_available,all,200,179,0.895,0.8448,0.9303,0.8,pass,"reviewed machine-prefilled labels (adjudicated = agreed fields + majority with a third language-model coder; no human adjudication)"

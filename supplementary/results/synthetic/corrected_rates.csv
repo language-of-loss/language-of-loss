@@ -1,0 +1,17 @@
+measure,lang,n_texts,observed,observed_lo,observed_hi,corrected,lo,hi,sensitivity,fpr,n_pos,n_neg,flags,status,split
+dict:orientation=I,hi,87,0.043668,0.006628,0.081207,-0.007116,-0.099398,0.077082,0.711538,0.048387,52,248,out_of_range,"SYNTHETIC placeholder, not data",dev
+dict:orientation=I,en,71,0.156536,0.117825,0.192117,0.216472,0.146358,0.293238,0.5,0.061644,8,292,,"SYNTHETIC placeholder, not data",dev
+dict:orientation=F,hi,92,0.277347,0.244617,0.314795,0.734436,0.675909,0.817476,0.340909,0.101562,44,256,,"SYNTHETIC placeholder, not data",dev
+dict:orientation=F,en,83,0.271817,0.233096,0.30318,0.253334,0.18831,0.336162,0.875,0.067164,32,268,,"SYNTHETIC placeholder, not data",dev
+dict:orientation=C,hi,90,0.21209,0.185439,0.235138,0.164143,0.065681,0.243454,0.77193,0.102151,114,186,,"SYNTHETIC placeholder, not data",dev
+dict:orientation=C,en,78,0.201606,0.174432,0.229085,0.151489,0.074806,0.209464,0.883929,0.079787,112,188,,"SYNTHETIC placeholder, not data",dev
+dict:orientation=R,hi,98,0.210035,0.185973,0.239018,0.199843,0.104371,0.287966,0.596774,0.113445,62,238,,"SYNTHETIC placeholder, not data",dev
+dict:orientation=R,en,60,0.296045,0.270337,0.32413,0.337419,0.259065,0.403385,0.737705,0.07113,61,239,,"SYNTHETIC placeholder, not data",dev
+dict:experiencer=self,hi,86,0.076884,0.054815,0.112249,0.006974,-0.064325,0.081433,0.5,0.073913,70,230,,"SYNTHETIC placeholder, not data",dev
+dict:experiencer=self,en,62,0.230966,0.206344,0.268744,0.251605,0.177466,0.327299,0.833333,0.028455,54,246,,"SYNTHETIC placeholder, not data",dev
+dict:experiencer=kin,hi,98,0.120431,0.09176,0.149949,0.052672,-0.029318,0.142166,0.714286,0.087413,14,286,,"SYNTHETIC placeholder, not data",dev
+dict:experiencer=kin,en,95,0.280781,0.254448,0.309806,0.516516,0.415157,0.59239,0.45,0.1,60,240,,"SYNTHETIC placeholder, not data",dev
+dict:experiencer=community,hi,74,0.208342,0.180165,0.242775,0.491571,0.420628,0.578745,0.40678,0.016484,118,182,,"SYNTHETIC placeholder, not data",dev
+dict:experiencer=community,en,81,0.193745,0.154752,0.220258,0.100697,0.017157,0.198817,0.807692,0.125,52,248,,"SYNTHETIC placeholder, not data",dev
+dict:experiencer=deceased,hi,64,0.174698,0.149512,0.208278,0.324765,0.264866,0.424593,0.37037,0.080586,27,273,,"SYNTHETIC placeholder, not data",dev
+dict:experiencer=deceased,en,81,0.064798,0.038737,0.091042,0.045362,-0.044682,0.140523,0.7,0.034615,40,260,,"SYNTHETIC placeholder, not data",dev

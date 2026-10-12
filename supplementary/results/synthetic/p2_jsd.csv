@@ -1,0 +1,2 @@
+quantity,estimate,lo,hi,B,n_components,n_texts_hi,n_texts_en,note,status,split,eligibility_sha256
+jsd_component_profiles_base2,0.09,0.06,0.13,2000,24,80,90,plug-in JSD (synthetic),"SYNTHETIC placeholder, not data",dev,synthetic

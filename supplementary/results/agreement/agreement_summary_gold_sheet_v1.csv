@@ -1,0 +1,9 @@
+field,n_units,n_both_coded,n_agree,pct_agree,alpha_nominal,n_out_of_codebook,provenance
+orientation,200,200,176,88.0,0.824,0,"machine pre-filled (two machine runs, 2026-10-11), reviewed and accepted by the investigator without change unless a correction is logged"
+experiencer,200,200,188,94.0,0.923,0,"machine pre-filled (two machine runs, 2026-10-11), reviewed and accepted by the investigator without change unless a correction is logged"
+predicate_type,200,200,179,89.5,0.845,0,"machine pre-filled (two machine runs, 2026-10-11), reviewed and accepted by the investigator without change unless a correction is logged"
+target,200,200,166,83.0,0.774,0,"machine pre-filled (two machine runs, 2026-10-11), reviewed and accepted by the investigator without change unless a correction is logged"
+process,200,200,181,90.5,0.842,0,"machine pre-filled (two machine runs, 2026-10-11), reviewed and accepted by the investigator without change unless a correction is logged"
+function,200,200,197,98.5,0.836,0,"machine pre-filled (two machine runs, 2026-10-11), reviewed and accepted by the investigator without change unless a correction is logged"
+grammar_forced,200,200,185,92.5,0.775,0,"machine pre-filled (two machine runs, 2026-10-11), reviewed and accepted by the investigator without change unless a correction is logged"
+dative_alternative_available,200,200,192,96.0,0.742,0,"machine pre-filled (two machine runs, 2026-10-11), reviewed and accepted by the investigator without change unless a correction is logged"

@@ -1,0 +1,737 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Annotation sheets</title>
+<style>
+:root { --bg: #fbfaf7; --fg: #1d1d1b; --muted: #6b6a66; --line: #d9d6cf; --accent: #2f5d8a; --warn: #9a3412;
+        --card: #ffffff; --filled: #e8f0e3; --blank: #fff4e0; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #1b1b1a; --fg: #ecebe6; --muted: #a3a29c; --line: #3a3936; --accent: #8db7e0; --warn: #f2a37a;
+          --card: #242422; --filled: #2c3a28; --blank: #3a2f1e; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.5 system-ui, -apple-system, "Segoe UI",
+       "Noto Sans Devanagari", "Noto Sans", sans-serif; }
+header { position: sticky; top: 0; background: var(--bg); border-bottom: 1px solid var(--line); padding: 10px 16px;
+         display: flex; flex-wrap: wrap; gap: 8px; align-items: center; z-index: 2; }
+header h1 { font-size: 17px; margin: 0 12px 0 0; }
+button, select, input[type=text] { font: inherit; color: inherit; background: var(--card); border: 1px solid var(--line);
+         border-radius: 6px; padding: 5px 10px; }
+button { cursor: pointer; }
+button.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+#status { color: var(--muted); font-size: 14px; flex: 1 1 260px; }
+main { max-width: 980px; margin: 0 auto; padding: 16px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; }
+.ctx { color: var(--muted); }
+.main { font-size: 20px; margin: 8px 0; white-space: pre-wrap; }
+.field-show { margin: 4px 0; font-size: 15px; }
+.field-show b { color: var(--muted); font-weight: 600; margin-right: 6px; }
+.edit { display: grid; grid-template-columns: minmax(170px, max-content) 1fr; gap: 6px 12px; margin-top: 14px;
+        align-items: center; }
+.edit label { font-weight: 600; }
+.edit .blank { background: var(--blank); }
+.edit .filled { background: var(--filled); }
+.edit select, .edit input { width: 100%; max-width: 420px; }
+#nav { display: flex; gap: 8px; margin: 12px 0; flex-wrap: wrap; align-items: center; }
+#help { display: none; margin-top: 12px; font-size: 14px; color: var(--muted); }
+#help.on { display: block; }
+.warn { color: var(--warn); font-weight: 600; }
+kbd { border: 1px solid var(--line); border-radius: 4px; padding: 0 4px; font-size: 13px; }
+@media (max-width: 640px) { .edit { grid-template-columns: 1fr; } header h1 { width: 100%; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Annotation sheets</h1>
+  <input id="file" type="file" accept=".csv,text/csv" aria-label="Open a sheet">
+  <button id="export" class="primary" disabled title="Download the sheet under its own name (Ctrl/Cmd+S)">Export CSV</button>
+  <button id="helpbtn" title="Keyboard shortcuts (?)">?</button>
+  <span id="status">Open one of your sheets (never a *_key* file).</span>
+</header>
+<main>
+  <div id="help">
+    <p><kbd>→</kbd>/<kbd>j</kbd> next row · <kbd>←</kbd>/<kbd>k</kbd> previous row · <kbd>n</kbd> next row with a blank
+    cell · <kbd>Tab</kbd> next field · in a dropdown, <kbd>1</kbd>–<kbd>9</kbd> pick the nth value and move to the next
+    field · in a rating sheet, <kbd>1</kbd>–<kbd>7</kbd> anywhere set the rating and go to the next passage ·
+    <kbd>Ctrl/Cmd</kbd>+<kbd>S</kbd> export · <kbd>?</kbd> this help.</p>
+    <p>Every edit is autosaved in this browser (per file). Export writes the same columns, rows and formatting as the
+    file you opened; only the cells you filled change. Save the export over the original file, under the same name.</p>
+  </div>
+  <div id="nav" hidden>
+    <button id="prev">← Prev</button>
+    <button id="next">Next →</button>
+    <button id="nextblank">Next blank (n)</button>
+    <span>Row <input id="jump" type="text" inputmode="numeric" size="5" aria-label="Go to row"> of <span id="total"></span></span>
+    <span id="progress"></span>
+  </div>
+  <div id="card" class="card" hidden></div>
+</main>
+<script id="config" type="application/json">{
+ "sheets": [
+  {
+   "type": "gold",
+   "label": "Gold / pilot clause sheet",
+   "pattern": "^(gold_sheet_v\\d+_(coder\\d|adjudicated)|gold_pilot_r\\d)\\.csv$",
+   "show": [
+    "context_before",
+    "clause_text",
+    "span_text",
+    "context_after"
+   ],
+   "main": "clause_text",
+   "edit": [
+    {
+     "col": "orientation",
+     "values": [
+      "I",
+      "F",
+      "C",
+      "R",
+      "NA"
+     ]
+    },
+    {
+     "col": "experiencer",
+     "values": [
+      "self",
+      "kin",
+      "community",
+      "deceased",
+      "God",
+      "impersonal",
+      "other"
+     ]
+    },
+    {
+     "col": "predicate_type",
+     "values": [
+      "state",
+      "action",
+      "event_befalling",
+      "speech",
+      "other"
+     ]
+    },
+    {
+     "col": "target",
+     "values": [
+      "self",
+      "kin",
+      "community",
+      "deceased",
+      "God",
+      "impersonal",
+      "other",
+      "none"
+     ]
+    },
+    {
+     "col": "process",
+     "values": [
+      "L",
+      "Rs",
+      "NA"
+     ]
+    },
+    {
+     "col": "function",
+     "values": [
+      "Sk",
+      "Of",
+      "NA"
+     ]
+    },
+    {
+     "col": "grammar_forced",
+     "values": [
+      "Y",
+      "N",
+      "context"
+     ]
+    },
+    {
+     "col": "dative_alternative_available",
+     "values": [
+      "Y",
+      "N",
+      "NA"
+     ]
+    },
+    {
+     "col": "notes",
+     "text": true
+    }
+   ]
+  },
+  {
+   "type": "components",
+   "label": "Component sheet (0 / 1 per component)",
+   "pattern": "^gold_components_v\\d+_(coder\\d|adjudicated)\\.csv$",
+   "show": [
+    "context_before",
+    "clause_text",
+    "span_text",
+    "context_after"
+   ],
+   "main": "clause_text",
+   "edit": [
+    {
+     "col": "FEEL_BAD",
+     "values": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "col": "NOT_HERE",
+     "values": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "col": "HAPPEN_TO",
+     "values": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "col": "THINK_OF",
+     "values": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "col": "WANT_BE_WITH",
+     "values": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "col": "WITH_OTHERS",
+     "values": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "col": "KIN",
+     "values": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "col": "ABOVE",
+     "values": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "col": "DUTY_DONE",
+     "values": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "col": "DUTY_UNDONE",
+     "values": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "col": "BODY",
+     "values": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "col": "BROKEN",
+     "values": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "col": "SUPPORT",
+     "values": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "col": "BLESSING",
+     "values": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "col": "AFTER_GOOD",
+     "values": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "col": "SPEAK_TO_DEAD",
+     "values": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "col": "LONG_TIME",
+     "values": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "col": "OTHERS_SAY",
+     "values": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "col": "DO_BECAUSE",
+     "values": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "col": "AVOID_DIE",
+     "values": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "col": "BOND",
+     "values": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "col": "RITUAL_WORDS",
+     "values": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "col": "HONOUR",
+     "values": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "col": "EVERYONE",
+     "values": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "col": "notes",
+     "text": true
+    }
+   ]
+  },
+  {
+   "type": "rating",
+   "label": "Intensity rating sheet (1-7)",
+   "pattern": "^(audit_rating_sheet_r\\d|audit_calibration_brighter_r\\d)\\.csv$",
+   "show": [
+    "passage_text"
+   ],
+   "main": "passage_text",
+   "edit": [
+    {
+     "col": "intensity_1to7",
+     "values": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+     ]
+    },
+    {
+     "col": "notes",
+     "text": true
+    }
+   ]
+  },
+  {
+   "type": "meta",
+   "label": "Text metadata confirmation",
+   "pattern": "^meta_review\\.csv$",
+   "show": [
+    "record_id",
+    "lang",
+    "field",
+    "prefill_value",
+    "confidence",
+    "rule",
+    "evidence_clause_ids",
+    "prefill_changed",
+    "source_url"
+   ],
+   "main": "field",
+   "edit": [
+    {
+     "col": "confirmed_value",
+     "valuesByField": {
+      "genre": [
+       "narrative",
+       "reflective"
+      ],
+      "home_language_statement": [
+       "en",
+       "hi",
+       "both",
+       "none"
+      ],
+      "diaspora": [
+       "yes",
+       "no",
+       "unknown"
+      ],
+      "script_mix": [
+       "devanagari",
+       "latin",
+       "mixed"
+      ]
+     }
+    },
+    {
+     "col": "reviewer",
+     "text": true
+    },
+    {
+     "col": "notes",
+     "text": true
+    }
+   ]
+  },
+  {
+   "type": "review",
+   "label": "Corpus review master",
+   "pattern": "^review_master.*\\.csv$",
+   "show": [
+    "review_id",
+    "lang",
+    "title",
+    "url",
+    "n_words",
+    "over_cap",
+    "first_300_chars",
+    "suggested_decision",
+    "suggested_relation",
+    "suggested_reason",
+    "suggestion_confidence"
+   ],
+   "main": "first_300_chars",
+   "edit": [
+    {
+     "col": "decision",
+     "values": [
+      "maybe",
+      "no",
+      "yes"
+     ]
+    },
+    {
+     "col": "relation",
+     "text": true
+    },
+    {
+     "col": "reason",
+     "text": true
+    },
+    {
+     "col": "reviewer",
+     "text": true
+    }
+   ]
+  }
+ ],
+ "refuse": "key"
+}</script>
+<script>
+// CORE-BEGIN
+
+function parseCSV(text) {
+  var bom = text.charCodeAt(0) === 0xFEFF;
+  if (bom) text = text.slice(1);
+  var records = [], fields = [], i = 0, n = text.length, start = 0;
+  var field = "", quoted = false, inQuotes = false, started = false;
+
+  function endField() {
+    fields.push({v: field, q: quoted, raw: text.slice(start, i), v0: field});
+    field = ""; quoted = false; started = false;
+  }
+  while (i < n) {
+    var c = text[i];
+    if (inQuotes) {
+      if (c === '"') {
+        if (text[i + 1] === '"') { field += '"'; i += 2; continue; }
+        inQuotes = false; i++; continue;
+      }
+      field += c; i++; continue;
+    }
+    if (c === '"' && !started) { inQuotes = true; quoted = true; started = true; i++; continue; }
+    if (c === ",") { endField(); i++; start = i; continue; }
+    if (c === "\r" || c === "\n") {
+      var eol = (c === "\r" && text[i + 1] === "\n") ? "\r\n" : c;
+      endField();
+      records.push({fields: fields, eol: eol});
+      fields = []; i += eol.length; start = i; continue;
+    }
+    field += c; started = true; i++;
+  }
+  if (started || fields.length) { endField(); records.push({fields: fields, eol: ""}); }
+  return {bom: bom, records: records};
+}
+
+function needsQuotes(v) { return /[",\r\n]/.test(v); }
+
+function serializeCSV(doc) {
+  var out = doc.bom ? "﻿" : "";
+  for (var r = 0; r < doc.records.length; r++) {
+    var rec = doc.records[r], parts = [];
+    for (var f = 0; f < rec.fields.length; f++) {
+      var fld = rec.fields[f], v = fld.v;
+      if (fld.raw !== undefined && v === fld.v0) { parts.push(fld.raw); continue; }
+      parts.push(fld.q || needsQuotes(v) ? '"' + v.replace(/"/g, '""') + '"' : v);
+    }
+    out += parts.join(",") + rec.eol;
+  }
+  return out;
+}
+
+function columns(doc) {
+  var idx = {};
+  doc.records[0].fields.forEach(function (f, k) { idx[f.v] = k; });
+  return idx;
+}
+
+function setCell(doc, row, col, value) {
+
+  var fld = doc.records[row].fields[col];
+  if (fld.v === value) return false;
+  fld.v = value;
+  return true;
+}
+
+function sheetType(config, name) {
+  if (new RegExp(config.refuse, "i").test(name)) return {refused: "a key file: keys are never opened here"};
+  for (var k = 0; k < config.sheets.length; k++) {
+    if (new RegExp(config.sheets[k].pattern).test(name)) return config.sheets[k];
+  }
+  return {refused: "not an annotation sheet this tool knows"};
+}
+// CORE-END
+</script>
+<script>
+(function () {
+  var CONFIG = JSON.parse(document.getElementById("config").textContent);
+  var doc = null, name = "", sheet = null, cols = null, rowIdx = 1, original = "", storeKey = "";
+  var $ = function (id) { return document.getElementById(id); };
+
+  function status(msg, warn) { $("status").textContent = msg; $("status").className = warn ? "warn" : ""; }
+  function dataRows() {
+    var n = doc.records.length;
+    while (n > 1 && doc.records[n - 1].fields.length === 1 && doc.records[n - 1].fields[0].v === "") n--;
+    return n - 1;
+  }
+  function val(r, c) { var k = cols[c]; return k === undefined ? "" : (doc.records[r].fields[k] || {v: ""}).v; }
+  function editsOf(r) { return sheet.edit.filter(function (e) { return cols[e.col] !== undefined; }); }
+  function valuesFor(e, r) { return e.valuesByField ? (e.valuesByField[val(r, "field")] || []) : e.values; }
+  function isBlank(r) { return editsOf(r).some(function (e) { return e.col !== "notes" && val(r, e.col) === ""; }); }
+
+  function hash(s) { var h = 5381; for (var i = 0; i < s.length; i++) h = ((h * 33) ^ s.charCodeAt(i)) >>> 0; return h.toString(16); }
+  function saveLocal() {
+    try {
+      var edits = {};
+      var base = parseCSV(original);
+      for (var r = 1; r < doc.records.length; r++) {
+        sheet.edit.forEach(function (e) {
+          var k = cols[e.col];
+          if (k === undefined) return;
+          var now = doc.records[r].fields[k].v, was = base.records[r].fields[k].v;
+          if (now !== was) { (edits[r] = edits[r] || {})[e.col] = now; }
+        });
+      }
+      localStorage.setItem(storeKey, JSON.stringify({saved: new Date().toISOString(), edits: edits}));
+    } catch (err) {  }
+  }
+  function restoreLocal() {
+    try {
+      var s = localStorage.getItem(storeKey);
+      if (!s) return 0;
+      var data = JSON.parse(s), n = 0;
+      Object.keys(data.edits).forEach(function (r) {
+        Object.keys(data.edits[r]).forEach(function (c) {
+          if (cols[c] !== undefined && doc.records[+r]) { setCell(doc, +r, cols[c], data.edits[r][c]); n++; }
+        });
+      });
+      if (n && !confirm("Restore " + n + " autosaved cell(s) from " + data.saved + "?")) {
+        doc = parseCSV(original); return 0;
+      }
+      return n;
+    } catch (err) { return 0; }
+  }
+
+  function render() {
+    var total = dataRows();
+    rowIdx = Math.max(1, Math.min(rowIdx, total));
+    $("total").textContent = total;
+    $("jump").value = rowIdx;
+    var done = 0;
+    for (var r = 1; r <= total; r++) if (!isBlank(r)) done++;
+    $("progress").textContent = done + " of " + total + " rows complete";
+    var card = $("card");
+    card.innerHTML = "";
+    sheet.show.forEach(function (c) {
+      if (cols[c] === undefined) return;
+      var v = val(rowIdx, c);
+      var el;
+      if (c === sheet.main) { el = document.createElement("div"); el.className = "main"; el.textContent = v; }
+      else if (c === "context_before" || c === "context_after") {
+        el = document.createElement("div"); el.className = "ctx"; el.textContent = v;
+      } else if (c === "url" || c === "source_url") {
+        el = document.createElement("div"); el.className = "field-show";
+        el.innerHTML = "<b></b>"; el.firstChild.textContent = c;
+        var a = document.createElement("a"); a.href = v; a.target = "_blank"; a.rel = "noopener noreferrer";
+        a.textContent = v; el.appendChild(a);
+      } else {
+        el = document.createElement("div"); el.className = "field-show";
+        el.innerHTML = "<b></b><span></span>"; el.firstChild.textContent = c; el.lastChild.textContent = v;
+      }
+      card.appendChild(el);
+    });
+    var grid = document.createElement("div"); grid.className = "edit";
+    editsOf(rowIdx).forEach(function (e) {
+      var id = "f_" + e.col, lab = document.createElement("label");
+      lab.htmlFor = id; lab.textContent = e.col; grid.appendChild(lab);
+      var cur = val(rowIdx, e.col), input;
+      if (e.text) {
+        input = document.createElement("input"); input.type = "text"; input.value = cur;
+        input.addEventListener("input", function () { commit(e.col, input.value); });
+      } else {
+        input = document.createElement("select");
+        var opts = [""].concat(valuesFor(e, rowIdx));
+        if (cur !== "" && opts.indexOf(cur) < 0) opts.push(cur);
+        opts.forEach(function (o, k) {
+          var op = document.createElement("option"); op.value = o;
+          op.textContent = o === "" ? "—" : (k <= 9 ? k + "  " : "") + o; input.appendChild(op);
+        });
+        input.value = cur;
+        input.addEventListener("change", function () { commit(e.col, input.value); });
+        input.addEventListener("keydown", function (ev) {
+          var k = parseInt(ev.key, 10);
+          if (!isNaN(k) && k >= 1 && k < input.options.length && !ev.metaKey && !ev.ctrlKey) {
+            ev.preventDefault(); ev.stopPropagation(); input.selectedIndex = k; commit(e.col, input.value);
+            if (sheet.type === "rating") go(rowIdx + 1); else focusNext(input);
+          }
+        });
+      }
+      input.id = id; input.className = cur === "" ? "blank" : "filled"; input.dataset.col = e.col;
+      grid.appendChild(input);
+    });
+    card.appendChild(grid);
+  }
+  function focusNext(el) {
+    var all = Array.prototype.slice.call(document.querySelectorAll(".edit select, .edit input"));
+    var k = all.indexOf(el);
+    if (k >= 0 && k + 1 < all.length) all[k + 1].focus();
+  }
+  function commit(col, value) {
+    if (setCell(doc, rowIdx, cols[col], value)) {
+      saveLocal();
+      var el = $("f_" + col);
+      if (el) el.className = value === "" ? "blank" : "filled";
+      status(name + ": edited, autosaved (export to write the file)");
+    }
+  }
+  function go(r) { rowIdx = r; render(); var f = document.querySelector(".edit select, .edit input"); if (f) f.focus(); }
+  function nextBlank() {
+    var total = dataRows();
+    for (var s = 1; s <= total; s++) { var r = ((rowIdx - 1 + s) % total) + 1; if (isBlank(r)) return go(r); }
+    status("Every row is complete.");
+  }
+
+  function load(file) {
+    var refused = sheetType(CONFIG, file.name).refused;
+    if (refused) { status(file.name + ": " + refused + ". Nothing was opened.", true); return; }
+    var reader = new FileReader();
+    reader.onload = function () {
+      original = reader.result;
+      var d = parseCSV(original);
+      if (serializeCSV(d) !== original) { status(file.name + ": could not read this file losslessly; not opened.", true); return; }
+      doc = d; name = file.name; sheet = sheetType(CONFIG, name); cols = columns(doc);
+      var missing = sheet.edit.filter(function (e) { return cols[e.col] === undefined && e.col !== "notes"; });
+      if (missing.length) { status(name + ": missing column(s) " + missing.map(function (e) { return e.col; }).join(", ") + "; not opened.", true); doc = null; return; }
+      storeKey = "annotate:" + name + ":" + hash(original);
+      var restored = restoreLocal();
+      $("nav").hidden = false; $("card").hidden = false; $("export").disabled = false;
+      status(name + " (" + sheet.label + ")" + (restored ? ": " + restored + " autosaved cell(s) restored" : ""));
+      rowIdx = 1; nextBlank();
+    };
+    reader.readAsText(file, "utf-8");
+  }
+
+  function exportFile() {
+    if (!doc) return;
+    var text = serializeCSV(doc);
+    var blob = new Blob([text], {type: "text/csv;charset=utf-8"});
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob); a.download = name; document.body.appendChild(a); a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+    status(name + ": exported (save it over the original file, same name)");
+  }
+
+  $("file").addEventListener("change", function (ev) { if (ev.target.files[0]) load(ev.target.files[0]); });
+  $("export").addEventListener("click", exportFile);
+  $("helpbtn").addEventListener("click", function () { $("help").classList.toggle("on"); });
+  $("prev").addEventListener("click", function () { go(rowIdx - 1); });
+  $("next").addEventListener("click", function () { go(rowIdx + 1); });
+  $("nextblank").addEventListener("click", nextBlank);
+  $("jump").addEventListener("change", function () { var r = parseInt($("jump").value, 10); if (r) go(r); });
+  document.addEventListener("keydown", function (ev) {
+    if ((ev.metaKey || ev.ctrlKey) && ev.key.toLowerCase() === "s") { ev.preventDefault(); exportFile(); return; }
+    if (!doc) { if (ev.key === "?") $("help").classList.toggle("on"); return; }
+    var t = ev.target, typing = t.tagName === "INPUT" && t.type === "text";
+    if (typing) return;
+    if (sheet.type === "rating" && /^[1-7]$/.test(ev.key) && t.tagName !== "SELECT") {
+      commit("intensity_1to7", ev.key); go(rowIdx + 1); ev.preventDefault(); return;
+    }
+    if (ev.key === "ArrowRight" || ev.key === "j") { go(rowIdx + 1); ev.preventDefault(); }
+    else if (ev.key === "ArrowLeft" || ev.key === "k") { go(rowIdx - 1); ev.preventDefault(); }
+    else if (ev.key === "n") { nextBlank(); ev.preventDefault(); }
+    else if (ev.key === "?") { $("help").classList.toggle("on"); }
+  });
+  window.addEventListener("beforeunload", function (ev) {
+    if (doc && serializeCSV(doc) !== original) { ev.preventDefault(); ev.returnValue = ""; }
+  });
+})();
+</script>
+</body>
+</html>

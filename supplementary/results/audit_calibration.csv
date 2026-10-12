@@ -1,0 +1,3 @@
+rater,n_sadness,mean_sadness,n_other,mean_other,difference
+r1,20,1.95,20,1.0,0.95
+r2,20,1.55,20,1.0,0.55

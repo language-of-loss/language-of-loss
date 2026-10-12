@@ -1,0 +1,10 @@
+quantity,value,status
+n_clauses,400,"SYNTHETIC placeholder, not data"
+gold_positive,170,"SYNTHETIC placeholder, not data"
+accuracy_translated,0.71,"SYNTHETIC placeholder, not data"
+f1_translated,0.62,"SYNTHETIC placeholder, not data"
+accuracy_native,0.79,"SYNTHETIC placeholder, not data"
+f1_native,0.73,"SYNTHETIC placeholder, not data"
+discordant_translated_right_native_wrong,21,"SYNTHETIC placeholder, not data"
+discordant_native_right_translated_wrong,53,"SYNTHETIC placeholder, not data"
+mcnemar_exact_p_two_sided,0.0003,"SYNTHETIC placeholder, not data"

@@ -1,0 +1,377 @@
+version: 0.2
+status: proposed
+boundary_left: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+boundary_right: "(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+
+flags:
+  - id: F1
+    name: dative_experiencer
+    components: [HAPPEN_TO]
+    grammar_forced: "Y"
+    sub_flag: ""
+    eligibility_rule: "chosen if a nominative predication with the same emotion noun/adjective exists (मैं दुखी हूँ, मैं रोया) and was available in context; forced for याद आना, कमी खलना, नींद न आना (no nominative alternative)"
+    source: "v0.1 §4"
+    patterns:
+      - entry_id: L-HI-C1
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:मुझे|मुझको|हमें|हमको|उसे|उन्हें|उनको|[ऀ-ॿ]+\\s+को)\\s+(?:बहुत\\s+|बड़ा\\s+|गहरा\\s+)?(?:दुख|दुःख|तकलीफ़?|तकलीफ|बुरा|ग़?म|पीड़?ा|सदमा|धक्का|अफ़?सोस|अफसोस)\\s+(?:हो|लग|है|था|थी|हुआ|हुई|पहुँच)[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: L-HI-07
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:[ऀ-ॿ]+\\s+की\\s+|आपकी\\s+|उनकी\\s+|उसकी\\s+|तुम्हारी\\s+|तेरी\\s+)?(?:बहुत\\s+)?याद\\s+(?:आ|आती|आते|आता|आया|आयी|आई|आएगी|आएगा)[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: L-HI-10
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:कमी(?:\\s+(?:महसूस|खल)[ऀ-ॿ]*)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: P-HI-04
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:मन\\s+(?:भारी|नहीं\\s+लगता|नहीं\\s+लगा|उदास|बेचैन|व्याकुल)[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: P-HI-05
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:सदम[ाे](?:\\s+लग)?[ऀ-ॿ]*|धक्का\\s+लग[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: P-HI-09
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:जी\\s+नहीं\\s+लग[ऀ-ॿ]*|जीने\\s+का\\s+मन\\s+नहीं)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: P-HI-48
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:आ[ँं]ख(?:ें|ों)|गला)\\s+भर\\s+(?:आ|आई|आया|आयी|आती|आता)[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: P-HI-49
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:नींद\\s+नहीं\\s+(?:आती|आई|आयी|आता)|खाना\\s+नहीं\\s+(?:खाया|खाती|खाता|गया))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: P-HI-50
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:सपन[ेों]+\\s+में\\s+(?:आ|दिख|मिल)[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+
+  - id: F2
+    name: honorific_plural_deceased
+    components: [KIN]
+    grammar_forced: "context"
+    sub_flag: "respect"
+    eligibility_rule: "forced for a parent/elder referent; chosen for a younger deceased (sibling, child, friend) where singular agreement was available"
+    source: "v0.1 §4; Plan v3 N1 step 2"
+    patterns:
+      - entry_id: L-HI-C2
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:वे|वो|उन्होंने|उनका|उनकी|उनके|उन्हें|उनको|उनसे|आप(?:ने|का|की|के|को)?))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?=[^।\\n]{0,80}[\\u0900-\\u097F]+(?:थे|थीं|ए|ये|ईं|या|ते|ती|हैं))"
+      - entry_id: L-HI-12
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:नहीं\\s+रह(?:े|ीं|ी|ा))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+
+  - id: F3
+    name: motion_euphemism
+    components: [NOT_HERE, AVOID_DIE]
+    grammar_forced: "N"
+    sub_flag: ""
+    eligibility_rule: "always chosen: a direct verb (मर गए / died) was available"
+    source: "v0.1 §4"
+    patterns:
+      - entry_id: L-HI-13
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:चल[ेीा]\\s+ग(?:ए|ये|यी|ईं|ई|या))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: L-HI-14
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:हमें|हमको|मुझे|मुझको|सबको|हम\\s+सबको)\\s+छोड़?(?:कर)?\\s*(?:चल[ेीा]\\s+)?ग(?:ए|ये|यी|ईं|ई|या))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: L-HI-16
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:स्वर्ग(?:वास(?:ी)?|\\s+सिधार|\\s+गमन|लोक)[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: P-HI-52
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:गुज़?र\\s+ग(?:ए|ये|यी|ईं|ई|या))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: P-HI-53
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:चल\\s+बस(?:े|ीं|ी|ा))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: P-HI-54
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:दुनिया|संसार|जहान)\\s+(?:छोड़?|से\\s+चल[ेी]|में\\s+नहीं)[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: P-HI-58
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:उनके|उसके|आपके|माँ\\s+के|पापा\\s+के|पिताजी\\s+के)\\s+जाने\\s+के\\s+बाद)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: L-EN-12
+        lang: en
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:pass(?:ed|es|ing)\\s+(?:away|on)|passed(?!\\s+(?:the|an?|his|her|my|out|by|through|over)))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: L-EN-14
+        lang: en
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:is|was|are|were|being|[A-Za-z]+['’]s)\\s+gone|gone\\s+(?:too\\s+soon|forever|now))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: L-EN-15
+        lang: en
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:left\\s+(?:us|me|this\\s+world|the\\s+world|our\\s+family))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: L-EN-19
+        lang: en
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:departed(?:\\s+soul)?|dearly\\s+departed)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: P-EN-54
+        lang: en
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:left\\s+(?:this|the)\\s+world|no\\s+longer\\s+(?:in|of)\\s+this\\s+world|not\\s+in\\s+this\\s+world)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: P-EN-58
+        lang: en
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:after|since|once)\\s+(?:he|she|they|dad|mom|mum|papa)\\s+(?:was|were)\\s+gone|(?:after|since)\\s+(?:he|she|they)\\s+(?:passed|left))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+
+  - id: F4
+    name: event_noun_death
+    components: [NOT_HERE, AVOID_DIE]
+    grammar_forced: "N"
+    sub_flag: ""
+    eligibility_rule: "chosen"
+    source: "v0.1 §4"
+    patterns:
+      - entry_id: L-HI-15
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:देहा[ंँ]त|देहावसान|निधन|मृत्यु|मौत|इंतक़ाल|इंतकाल)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: L-EN-16
+        lang: en
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:his|her|their|the|my|dad['’]?s|mom['’]?s|father['’]?s|mother['’]?s)\\s+(?:passing|demise|death))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+
+  - id: F5
+    name: negated_existence
+    components: [NOT_HERE, AVOID_DIE]
+    grammar_forced: "N"
+    sub_flag: ""
+    eligibility_rule: "chosen"
+    source: "v0.1 §3.7"
+    patterns:
+      - entry_id: L-HI-12
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:नहीं\\s+रह(?:े|ीं|ी|ा))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: P-HI-55
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:हमारे\\s+बीच\\s+नहीं\\s+रह(?:े|ीं|ी|ा))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: P-HI-59
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:अब\\s+)?(?:हमारे\\s+|मेरे\\s+)?साथ\\s+नहीं\\s+(?:हैं|रहे|है))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: L-EN-13
+        lang: en
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:is|are|was|were)\\s+no\\s+more)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: P-EN-55
+        lang: en
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:no\\s+longer\\s+(?:with|among)\\s+us|not\\s+with\\s+us\\s+(?:anymore|any\\s+more)|isn['’]t\\s+with\\s+us)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+
+  - id: F6
+    name: closing_formula
+    components: [RITUAL_WORDS]
+    grammar_forced: "N"
+    sub_flag: ""
+    eligibility_rule: "chosen; stripped in the H1 ritual run (A3.1 Run 2)"
+    source: "v0.1 §4"
+    patterns:
+      - entry_id: L-HI-26
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:ॐ|ओम्?|ओ३म्)\\s*शा[ंँ]ति(?:\\s*ॐ)?|आत्मा\\s+को\\s+(?:शांति|शान्ति)|आत्मा\\s+को\\s+(?:सद्गति|मोक्ष|मुक्ति))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: L-HI-03
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:विनम्र\\s+|भावभीनी\\s+|हार्दिक\\s+)?श्रद्धा[ंँ]जलि)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: P-HI-24
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:अलविदा|विदा(?:ई)?|अंतिम\\s+विदाई)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: P-HI-25
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:सादर\\s+)?(?:नमन|प्रणाम|चरण\\s+स्पर्श))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: P-HI-38
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:अमर(?:\\s+रह[ऀ-ॿ]*)?|हमेशा\\s+(?:ज़?िंदा|जिंदा|जीवित)\\s+रह[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: P-HI-57
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:देह\\s*त्याग|शरीर\\s+छोड़?[ऀ-ॿ]*|पंच\\s*तत्व\\s+में\\s+विलीन|ब्रह्मलीन)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: L-EN-23
+        lang: en
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:r\\.?i\\.?p\\.?|rest\\s+in\\s+(?:peace|power)|may\\s+(?:his|her|their|your)\\s+soul\\s+rest)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: P-EN-14
+        lang: en
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:condolences?|consol(?:e|ed|ing|ation)|sorry\\s+for\\s+your\\s+loss|thoughts\\s+and\\s+prayers|deepest\\s+sympath(?:y|ies))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: P-EN-24
+        lang: en
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:good-?bye|farewell|say\\s+bye)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: P-EN-38
+        lang: en
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:forever|always)\\s+in\\s+(?:our|my)\\s+hearts?|liv(?:e|es)\\s+on\\s+in\\s+(?:our|my)\\s+hearts?|always\\s+with\\s+(?:us|me)|gone\\s+but\\s+not\\s+forgotten)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+
+  - id: F7
+    name: vocative_address_deceased
+    components: [SPEAK_TO_DEAD]
+    grammar_forced: "N"
+    sub_flag: ""
+    eligibility_rule: "chosen"
+    source: "v0.1 §4"
+    patterns:
+      - entry_id: L-HI-C3
+        lang: hi
+        regex: "(?:^|[।!?\\n]\\s*)(?:माँ|मम्मी|माँ\\s+जी|पापा|पिताजी|बाबूजी|दादी|दादा|नानी|नाना|भैया|दीदी|बेटा|बेटी)(?:\\s*[,!]|\\s+(?:आप|तुम|तू)(?![\\u0900-\\u097F]))"
+      - entry_id: P-EN-C3
+        lang: en
+        regex: "(?:^|[.!?\\n]\\s*)(?:papa|dad|daddy|mom|mum|mummy|amma|appa|ma|maa|nani|nana|dadi|dada|grandma|grandpa|bhai|didi)(?:\\s*[,!]|\\s+(?:you|i)(?![a-z]))"
+      - entry_id: P-HI-26
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:जहा[ँं]\\s+भी\\s+ह(?:ों|ो|ैं))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: P-EN-26
+        lang: en
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:wherever\\s+you\\s+are|hope\\s+you\\s+(?:can\\s+)?(?:see|hear|know)|watching\\s+(?:over|down\\s+on)\\s+(?:us|me)|looking\\s+down\\s+on)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+
+  - id: F8
+    name: divine_agency
+    components: [ABOVE]
+    grammar_forced: "N"
+    sub_flag: "target=God"
+    eligibility_rule: "chosen"
+    source: "recommendation N1 (script = divine-agency)"
+    patterns:
+      - entry_id: P-HI-19
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:भगवान|ईश्वर|ऊपर\\s+वाल[ेा]|प्रभु|अल्लाह|ख़?ुदा)\\s+ने\\s+(?:उन्हें|उसे|उनको|उसको)?\\s*(?:अपने\\s+पास\\s+)?बुला\\s+लिया)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: P-HI-20
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:ईश्वर|भगवान|ऊपर\\s+वाले|प्रभु|अल्लाह|ख़?ुदा)\\s+की\\s+(?:इच्छा|मर्ज़?ी|मरज़ी))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: P-EN-19
+        lang: en
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:god\\s+(?:called|took|needed|wanted)|called\\s+(?:him|her|them)\\s+home|taken\\s+(?:from\\s+us|away|too\\s+soon))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: P-EN-20
+        lang: en
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:god['’]s\\s+(?:will|plan|wish)|(?:the\\s+)?will\\s+of\\s+god|allah['’]s\\s+will|inshallah)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+
+  - id: F9
+    name: kin_term_for_deceased
+    components: [KIN]
+    grammar_forced: "context"
+    sub_flag: ""
+    eligibility_rule: "forced where Hindi has no neutral alternative to the kin noun for an elder (a bare name for a parent is unavailable); chosen where a pronoun or name was available (English: 'my father' vs 'he')"
+    source: "Plan v3 P8b"
+    patterns:
+      - entry_id: KIN-HI
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:माँ|मम्मी|माता|माताजी|अम्मा|अम्मी|पापा|पिता|पिताजी|बाबूजी|बाबा|अब्बू|अब्बा|दादी|दादा|दादाजी|नानी|नाना|नानाजी|भाई|भैया|भाईसाहब|बहन|दीदी|बेटा|बेटी|पति|पत्नी|चाचा|चाची|मामा|मामी|बुआ|मौसी|ताऊ|ताई|दोस्त|सहेली)(?:जी)?(?![ऀ-ॣ०-९ॱ-ॿ‌‍])"
+      - entry_id: KIN-EN
+        lang: en
+        regex: "(?<![A-Za-z'])(?:mother|mom|mum|mummy|ma|maa|amma|ammi|father|dad|daddy|papa|appa|abbu|grandmother|grandma|dadi|nani|grandfather|grandpa|dada|nana|brother|bhai|bhaiya|sister|didi|son|daughter|husband|wife|uncle|aunt|aunty|chacha|chachi|mama|mami|bua|mausi|friend|best\\s+friend)(?:s|'s)?(?![A-Za-z])"
+
+  - id: F10
+    name: plural_self_reference
+    components: [WITH_OTHERS, KIN]
+    grammar_forced: "N"
+    sub_flag: ""
+    eligibility_rule: "chosen (singular alternative available); NB Hindi हम can be singular in eastern varieties: code via the codebook, not the flag"
+    source: "research plan §5.1"
+    patterns:
+      - entry_id: P-EN-71
+        lang: en
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:we\\s+lost|our\\s+(?:loss|mother|father|mom|mum|dad|papa|amma|grandmother|grandfather|nani|nana|dadi|dada|brother|sister))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: P-HI-31
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:अपन(?:े|ों)(?:\\s+(?:का|के|को|से))?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: P-HI-32
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:परिवार|घर\\s+वाल[ेों]|कुटुंब|ख़?ानदान)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+
+  - id: F11
+    name: direct_death_reference
+    components: [NOT_HERE]
+    grammar_forced: "N"
+    sub_flag: "names_direct"
+    eligibility_rule: "control flag: denominator for the indirect share"
+    source: "new"
+    patterns:
+      - entry_id: P-HI-60
+        lang: hi
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:मर\\s+ग(?:ए|ये|यी|ईं|ई|या)|मृत्यु\\s+हो\\s+ग[ऀ-ॿ]*|मौत\\s+हो\\s+ग[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+      - entry_id: P-EN-60
+        lang: en
+        regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:die(?:d|s)?|dying|death)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+
+  - id: F12
+    name: names_emotion
+    components: []
+    grammar_forced: "N"
+    sub_flag: ""
+    eligibility_rule: "used by H4 naming vs narrating"
+    source: "recommendation N1 (NAME-EMOTION moved out of the vector)"
+    patterns: []
+
+matcher_rules:
+  - id: R1
+    rule: "A clause vector is the elementwise OR of matched entry vectors and flag vectors (Plan v3 N1 step 3)."
+  - id: R2
+    rule: "Components tagged (grammar) on a construction (HAPPEN_TO from F1, KIN from F2) are written to a separate grammar_forced vector and are not counted as chosen orientation evidence."
+  - id: R3
+    rule: "Negation flips duty: सेवा / देखभाल / care with a negated opportunity (अवसर नहीं, नहीं कर पाया, never got to, couldn't) scores DUTY_UNDONE instead of DUTY_DONE; 'never got to say goodbye' scores DUTY_UNDONE."
+  - id: R4
+    rule: "Exclusions for prime-form polysemy: pronoun + लोग (हम लोग, आप लोग) is not PEOPLE; 'के पास' possessive is not NEAR; deontic चाहिए is not WANT; N + करना conjunct verbs are not DO; शायद ही is not MAYBE."
+  - id: R5
+    rule: "Bare 'passed', bare 'gone' and मरना in hyperbole (शर्म से मर गई) are matched but routed to human review (review_queue = Y) before counting."
+  - id: R6
+    rule: "names_emotion (F12) is set when the clause matches a lexicon row with pos beginning 'noun' and FEEL_BAD in its vector; it is a form flag outside the K vector."
+  - id: R7
+    rule: "The indirect_death_reference share = clauses matching F3/F4/F5/F16-type euphemisms over (those + F11 direct forms), per language."
+  - id: R8
+    rule: "Honorific plural (F2): the pattern matches pronoun forms only; singular reference must be confirmed from the Stanza parse (P7) or by the coder before KIN + respect is scored."
+
+stage4_flags:
+  - id: S4-01
+    column: dative_regex
+    extends: F1
+    lang: hi
+    regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:मुझे|मुझको|हमें|हमको|उन्हें|उनको|उसे|उसको|आपको|तुम्हें|तुमको|तुझे|तुझको|इन्हें|इनको|इसे|इसको)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])[^।\\n]*?(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:हुआ|हुई|हुए|होता|होती|लगता|लगती|लगा|लगी|आता|आती|आते|आया|आई|आयी|रहा|रही|रहे)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+    filter: "finite_dative"
+    note: "dative pronoun followed later in the clause by an experiencer verb form; the form must be a clause head or its aux/cop/compound and must not directly follow a -ते/-कर/-ए verb (देखते हुए is a converb, not a predicate)"
+  - id: S4-03
+    column: motion_euphemism
+    extends: F3
+    lang: hi
+    regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?<!ता\\s)(?<!ते\\s)(?<!ती\\s)चल[ेी]\\s+ग(?:ए|ये|ईं|यीं)|गुज़?र\\s+ग(?:ए|ये|ईं|यीं)|छोड़?\\s+ग(?:ए|ये|ईं|यीं))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+    filter: "no_destination"
+    note: "honorific-plural motion verbs: चले गए / चली गईं / गुज़र गए / छोड़ गए (+ गये/गयीं spellings); not after a -ता/-ते/-ती participle (बदलती चली गईं = aspectual 'kept changing'); चले/चली गए with a destination (बाज़ार चले गए, घर को, बाहर) is literal motion and is not counted"
+  - id: S4-04
+    column: closing_formula
+    extends: F6
+    lang: hi
+    regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:आत्मा\\s+को\\s+शा(?:ं|ँ|न्)ति|(?:ॐ|ओम्?)\\s*शा(?:ं|ँ|न्)ति|श्रद्धा(?:ं|ँ)जलि|नमन)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+    filter: ""
+    note: "आत्मा को शांति / ॐ शांति / श्रद्धांजलि / नमन"
+  - id: S4-05
+    column: motion_euphemism
+    extends: F3
+    lang: en
+    regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?i:pass(?:ed|es|ing)\\s+away|pass(?:ed|es|ing)\\s+on(?!\\s+(?:the|a|an|his|her|my|our|their|this|that|it|to|these|those)(?![A-Za-z]))|left\\s+us(?!\\s+(?:a|an|the|some|any|no|his|her|my|our|their|with|alone)(?![A-Za-z])))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+    filter: ""
+    note: "passed away / passed on (not + object) / left us (not + object or 'alone')"
+  - id: S4-05b
+    column: motion_euphemism
+    extends: F3
+    lang: en
+    regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?i:(?:is|was|are|were|be|been|[A-Za-z]+['’]s)\\s+gone|gone\\s+(?:too\\s+soon|forever))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+    filter: "animate_subject"
+    note: "is gone / gone too soon|forever, only with a person subject (not 'the pain is gone')"
+  - id: S4-06
+    column: no_more
+    extends: F5
+    lang: en
+    regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?i:(?:is|was|are|were)\\s+no\\s+more)(?!\\s+(?:than|[A-Za-z]+ing)(?![A-Za-z]))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+    filter: ""
+    note: "is/was no more (English counterpart of नहीं रहे); not 'no more than' or 'no more + -ing noun'"
+  - id: S4-07
+    column: closing_formula
+    extends: F6
+    lang: en
+    regex: "(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?i:rest\\s+in\\s+peace|may\\s+(?:her|his|their|your)\\s+soul)|RIP|R\\.I\\.P\\.?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])"
+    filter: ""
+    note: "rest in peace / RIP (upper case only) / may her|his soul"
+
+stage4_filters:
+  finite_dative:
+    pronouns: ["मुझे", "मुझको", "हमें", "हमको", "उन्हें", "उनको", "उसे", "उसको", "आपको", "तुम्हें", "तुमको", "तुझे", "तुझको", "इन्हें", "इनको", "इसे", "इसको"]
+    verbs: ["हुआ", "हुई", "हुए", "होता", "होती", "लगता", "लगती", "लगा", "लगी", "आता", "आती", "आते", "आया", "आई", "आयी", "रहा", "रही", "रहे"]
+    aux_deprels: ["aux", "aux:pass", "cop", "compound"]
+    participle_endings: ["ते", "कर", "ए"]
+  no_destination:
+    motion_stems: ["चले", "चली"]
+    destination_case_markers: ["को", "में", "तक"]
+    destination_adverbs: ["बाहर", "अंदर", "भीतर", "वापस", "घर"]
+    bare_noun_max_distance: ["2"]
+    otherworld_nouns: ["दुनिया", "संसार", "लोक", "परलोक", "धाम", "स्वर्ग", "जहान", "बैकुंठ"]
+    time_nouns: ["साल", "सालों", "वर्ष", "वर्षों", "बरस", "बरसों", "दिन", "दिनों", "महीने", "महीना", "महीनों", "हफ्ते", "हफ्तों", "सप्ताह", "सप्ताहों", "सुबह", "शाम", "रात", "रातों", "दोपहर", "समय", "वक्त", "बार", "आज", "कल", "घंटे", "घंटों", "पल", "क्षण"]
+  animate_subject:
+    pronouns: ["he", "she", "they", "you", "i", "we"]
+    kin: ["mother", "mom", "mum", "mummy", "ma", "maa", "amma", "ammi", "father", "dad", "daddy", "papa", "appa", "abbu", "grandmother", "grandma", "dadi", "nani", "grandfather", "grandpa", "dada", "nana", "brother", "bhai", "bhaiya", "sister", "didi", "son", "daughter", "husband", "wife", "uncle", "aunt", "aunty", "chacha", "chachi", "mama", "mami", "bua", "mausi", "friend", "best friend"]
+
+stage4_dative_parse:
+  pronouns: ["मुझे", "मुझको", "हमें", "हमको", "उन्हें", "उनको", "उसे", "उसको", "आपको", "तुम्हें", "तुमको", "तुझे", "तुझको", "इन्हें", "इनको", "इसे", "इसको"]
+  deprels: ["iobj", "obl", "nsubj"]
+  feel_verb_stems: ["लग", "खल", "सता", "भा", "अखर", "चुभ", "सूझ"]
+  light_verbs: ["हो", "आ", "रह", "पड", "मिल"]
+  feel_words: ["दुख", "दुःख", "गम", "अफसोस", "याद", "गुस्सा", "क्रोध", "डर", "भय", "चिंता", "फिक्र", "तकलीफ", "पीडा", "दर्द", "खुशी", "शर्म", "सदमा", "हैरानी", "आश्चर्य", "बुरा", "अच्छा", "रोना", "रुलाई", "हँसी", "हंसी", "नींद", "चैन", "परेशानी", "एहसास", "अहसास", "महसूस", "कमी", "प्यार", "मोह", "पछतावा", "ग्लानि", "बेचैनी", "घबराहट", "उदासी", "अकेलापन", "सुकून", "तसल्ली", "संतोष", "धक्का", "झटका", "पसंद", "दुखी", "उदास"]
+  body_state_words: ["कैंसर", "बीमारी", "बुखार", "चोट", "दौरा", "अटैक", "लकवा", "संक्रमण", "कोरोना", "कोविड", "टीबी", "मधुमेह", "डायबिटीज", "निमोनिया", "पीलिया", "खांसी", "खाँसी", "जुकाम", "सर्दी", "बेहोशी", "थकान"]
+
+stage4_placeholders: [grammar_forced, dative_alternative_available]

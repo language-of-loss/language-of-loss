@@ -1,0 +1,23 @@
+lang,sentence,expected_flags
+hi,मुझे उनकी बहुत याद आती है।,dative_regex;dative_parse
+en,"My father passed away last year; may his soul rest in peace.",motion_euphemism;closing_formula
+hi,मुझे बहुत दुख हुआ जब वे चले गए।,dative_regex;dative_parse;motion_euphemism
+hi,हमें लगा कि अब सब कुछ खत्म हो गया।,dative_regex;dative_parse
+hi,उन्हें कैंसर हुआ था और वे दो साल तक लड़ती रहीं।,dative_regex;dative_parse
+hi,माँ के जाने के बाद मुझे रातों को नींद नहीं आती।,dative_regex;dative_parse
+hi,मुझे वह किताब दे दो।,
+hi,उन्हें देखते हुए मैं रो पड़ा।,
+hi,पापा बाज़ार चले गए और शाम को लौट आए।,
+hi,दादी पिछले साल गुज़र गईं।,motion_euphemism
+hi,उनकी आत्मा को शांति मिले।,closing_formula
+hi,मैंने उसे दो चम्मच खिचड़ी दी।,
+en,My grandmother passed away last winter.,motion_euphemism
+en,He has gone to the market and will be back soon.,
+en,She is gone too soon and I still cannot believe it.,motion_euphemism
+en,Rest in peace Appa.,closing_formula
+en,The message was passed on to the whole family.,
+en,He left us in March and the house has been silent since.,motion_euphemism
+en,My brother left us a letter before his flight.,
+en,She is no more and the kitchen smells of nothing now.,no_more
+en,The pain is gone and only the memories remain.,
+en,We lit a lamp and said a rip in the cloth should be mended.,

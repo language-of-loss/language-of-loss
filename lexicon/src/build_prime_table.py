@@ -1,0 +1,337 @@
+import csv, pathlib
+
+COLS = ["group", "prime_en", "exponent_hi_deva", "exponent_hi_roman", "allolexes",
+        "polysemy_notes", "test_sentence_1_hi", "test_sentence_2_hi",
+        "confidence", "confidence_reason", "status"]
+
+R = []
+
+G = "Substantives"
+R += [
+ (G, "I", "मैं", "main / mai", "मुझे, मुझको (dative, experiencer frames); मुझ- (oblique: मुझसे, मुझमें)",
+  "None. मेरा is the exponent of (IS) MINE, not an allolex of I. Verb gender agreement (चाहता/चाहती) is grammatical, not semantic.",
+  "मैं कुछ करना चाहता हूँ।", "मैं जानता हूँ कि यह सच है।",
+  "high", "Single unmarked form; dative allolex is fully predictable from the frame."),
+ (G, "YOU", "तुम", "tum", "तू (tū, intimate/low), आप (āp, honorific); तुम्हें, तुझे, आपको (dative)",
+  "Three-way register split (तू/तुम/आप) encodes social distance, not meaning; treat as register allolexes as Peeters treats French tu/vous. आप also = reflexive 'self' in अपने आप. तुम takes plural agreement without plural meaning.",
+  "तुम जानते हो कि मैं क्या चाहता हूँ।", "मैं तुमसे कुछ कहना चाहता हूँ।",
+  "medium", "Citation form must be chosen for explications that raters will read; तुम is the least marked in written narrative, but a second speaker should confirm आप does not read as more neutral in therapeutic/offer register."),
+ (G, "SOMEONE", "कोई", "koī / koi", "किसी (oblique: किसी को, किसी ने); कोई और = someone else",
+  "Under negation कोई = 'anyone' (कोई नहीं = no one). With numerals कोई = approximative ('कोई दस लोग' = some ten people), which is a SOME/approx use, not SOMEONE.",
+  "कोई कुछ बुरा कर सकता है।", "मैं किसी के बारे में सोच रहा हूँ।",
+  "high", "Transparent, no competing form."),
+ (G, "SOMETHING~THING", "कुछ / चीज़", "kuch / cīz (cheez)", "बात (bāt) for an abstract thing said or thought ('यह बात सच है'); चीज़ें (pl.)",
+  "कुछ also = SOME (कुछ लोग) and 'somewhat' (कुछ अच्छा). चीज़ = object/item; बात = matter/talk. Grief prose prefers बात for abstract THIS/SOMETHING ('यह बात मुझे …').",
+  "कुछ हुआ।", "मैं कुछ करना चाहता हूँ।",
+  "high (कुछ) / medium (THING allolex)", "कुछ is secure; the चीज़ vs बात division of the THING frames ('this thing', 'many things') needs a canonical-context check."),
+ (G, "PEOPLE", "लोग", "log", "लोगों (oblique); जन (Sanskritic, compounds only)",
+  "लोग is also a plural marker on pronouns: हम लोग = we, आप लोग = you-all. In that use it is not PEOPLE; the matcher must exclude pronoun+लोग.",
+  "बहुत लोग ऐसा सोचते हैं।", "लोग कह सकते हैं कि यह बुरा है।",
+  "high", "Unmarked, pan-register."),
+ (G, "BODY", "शरीर", "śarīr / sharir", "बदन (badan, colloquial), देह (deh, literary/Sanskritic), जिस्म (jism, Urdu register)",
+  "देह in ritual register = the body as what is quitted at death (देह त्याग, देहांत): those are lexicon entries, not prime uses. शरीर also = 'health/constitution' (शरीर ठीक नहीं).",
+  "मेरे शरीर में कुछ हो रहा है।", "मेरे शरीर का यह हिस्सा।",
+  "high", "शरीर is the neutral form; allolex choice is register only."),
+]
+
+G = "Relational substantives"
+R += [
+ (G, "KIND", "तरह (इस तरह का)", "tarah", "प्रकार (prakār, formal), क़िस्म (qism, colloquial/Urdu)",
+  "Same form carries LIKE~AS~WAY: 'X की तरह' = like X; 'इस तरह (से)' = in this way. Frame disambiguates: 'तरह का/की/के' + N = KIND.",
+  "इस तरह के लोग ऐसा नहीं करते।", "यह दो तरह की चीज़ें हैं।",
+  "medium", "Polysemy with LIKE~WAY is real and frequent; प्रकार is unambiguous but formal. Speaker check: which form reads naturally in 'people of this kind'."),
+ (G, "PART", "हिस्सा", "hissā / hissa", "भाग (bhāg, formal), अंग (aṅg, body part)",
+  "हिस्सा also = share/portion (मेरा हिस्सा = my share). भाग has an unrelated homonym (verb stem 'run').",
+  "इस चीज़ के दो हिस्से हैं।", "शरीर का यह हिस्सा।",
+  "high", "Unmarked; allolexes are register variants."),
+]
+
+G = "Determiners"
+R += [
+ (G, "THIS", "यह", "yah / ye", "इस (oblique), ये (spoken/plural), ऐसा = LIKE + THIS",
+  "यह is also the proximal third-person pronoun (he/she/it, near). Abstract THIS is often 'यह बात'.",
+  "यह सच है।", "मैं यह चाहता हूँ।",
+  "high", "Transparent."),
+ (G, "THE SAME", "वही / एक ही", "vahī / ek hī", "यही (this same), उसी (oblique); 'वही … जो' correlative",
+  "वही also = emphatic 'that very one'. एक जैसा / समान mean ALIKE (similar), not SAME, and must not be used.",
+  "यह वही आदमी है।", "मैं वही चाहता हूँ जो तुम चाहते हो।",
+  "medium", "Exponent is a demonstrative + ही construction rather than a lexeme; whether वही or एक ही is the citation form for 'the same thing/place/time' needs a speaker check."),
+ (G, "OTHER~ELSE~ANOTHER", "दूसरा / और", "dūsrā / aur", "कोई और (someone else), कुछ और (something else), दूसरे (obl./pl.), अन्य (formal)",
+  "दूसरा also = ordinal 'second'. और also = 'and' and MORE. Position disambiguates: 'कोई और' = someone else, 'और कोई' ≈ anyone else.",
+  "कोई और यह कर सकता है।", "मैं किसी और जगह जाना चाहता हूँ।",
+  "high", "Both forms are unmarked; the ordinal and conjunction readings are frame-separable."),
+]
+
+G = "Quantifiers"
+R += [
+ (G, "ONE", "एक", "ek", "—",
+  "Indefinite-article-like use ('एक आदमी' = a man) is treated as ONE, as in French un. 'एक' in 'एक हो जाना' = become united (non-prime).",
+  "एक आदमी यहाँ था।", "मैं एक चीज़ चाहता हूँ।",
+  "high", "Transparent."),
+ (G, "TWO", "दो", "do", "दोनों (both = the two)",
+  "None.", "दो लोग यहाँ थे।", "यह दो चीज़ें हैं।",
+  "high", "Transparent."),
+ (G, "SOME", "कुछ", "kuch", "कुछ लोग / कुछ समय; कोई for 'some (one)'",
+  "Bare कुछ = SOMETHING; with a noun = SOME. 'कुछ' also downtoner ('somewhat').",
+  "कुछ लोग ऐसा सोचते हैं।", "कुछ समय के लिए मैं वहाँ था।",
+  "high", "Same form as SOMETHING but frame-separable."),
+ (G, "ALL", "सब / सभी", "sab / sabhī", "सारा/सारे (whole of a set), तमाम (Urdu), समस्त (Sanskritic)",
+  "सब is also pronominal 'everyone/everything' (सब कुछ, सब लोग). 'सब ठीक है' = all is well.",
+  "सब लोग यह जानते हैं।", "यह सब सच है।",
+  "high", "Unmarked."),
+ (G, "MUCH~MANY", "बहुत", "bahut", "बहुत से/सारे (with count nouns), ज़्यादा (zyādā), अनेक (formal), काफ़ी (quite a lot)",
+  "Same form as VERY. Frame disambiguates: बहुत + N = MANY/MUCH; बहुत + Adj/Adv = VERY. With count nouns 'बहुत से लोग' may be more natural than bare 'बहुत लोग'.",
+  "बहुत लोग मरे।", "मैं इसके बारे में बहुत कुछ जानता हूँ।",
+  "high (form) / medium (frame)", "Form is secure; whether bare बहुत or बहुत से is the canonical count frame needs a check."),
+ (G, "LITTLE~FEW", "थोड़ा / थोड़े (से) / कुछ ही", "thoṛā / thoṛe se / kuch hī", "कम (kam: few/less), ज़रा (zarā, Urdu 'a little')",
+  "थोड़ा also = downtoner 'a bit' (a softening device in the codebook). कम = 'less' (comparative). कुछ ही = 'only some'.",
+  "थोड़ा समय बाद कुछ हुआ।", "थोड़े से लोग ऐसा कहते हैं।",
+  "medium", "No single unmarked count form for FEW; थोड़े से / कुछ ही / कम compete and a speaker must choose."),
+]
+
+G = "Evaluators"
+R += [
+ (G, "GOOD", "अच्छा", "acchā / achha", "भला (bhalā: good person, well-being), बढ़िया (colloquial 'fine')",
+  "अच्छा is also a discourse particle ('okay', 'oh?'). 'अच्छा लगना' (dative) = feel good about / like.",
+  "यह अच्छा है।", "इस आदमी ने कुछ अच्छा किया।",
+  "high", "Unmarked."),
+ (G, "BAD", "बुरा", "burā / bura", "ख़राब (kharāb: bad/spoilt, for things and conditions), बुरी (fem.)",
+  "'बुरा लगना' (dative) = feel bad but also 'be offended/hurt'; 'बुरा मानना' = take offence. The FEEL BAD frame in explications must be checked for the 'offended' reading.",
+  "यह बुरा है।", "किसी के साथ कुछ बुरा हुआ।",
+  "high", "Unmarked; the offence reading is a frame issue, not an exponent issue."),
+]
+
+G = "Descriptors"
+R += [
+ (G, "BIG", "बड़ा", "baṛā / bada", "—",
+  "Also = elder (बड़ा भाई), important/great (बड़ा आदमी), grown-up, and colloquial intensifier (बड़ा अच्छा = very good).",
+  "यह चीज़ बड़ी है।", "यह एक बड़ी जगह है।",
+  "high", "Polysemy is frame-separable."),
+ (G, "SMALL", "छोटा", "choṭā / chhota", "—",
+  "Also = younger (छोटा भाई), minor/petty (छोटी बात).",
+  "यह चीज़ छोटी है।", "यह एक छोटी जगह है।",
+  "high", "As for BIG."),
+]
+
+G = "Mental predicates"
+R += [
+ (G, "THINK", "सोचना", "socnā / sochna", "लगना in dative 'मुझे लगता है कि …' for 'think that'; ख़याल/विचार (nouns); समझना and मानना are NOT allolexes (understand; hold/believe)",
+  "सोचना also = intend/plan (जाने की सोच रहा हूँ). लगना is massively polysemous (seem, FEEL, touch, cost). 'सोचना कि' for opinions may read as 'consider' rather than 'think that'.",
+  "मैं इस आदमी के बारे में सोच रहा हूँ।", "मैं ऐसा सोचता हूँ: …",
+  "medium", "The 'think about' and 'think like this' frames are secure with सोचना; the 'think that' frame splits between सोचना कि and लगना कि and must be tested."),
+ (G, "KNOW", "जानना", "jānnā / jaanna", "पता होना (dative: मुझे पता है), मालूम होना (dative, Urdu register)",
+  "जानना also = be acquainted with (a person). पता (noun) = address; पता चलना = find out.",
+  "मैं जानता हूँ कि यह सच है।", "मुझे पता है कि यह कहाँ है।",
+  "high", "Two frames, both unmarked; the dative one is the colloquial default."),
+ (G, "WANT", "चाहना", "cāhnā / chahna", "चाहिए (dative: मुझे यह चाहिए = I want/need this)",
+  "चाहना also = love (मैं तुम्हें चाहता हूँ). चाहिए also = deontic 'should' (तुम्हें जाना चाहिए), which is NOT WANT and must be excluded by the matcher. चाहे = whether/although.",
+  "मैं यह चाहता हूँ।", "मैं चाहता हूँ कि तुम यहाँ रहो।",
+  "high", "Form secure; deontic चाहिए is the one trap."),
+ (G, "DON'T WANT", "नहीं चाहना", "nahīn cāhnā", "— (compositional: मैं नहीं चाहता कि …)",
+  "None beyond WANT. Goddard & Wierzbicka list DON'T WANT as a prime although its English exponent is compositional; the same holds here.",
+  "मैं नहीं चाहता कि ऐसा हो।", "मैं यह नहीं चाहता।",
+  "high", "Compositional exponent is acceptable by the framework's own precedent."),
+ (G, "FEEL", "महसूस होना (dative)", "mahsūs honā / mehsoos hona", "लगना (dative: मुझे बुरा लग रहा है), अनुभव होना (Sanskritic), महसूस करना (agentive), 'मन में कुछ होना'",
+  "महसूस करना also = realise/perceive. लगना = seem, THINK-that, touch, cost. In grief prose the FEEL BAD frame is usually बुरा लगना or दुख होना; दुख is a lexicon entry, not a prime.",
+  "मुझे कुछ बुरा महसूस हो रहा है।", "मैं जानता हूँ कि तुम्हें क्या महसूस हो रहा है।",
+  "medium", "The most consequential choice for a grief lexicon. महसूस is pan-register but Persian-origin; लगना is the colloquial default but carries the 'offended' reading with बुरा. Both must be read aloud to two speakers in the canonical 'feel something good/bad' and 'feel like this' frames."),
+ (G, "SEE", "देखना", "dekhnā / dekhna", "दिखना / दिखाई देना (dative: be visible), नज़र आना (Urdu)",
+  "देखना also = look at, watch, check; discourse 'देखो'.",
+  "मैं यह देख सकता हूँ।", "मैंने कुछ देखा।",
+  "high", "Unmarked."),
+ (G, "HEAR", "सुनना", "sunnā / sunna", "सुनाई देना (dative: be audible)",
+  "सुनना also = listen, heed, obey (बात सुनना).",
+  "मैंने कुछ सुना।", "मैं तुम्हें सुन सकता हूँ।",
+  "high", "Unmarked."),
+]
+
+G = "Speech"
+R += [
+ (G, "SAY", "कहना", "kahnā / kehna", "बोलना (bolnā, colloquial/regional), बताना (batānā, 'tell' with addressee); quotative कि",
+  "कहना also = call/name (इसे क्या कहते हैं); कहलाना = be called.",
+  "इस आदमी ने कुछ कहा।", "मैं तुमसे कुछ कहना चाहता हूँ।",
+  "high", "Unmarked."),
+ (G, "WORDS", "शब्द", "śabd / shabd", "बात/बातें (bāt: things said), लफ़्ज़ (lafz, Urdu), बोल (bol)",
+  "शब्द also = 'sound' (Sanskrit) and 'vocabulary item'. बात = matter/conversation. Grief prose uses 'उसकी बातें' (his words/sayings) far more than शब्द.",
+  "उसने ये शब्द कहे: …", "मैं इन शब्दों में यह कहना चाहता हूँ।",
+  "medium", "Dictionary exponent is शब्द, but the 'say something in these words' frame may be more natural with बात; needs a canonical-context test."),
+ (G, "TRUE", "सच", "sac / sach", "सत्य (satya, formal); सही (sahī = correct/right) is a near-allolex only in 'यह सही है' and should be flagged, not adopted",
+  "सच also = noun 'truth' and adverb 'really' (सच में, सच कहूँ तो).",
+  "यह सच है।", "यह सच नहीं है।",
+  "high", "Unmarked."),
+]
+
+G = "Actions, events, movement"
+R += [
+ (G, "DO", "करना", "karnā / karna", "कर देना (completive)",
+  "करना is the light verb of hundreds of conjunct verbs (याद करना, प्यार करना, इंतज़ार करना); those are not DO and the matcher must exclude N+करना conjuncts. Also = make.",
+  "उसने कुछ किया।", "मैं कुछ करना चाहता हूँ।",
+  "high", "Form secure; conjunct-verb exclusion is a matcher rule."),
+ (G, "HAPPEN", "होना (क्या हुआ)", "honā / hona", "हो जाना (perfective), घटना / घटित होना (formal), बीतना ('X पर बीतना' = befall X, literary)",
+  "होना is also the copula (BE) and existential (THERE IS) and 'become'. HAPPEN-TO frame: 'X के साथ कुछ हुआ' (with-frame) vs 'X को कुछ हुआ' (dative), and 'उसे कुछ हो गया' is itself a death/illness euphemism (lexicon entry).",
+  "कुछ बुरा हुआ।", "इस आदमी के साथ कुछ हुआ।",
+  "high (form) / medium (happen-to frame)", "Which frame (साथ vs को) is the canonical 'happen to someone' needs a check; the dative one shades into the euphemism."),
+ (G, "MOVE", "हिलना", "hilnā / hilna", "हिलना-डुलना (echo compound), हिलाना (transitive), चलना (calnā: move/go/walk)",
+  "हिलना narrowly = stir/shake/budge. चलना = go, walk, run (of a machine), work; 'चल बसना' is a motion euphemism for die (lexicon entry).",
+  "यह चीज़ हिल रही है।", "मैं अपने शरीर का यह हिस्सा हिला सकता हूँ।",
+  "medium", "Whether हिलना covers 'something moved (from here to there)' or only in-place motion needs a check; चलना may be required for displacement."),
+]
+
+G = "Location, existence, specification"
+R += [
+ (G, "BE (SOMEWHERE)", "होना (है/था + locative)", "honā", "रहना (stay/remain), मौजूद होना (be present)",
+  "होना carries BE, THERE IS and HAPPEN; word order and the locative phrase disambiguate.",
+  "यह आदमी यहाँ है।", "यह चीज़ इस जगह है।",
+  "high", "No competing form."),
+ (G, "THERE IS", "होना (existential: यहाँ कुछ है)", "honā", "—",
+  "No distinct existential verb (contrast Spanish hay). Locative-first order marks existence.",
+  "इस जगह बहुत लोग हैं।", "ऐसे लोग हैं जो ऐसा सोचते हैं।",
+  "high", "Grammatically marked by order, not lexeme."),
+ (G, "BE (SOMEONE/SOMETHING)", "होना (copula)", "honā", "—",
+  "As above.", "यह आदमी मेरा भाई है।", "यह कोई और चीज़ है।",
+  "high", "No competing form."),
+]
+
+G = "Possession"
+R += [
+ (G, "(IS) MINE", "मेरा", "merā / mera", "मेरी, मेरे (agreement forms)",
+  "मेरा also serves the relational frame 'my brother' (मेरा भाई), which NSM handles under the same prime.",
+  "यह मेरा है।", "यह चीज़ मेरी है।",
+  "high", "Transparent."),
+]
+
+G = "Life and death"
+R += [
+ (G, "LIVE", "जीना", "jīnā / jeena", "रहना (rahnā) for 'live with someone / in a place'; ज़िंदा होना / जीवित होना (be alive); ज़िंदगी / जीवन (nouns)",
+  "रहना also = stay, remain, keep (aspectual 'करता रहना'). जीना also = get by / live through (जी लेना). NSM LIVE frames split between जीना (be alive, live long) and रहना (live with/in).",
+  "यह आदमी बहुत समय जिया।", "मैं इन लोगों के साथ रहता हूँ।",
+  "medium", "Frame-conditioned split exponent; needs confirmation that जीना is acceptable in 'live for a long time' without ज़िंदा."),
+ (G, "DIE", "मरना (मर जाना)", "marnā / mar jānā", "मर जाना is the ordinary narrative form; मृत्यु / मौत (nouns). NOT allolexes: गुज़र जाना, चल बसना, नहीं रहना, चले जाना, स्वर्गवास, देहांत, निधन, इंतक़ाल (euphemisms with extra components → dictionary entries)",
+  "मरना also = hyperbolic (शर्म से मर गई), 'be crazy about' (X पर मरना), and appears in curses. Bare perfective मरा is stylistically odd; the compound मर गया is canonical.",
+  "यह आदमी मर गया।", "सब लोग मरते हैं।",
+  "high", "Form secure; the boundary with euphemisms is the dictionary's job, not the prime table's."),
+]
+
+G = "Time"
+R += [
+ (G, "WHEN~TIME", "जब / समय", "jab / samay", "कब (interrogative), वक़्त (vaqt, Urdu), टाइम (colloquial); 'उस समय' = at that time",
+  "समय also = era, occasion, 'enough time'. बार (occasion: एक बार) is not this prime. जब also = whenever.",
+  "उस समय मैं यहाँ था।", "जब यह हुआ, मैं वहाँ नहीं था।",
+  "high", "Unmarked."),
+ (G, "NOW", "अब", "ab", "अभी (abhī: right now / just now)",
+  "अब also discourse 'well, now'. अभी under negation = 'not yet'.",
+  "अब मैं यह जानता हूँ।", "अब यह आदमी यहाँ नहीं है।",
+  "high", "Unmarked; note the second test sentence is itself the NOT-HERE frame."),
+ (G, "BEFORE", "पहले", "pahle", "इससे पहले (before this)",
+  "Also = 'first(ly)' (पहले यह करो) and 'formerly' (पहले ऐसा नहीं था); ordinal पहला.",
+  "इससे पहले कुछ और हुआ।", "पहले मैं यह नहीं जानता था।",
+  "high", "Unmarked."),
+ (G, "AFTER", "बाद", "bād / baad", "इसके बाद (after this), बाद में (later)",
+  "Minimal.", "इसके बाद कुछ बुरा हुआ।", "बहुत समय बाद मैं वहाँ गया।",
+  "high", "Unmarked."),
+ (G, "A LONG TIME", "बहुत समय / लंबे समय तक", "bahut samay / lambe samay tak", "बहुत देर (hours scale; देर = lateness/delay), बहुत दिन (many days, idiomatic), काफ़ी समय, अरसा (Urdu)",
+  "देर also = delay (देर हो गई). Grief prose says बरसों / सालों (years), which are not primes; the explication form must still be बहुत समय.",
+  "यह आदमी बहुत समय जिया।", "बहुत समय तक ऐसा ही था।",
+  "medium", "No single lexeme; scale-dependent choice (देर for hours, समय for longer). Speaker check on whether 'बहुत समय' alone is natural for years."),
+ (G, "A SHORT TIME", "थोड़ी देर / थोड़े समय", "thoṛī der / thoṛe samay", "कुछ ही समय, ज़रा देर (Urdu)",
+  "As for A LONG TIME.", "थोड़ी देर बाद कुछ हुआ।", "थोड़े समय के लिए मैं वहाँ था।",
+  "medium", "Same scale issue as A LONG TIME."),
+ (G, "FOR SOME TIME", "कुछ समय (तक / के लिए)", "kuch samay tak", "कुछ देर (तक)",
+  "The contrast with A SHORT TIME (थोड़ी देर vs कुछ देर) is fine-grained; speakers may not separate them.",
+  "कुछ समय तक मैं कुछ नहीं कर सका।", "कुछ देर तक मैंने कुछ नहीं कहा।",
+  "medium", "Needs a canonical-context test against A SHORT TIME."),
+ (G, "MOMENT", "पल", "pal", "क्षण (kṣaṇ, Sanskritic), लम्हा (lamhā, Urdu); 'एक पल में' = in a moment",
+  "Plural memorial use ('वो पल' = those moments) is a THINK-OF lexicon item, not a prime use.",
+  "एक पल में सब कुछ हो गया।", "उस पल मुझे कुछ महसूस हुआ।",
+  "high", "Unmarked; register allolexes only."),
+]
+
+G = "Space"
+R += [
+ (G, "WHERE~PLACE", "जहाँ / जगह", "jahān / jagah", "कहाँ (interrogative), स्थान (sthān, formal)",
+  "जगह also = room/space (जगह नहीं है), a position/vacancy, and 'instead of' (की जगह).",
+  "मैं जानता हूँ कि यह चीज़ कहाँ है।", "इस जगह बहुत लोग हैं।",
+  "high", "Unmarked."),
+ (G, "HERE", "यहाँ", "yahān / yahan", "इधर (idhar: over here / hither)",
+  "Minimal.", "मैं यहाँ हूँ।", "अब यह आदमी यहाँ नहीं है।",
+  "high", "Unmarked."),
+ (G, "ABOVE", "ऊपर", "ūpar / upar", "—",
+  "Also = on top of, up, upstairs, over (in rank); 'ऊपर से' = on top of that. 'ऊपर वाला' (the One above = God) is a lexicon entry carrying the ABOVE component, not a prime use.",
+  "यह चीज़ उस चीज़ के ऊपर है।", "ऊपर कुछ है।",
+  "high", "Unmarked."),
+ (G, "BELOW", "नीचे", "nīce / neeche", "—",
+  "Also = under, down, downstairs, lower (rank).", "यह चीज़ उस चीज़ के नीचे है।", "नीचे कुछ है।",
+  "high", "Unmarked."),
+ (G, "FAR", "दूर", "dūr / door", "—",
+  "Also = 'away' (दूर चला गया = went away), 'distant' (of kin); 'दूर-दूर तक' = anywhere near. 'अब बहुत दूर है' is a motion-euphemism frame (lexicon).",
+  "यह जगह यहाँ से बहुत दूर है।", "यह आदमी अब यहाँ से दूर है।",
+  "high", "Unmarked."),
+ (G, "NEAR", "पास", "pās / paas", "नज़दीक (nazdīk), क़रीब (qarīb), निकट (nikaṭ, formal)",
+  "'X के पास' = X has (possession construction: मेरे पास किताब है) is extremely frequent and must be excluded by the matcher; 'के पास जाना' = go to (a person).",
+  "यह जगह यहाँ के पास है।", "मैं इस आदमी के पास था।",
+  "high", "Form secure; the possessive construction is the one trap."),
+ (G, "SIDE", "तरफ़ / ओर", "taraf / or", "बगल (bagal: beside), किनारा (edge/bank); पक्ष (side in a dispute, formal)",
+  "तरफ़ also = direction ('की तरफ़' = towards) and 'की तरफ़ से' = on behalf of. ओर = towards.",
+  "इस चीज़ की एक तरफ़ कुछ है।", "उस चीज़ की दोनों तरफ़ लोग हैं।",
+  "medium", "'On one side / on all sides' frames need a check of तरफ़ vs ओर and of whether 'की सब तरफ़' is acceptable."),
+ (G, "INSIDE", "अंदर", "andar", "भीतर (bhītar, literary/Sanskritic); the postposition में ('in') is NOT the exponent",
+  "अंदर also = within (a time span), 'inside' (jail, colloquial). 'मेरे अंदर कुछ हो रहा है' is the grief-relevant frame.",
+  "इस चीज़ के अंदर कुछ है।", "मेरे अंदर कुछ हो रहा है।",
+  "high", "Unmarked."),
+ (G, "TOUCH", "छूना", "chūnā / chhoona", "स्पर्श करना (formal); 'लगा हुआ' (touching/attached)",
+  "छूना also = touch upon (a topic); 'दिल को छू गया' = moved emotionally (lexicon item).",
+  "यह चीज़ उस चीज़ को छू रही है।", "मैंने इस चीज़ को छुआ।",
+  "high", "Unmarked."),
+]
+
+G = "Logical concepts"
+R += [
+ (G, "NOT", "नहीं", "nahīn / nahi", "न (na: literary and in न … न), मत (mat: prohibitive with imperatives)",
+  "'नहीं रहे' (is no more) is a death euphemism (lexicon entry) built on NOT + LIVE/BE.",
+  "यह सच नहीं है।", "मैं यह नहीं चाहता।",
+  "high", "Unmarked."),
+ (G, "MAYBE", "शायद", "śāyad / shayad", "हो सकता है (कि) (= CAN + BE), मुमकिन है (Urdu), संभव है / कदाचित (Sanskritic)",
+  "'शायद ही' reverses polarity (= hardly/scarcely: शायद ही कोई = hardly anyone); the matcher must exclude शायद ही. हो सकता है belongs to CAN and should not be counted as MAYBE.",
+  "शायद यह सच है।", "शायद कुछ बुरा हुआ।",
+  "high", "Form secure; one polarity trap."),
+ (G, "CAN", "सकना (V-सकता है)", "saknā", "पाना (pānā: manage to; in negation 'नहीं कर पाया' = couldn't), 'हो सकता है' (it can happen / it may be)",
+  "सकना spans ability, permission and epistemic possibility, as NSM CAN does.",
+  "मैं यह कर सकता हूँ।", "ऐसा हो सकता है।",
+  "high", "Unmarked."),
+ (G, "BECAUSE", "क्योंकि", "kyonki / kyunki", "की वजह से (kī vajah se: because of X), के कारण (ke kāraṇ, Sanskritic), इसलिए / इस वजह से (because of this, therefore)",
+  "वजह / कारण also = 'reason' (nouns).", "मैंने ऐसा किया क्योंकि मैं यह चाहता था।", "इस वजह से कुछ बुरा हुआ।",
+  "high", "Unmarked; clause vs nominal frames both available."),
+ (G, "IF", "अगर", "agar", "यदि (yadi, formal), correlative तो (can carry the conditional alone: 'तुम आओ तो …'), जो (archaic)",
+  "'अगर … भी' = even if.", "अगर ऐसा हुआ, तो मैं यह करूँगा।", "अगर तुम यह चाहते हो, तो मैं यह कर सकता हूँ।",
+  "high", "Unmarked."),
+]
+
+G = "Augmentor, intensifier"
+R += [
+ (G, "VERY", "बहुत", "bahut", "बड़ा (colloquial with adjectives), बेहद (behad, Urdu), अत्यंत / अति (Sanskritic), बहुत ही (emphatic)",
+  "Same form as MUCH~MANY; see that row.", "यह बहुत बड़ा है।", "यह बहुत बुरा है।",
+  "high", "Unmarked."),
+ (G, "MORE", "और / ज़्यादा", "aur / zyādā", "अधिक (adhik, formal), 'और भी' (even more)",
+  "और = 'and', OTHER (कोई और) and MORE; 'कुछ और' is ambiguous between 'something else' and 'some more'. ज़्यादा also = too much (ज़्यादा मत सोचो) and MUCH.",
+  "मैं इसके बारे में और जानना चाहता हूँ।", "मैं इसके बारे में और कुछ कहना चाहता हूँ।",
+  "medium", "और is triply ambiguous; ज़्यादा shades into excess. The canonical 'do more / know more' frames need a check."),
+]
+
+G = "Similarity"
+R += [
+ (G, "LIKE~AS~WAY", "जैसा / ऐसा / की तरह", "jaisā / aisā / kī tarah", "जैसे (as), ऐसे (in this way), वैसा/वैसे (like that), इस तरह (से) (in this way)",
+  "जैसे also = 'as if', 'such as', 'as soon as' (जैसे ही). तरह also = KIND. 'ऐसे ही' = just like that / for no reason.",
+  "मैं इसके बारे में ऐसा सोचता हूँ: …", "यह आदमी उस आदमी जैसा है।",
+  "high (form) / medium (citation)", "All three forms are needed across frames (like X / like this / in this way); the citation exponent for explication writing must be fixed by convention."),
+]
+
+assert len(R) == 65, len(R)
+out = pathlib.Path(__file__).resolve().parents[1] / "tables"
+with open(out / "primes_hi.csv", "w", newline="", encoding="utf-8") as f:
+    w = csv.writer(f); w.writerow(COLS)
+    for r in R: w.writerow(list(r) + ["proposed"])
+with open(out / "primes_hi.md", "w", encoding="utf-8") as f:
+    f.write("| # | Group | Prime | Hindi (Deva) | Roman | Allolexes | Polysemy | Test 1 | Test 2 | Conf. | Why |\n|---|---|---|---|---|---|---|---|---|---|---|\n")
+    for i, r in enumerate(R, 1):
+        f.write("| " + " | ".join([str(i)] + [str(x).replace("|", "\\|") for x in r]) + " |\n")
+print("wrote", len(R), "rows")

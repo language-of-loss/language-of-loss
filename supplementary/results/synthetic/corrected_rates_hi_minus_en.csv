@@ -1,0 +1,9 @@
+measure,lang,diff_observed,diff_corrected,lo,hi,sign_flip,p_flip,recall_gap,gap_ok,status,split
+dict:orientation=I,hi-en,-0.112867,-0.223588,-0.329762,-0.125165,False,0.1858,0.211538,False,"SYNTHETIC placeholder, not data",dev
+dict:orientation=F,hi-en,0.005531,0.481102,0.383489,0.571899,False,0.12427,0.534091,False,"SYNTHETIC placeholder, not data",dev
+dict:orientation=C,hi-en,0.010484,0.012654,-0.085888,0.141866,False,0.389711,0.111999,False,"SYNTHETIC placeholder, not data",dev
+dict:orientation=R,hi-en,-0.08601,-0.137576,-0.218825,-0.061083,False,0.356557,0.140931,False,"SYNTHETIC placeholder, not data",dev
+dict:experiencer=self,hi-en,-0.154082,-0.244631,-0.346281,-0.147981,False,0.261145,0.333333,False,"SYNTHETIC placeholder, not data",dev
+dict:experiencer=kin,hi-en,-0.160349,-0.463844,-0.557256,-0.349942,False,0.211595,0.264286,False,"SYNTHETIC placeholder, not data",dev
+dict:experiencer=community,hi-en,0.014597,0.390874,0.26609,0.487497,False,0.377603,0.400913,False,"SYNTHETIC placeholder, not data",dev
+dict:experiencer=deceased,hi-en,0.1099,0.279404,0.162418,0.385868,False,0.076903,0.32963,False,"SYNTHETIC placeholder, not data",dev

@@ -1,0 +1,9 @@
+lang,residue,count,denominator,denominator_unit,share,note,status,split,eligibility_sha256
+hi,grammar_forced_component_clauses,93,3118,finite clauses,0.0298268,gf_* hits kept apart from comp_* by matcher rule R2 (not in the profile),"dev smoke, not a result",dev,7fecf9705bc01c4a24d7a48f6c4d81115e989a5d4b72bbf2469423efe5b21987
+hi,matched_clauses_without_component,0,823,lexicon-matched clauses,0.0,entry matched but contributes no component,"dev smoke, not a result",dev,7fecf9705bc01c4a24d7a48f6c4d81115e989a5d4b72bbf2469423efe5b21987
+hi,emotion_sites_in_unmatched_clauses,32,85,emotion experiencer sites (P1 rules),0.376471,emotional predication the lexicon does not match,"dev smoke, not a result",dev,7fecf9705bc01c4a24d7a48f6c4d81115e989a5d4b72bbf2469423efe5b21987
+hi,component_hits_in_profile,2119,3118,finite clauses,0.679602,for scale,"dev smoke, not a result",dev,7fecf9705bc01c4a24d7a48f6c4d81115e989a5d4b72bbf2469423efe5b21987
+en,grammar_forced_component_clauses,0,3289,finite clauses,0.0,gf_* hits kept apart from comp_* by matcher rule R2 (not in the profile),"dev smoke, not a result",dev,7fecf9705bc01c4a24d7a48f6c4d81115e989a5d4b72bbf2469423efe5b21987
+en,matched_clauses_without_component,5,815,lexicon-matched clauses,0.00613497,entry matched but contributes no component,"dev smoke, not a result",dev,7fecf9705bc01c4a24d7a48f6c4d81115e989a5d4b72bbf2469423efe5b21987
+en,emotion_sites_in_unmatched_clauses,58,148,emotion experiencer sites (P1 rules),0.391892,emotional predication the lexicon does not match,"dev smoke, not a result",dev,7fecf9705bc01c4a24d7a48f6c4d81115e989a5d4b72bbf2469423efe5b21987
+en,component_hits_in_profile,2484,3289,finite clauses,0.755245,for scale,"dev smoke, not a result",dev,7fecf9705bc01c4a24d7a48f6c4d81115e989a5d4b72bbf2469423efe5b21987

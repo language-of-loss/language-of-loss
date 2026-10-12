@@ -1,0 +1,11 @@
+sentence,label,hindi_words,english_words,deva_expected
+mujhe maa ki bahut yaad aati hai,romanized_hindi,mujhe maa bahut yaad aati,,याद
+mere papa ab is duniya me nahi h,romanized_hindi,mere papa duniya nahi,,दुनिया
+papa ke jaane ke baad ghar khali lagta hai,romanized_hindi,papa jaane baad ghar lagta,,घर
+dadi ki bahut yaad aa rahi hai aaj,romanized_hindi,dadi bahut yaad rahi aaj,,याद
+I miss my mother so much she was my everything,english,,miss mother much everything,
+My father passed away last year but unki bahut yaad aati hai,code_mixed,unki bahut yaad aati,father passed away year,याद
+aaj papa ki barsi hai and I still cannot believe he is gone,code_mixed,aaj papa barsi,still cannot believe gone,बरसी
+Nani ji ka dehant ho gaya last week please pray for her,code_mixed,dehant gaya,last week please pray,देहांत
+bhai tu bahut yaad aata hai yaar rest in peace brother,code_mixed,bhai bahut yaad aata yaar,rest peace brother,याद
+मेरी माँ चली गईं but I feel her everywhere every single day,code_mixed,मेरी माँ चली गईं,feel everywhere every single day,

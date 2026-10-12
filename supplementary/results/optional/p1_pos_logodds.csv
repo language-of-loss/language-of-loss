@@ -1,0 +1,5 @@
+category,count_hi,count_en,tokens_hi,tokens_en,alpha0,delta,sd,z,note,status,split,eligibility_sha256
+agentive_self,18,63,27392,26517,500.0,-1.25729,0.262708,-4.78588,,"dev smoke, not a result",dev,7fecf9705bc01c4a24d7a48f6c4d81115e989a5d4b72bbf2469423efe5b21987
+emotion_adjective,22,37,27392,26517,500.0,-0.542443,0.266429,-2.03598,,"dev smoke, not a result",dev,7fecf9705bc01c4a24d7a48f6c4d81115e989a5d4b72bbf2469423efe5b21987
+emotion_noun,44,0,27392,26517,500.0,,,,n/a: en = 0 by construction,"dev smoke, not a result",dev,7fecf9705bc01c4a24d7a48f6c4d81115e989a5d4b72bbf2469423efe5b21987
+emotion_verb,18,111,27392,26517,500.0,-1.80087,0.246994,-7.29117,,"dev smoke, not a result",dev,7fecf9705bc01c4a24d7a48f6c4d81115e989a5d4b72bbf2469423efe5b21987

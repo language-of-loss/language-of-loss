@@ -1,0 +1,874 @@
+inspected_on: "2026-09-19"
+
+sources:
+  - key: url::https://reshare.ukdataservice.ac.uk/856067/
+    title: "Experiences of Grief: A Phenomenological Survey, 2020"
+    url: https://reshare.ukdataservice.ac.uk/856067/
+    doi: 10.5255/UKDA-SN-856067
+    paper: "no paper DOI on the record; creators listed as Millar, Ratcliffe, Richardson, Hughes (University of York)"
+    languages: [en]
+    genre: open-ended written survey responses (elicited, not posted online)
+    material_type: downloadable_text
+    reported_size: "265 completed responses (235 bereavement, 30 involuntary childlessness)"
+    verified_size: "xlsx 1,092,612 bytes; sheet 'Sheet 1 - Bereavement' = 235 respondents, 40 open-text question columns, 197,899 words in total, median 639 words per respondent (min 3, max 3,167). CORRECTED 2026-09-19: the earlier '~1,900 median' double-counted the workbook's FullQandAs column, which repeats every answer"
+    personal_bereavement: "yes - first-person accounts of a specific death"
+    dates_context: "collected 2020-06-01 to 2021-02-04; respondent nationality is an explicit column: 217 'British', 0 Indian"
+    population_evidence: "explicit self-reported nationality column (predominantly British)"
+    license: "CC BY 4.0 (data, README); CC BY-SA 4.0 (documentation)"
+    restrictions: "attribution; participants consented to public release of anonymised testimony in full; no registration"
+    auth_or_payment: none
+    inspected: files_opened
+    status: candidate_with_caveats
+    suitability: "Only openly licensed, consented, long-form first-person English bereavement text found. Fit for codebook development and as a non-Indian English reference."
+    limitations: "Not an online narrative genre (prompted by 20+ survey questions); UK population, so it does NOT serve the within-India comparison; using it as the English arm against Hindi online text would confound language with country and genre."
+
+  - key: url::https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0240270
+    title: "Das et al. 2021, PLOS ONE - S2 File: transcriptions of in-depth interviews and FGDs with bereaved North Indian parents"
+    url: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0240270
+    doi: 10.1371/journal.pone.0240270
+    paper: "Grief reaction and psychosocial impacts of child death and stillbirth on bereaved North Indian parents: A qualitative study"
+    languages: ["en (researcher translation of Hindi speech)"]
+    genre: interviewer-elicited interview / focus-group transcripts
+    material_type: downloadable_text
+    reported_size: "IDIs with 50 mothers + 49 fathers, 41 family members, 12 community representatives; 8 FGDs"
+    verified_size: "S2 = PDF, 14,754,643 bytes, 397 pages; ~158k characters extractable from first 40 pages"
+    personal_bereavement: "yes - stillbirth and child death"
+    dates_context: "Delhi; interviews conducted in Hindi, audio-recorded, then translated to English; participant table lists age band and religion"
+    population_evidence: "explicit: Delhi residents; religion listed per participant by the authors"
+    license: "CC BY 4.0 (PLOS article and supporting information)"
+    restrictions: "attribution. Ethical caution: sensitive perinatal-loss interviews; re-use beyond the consented purpose should go through our own ethics review"
+    auth_or_payment: none
+    inspected: files_opened
+    status: reference_only
+    suitability: "Indian-context bereavement content useful for sensitising the codebook (family obligation, ritual, blame)."
+    limitations: "Text is a translation, so it is evidence of neither Hindi nor native-English expression and must not enter either language arm; answers are shaped by interviewer probes; passages are partly third-person summaries."
+
+  - key: dataverse::doi:10.7910/DVN/QDENSA
+    title: "death and grief narratives"
+    url: https://doi.org/10.7910/DVN/QDENSA
+    paper: "none linked (depositor: N. Aggarwal, JNU)"
+    languages: ["hi-Latn (romanised Hindi)", en]
+    genre: researcher field notes and interview notes on COVID-19 bereavement
+    material_type: downloadable_text
+    reported_size: "3 .docx files"
+    verified_size: "3 files, 73,538 bytes, 4,829 word tokens in total (394 / 3,809 / 626); no Devanagari"
+    personal_bereavement: "partly - notes about bereaved families written by the researcher, with quoted speech"
+    dates_context: "field notes dated Aug-Sep 2022, South Delhi settlements"
+    population_evidence: "explicit in notes (locality, community) - but see restrictions"
+    license: "CC0 1.0 (Dataverse default)"
+    restrictions: "PRIVACY BLOCKER: files contain participants' real names, a street address and caste/community labels. The CC0 tag does not make re-use ethical. Our inspection copies were deleted after profiling."
+    auth_or_payment: none
+    inspected: files_opened
+    status: unresolved
+    suitability: "None at present."
+    limitations: "Not de-identified; researcher-authored notes rather than participants' own narratives; tiny. Action: do not ingest; consider notifying the depositor/Dataverse about the identifiers."
+
+  - key: zenodo::15591374
+    title: "Narrating Loss: Speech Patterns of Widowed Women During Crises in Wukari LGA, Taraba State, Nigeria"
+    url: https://zenodo.org/records/15591374
+    doi: 10.5281/zenodo.15591374
+    languages: ["en (with Hausa phrases)"]
+    genre: interview narratives (transcribed)
+    material_type: downloadable_text
+    reported_size: "20 participants"
+    verified_size: "1 .docx, 37,230 bytes, 21 paragraphs, 3,086 word tokens"
+    personal_bereavement: "yes - widows' first-person accounts"
+    dates_context: "collected March-April 2024, Nigeria; anonymised per record description; ethical approval stated"
+    population_evidence: "explicit: Nigeria"
+    license: "CC BY 4.0"
+    restrictions: attribution
+    auth_or_payment: none
+    inspected: files_opened
+    status: reference_only
+    suitability: "Could inform codebook categories on obligations to surviving children."
+    limitations: "Violent-conflict bereavement in Nigeria; outside both the Indian context and the online genre. Not for either comparison arm."
+
+  - key: dataverse::doi:10.7910/DVN/SWUL5V
+    title: "De-identified qualitative data: Perceptions of AI-mediated mourning among recently bereaved adults (Turkiye)"
+    url: https://doi.org/10.7910/DVN/SWUL5V
+    languages: [unknown (Turkish study; file language not visible without access)]
+    genre: coded interview excerpts
+    material_type: restricted
+    reported_size: "25 participants"
+    verified_size: "5 files listed, 130,146 bytes; 3 of 5 restricted (coded_excerpts_deidentified.tab 122,380 bytes)"
+    personal_bereavement: "yes (per description)"
+    dates_context: "released 2026-09-16; Turkiye"
+    population_evidence: "explicit: Turkiye"
+    license: "custom terms - scholarly research only, cite, no redistribution of restricted files"
+    restrictions: "access on reasoned request to depositors; no re-identification; no onward sharing"
+    auth_or_payment: "Dataverse account + approved request"
+    inspected: listing_only
+    status: not_suitable
+    suitability: "Wrong language/population; listed as evidence of how comparable projects gate grief data."
+    limitations: "Restricted; not requested."
+
+  - key: dataverse::doi:10.7910/DVN/DCJ1QV
+    title: "Harvard Bereavement Study, 1965-1966 (Weiss & Parkes), Murray Research Archive"
+    url: https://doi.org/10.7910/DVN/DCJ1QV
+    languages: [en]
+    genre: archived interviews (audio/paper scans)
+    material_type: restricted
+    reported_size: "9 boxes"
+    verified_size: "16 files, 1.26 GB; 10 restricted (all content boxes); only inventories/measures are open"
+    personal_bereavement: "yes - widows/widowers, Boston, 1965-66"
+    dates_context: "1965-1966, USA"
+    population_evidence: "explicit: USA"
+    license: "Murray Archive revocable research licence"
+    restrictions: "application form required; no contact with subjects; no redistribution"
+    auth_or_payment: "application + approval"
+    inspected: listing_only
+    status: not_suitable
+    suitability: "Historical US interviews; not comparable."
+    limitations: "Restricted, scanned/audio, wrong era and population."
+
+  - key: zenodo::22041925
+    title: "HinEmo-9: An Emotion Dataset for Code-Mixed Hindi-English Across Two Scripts"
+    url: https://zenodo.org/records/22041925
+    doi: 10.5281/zenodo.22041925
+    paper: "software/data supplement to github.com/im-rakeshsahani/hinemo9 v1.0.1; no paper DOI in record"
+    languages: [en, hi (Devanagari), hi-Latn (Hinglish)]
+    genre: YouTube comments, 3-30 tokens
+    material_type: downloadable_text
+    reported_size: "30,436 comments (11,004 en / 9,039 hi / 10,393 Hinglish) from 1,496 videos, 1,014 channels"
+    verified_size: "zip 4,165,228 bytes; data/full.jsonl = 30,436 records (matches)"
+    personal_bereavement: "rare - a deliberately narrow first-person kin-death pattern matched 14 comments (10 en, 2 hi, 2 Hinglish), i.e. ~0.05%"
+    dates_context: "no comment dates, no video or channel IDs in the release; only a 'genre' seed label (e.g. hindi_dukh_sadness, shayari_emotional)"
+    population_evidence: "unknown per comment (authors describe 'Indian online discourse'; that is not per-author evidence)"
+    license: "CC BY 4.0, stated by authors to cover 'annotations and curation'"
+    restrictions: "comment text originates from YouTube users; the authors' licence cannot grant more than they hold, and YouTube API policy (III.E.4) limits storage of API data to 30 days. PII masked ([NAME], [USER]); raw text not distributed. 27,073 labels are LLM-derived (a commercial LLM)."
+    auth_or_payment: none
+    inspected: files_opened
+    status: candidate_with_caveats
+    suitability: "Genuine, PII-masked, tri-variety YouTube comment text from Indian-audience videos; useful to (a) pilot language/script identification and the bereavement screen, (b) estimate base rates."
+    limitations: "Bereavement yield far too low to meet any target; sampled BY emotion label, so anything drawn from it inherits that selection; no thread/video context; comments capped at 30 tokens; underlying text rights unresolved for redistribution. Verified discrepancy: in data/full.jsonl all 30,436 records carry label_source='llm', although the card describes a 3,363-item human_gold tier (gold.jsonl not examined) - emotion labels are irrelevant to us but this signals the release is still rough."
+
+  - key: huggingface::sumanpaudel1997/hindi_tweet_sampled_dataset
+    title: "sumanpaudel1997/hindi_tweet_sampled_dataset"
+    url: https://huggingface.co/datasets/sumanpaudel1997/hindi_tweet_sampled_dataset
+    languages: [hi]
+    genre: tweets (text only)
+    material_type: downloadable_text
+    reported_size: "no dataset card"
+    verified_size: "10,183,176 rows (datasets-server), 6 parquet files, 1.30 GB; single column 'text'"
+    personal_bereavement: "not established (not screened - see restrictions)"
+    dates_context: "no tweet IDs, dates, authors or collection description"
+    population_evidence: unknown
+    license: "'apache-2.0' tag set by uploader; no documentation"
+    restrictions: "Provenance undocumented. Bulk redistribution of tweet text is contrary to the X Developer Agreement (content redistribution is limited to IDs beyond small samples), so the uploader's licence tag cannot be relied on. Without IDs, deletions cannot be honoured and duplicates/retweets cannot be resolved."
+    auth_or_payment: none
+    inspected: api_sample
+    status: unresolved
+    suitability: "Would be the largest Hindi tweet pool, but only if provenance and permission can be established with the uploader."
+    limitations: "Not downloaded. Do not use until resolved."
+
+  - key: github::shubhamhegde/Emotion-Detection-Hindi-English-Code-mixed-data
+    title: "shubhamhegde/Emotion-Detection-Hindi-English-Code-mixed-data (re-host of 'Towards Emotion Recognition in Hindi-English Code-Mixed Data' and others)"
+    url: https://github.com/shubhamhegde/Emotion-Detection-Hindi-English-Code-mixed-data
+    paper: "Wadhawan & Aggarwal 2021, arXiv:2102.09943 (upstream dataset)"
+    languages: [hi-Latn (Hinglish), en]
+    genre: tweets with emotion labels
+    material_type: downloadable_text
+    reported_size: "~140k-150k tweets, six emotions"
+    verified_size: "repo 150.9 MB; data/*.csv contain tweet_id + tweet text + labels (sample verified)"
+    personal_bereavement: "not established"
+    dates_context: "tweet IDs in sample span 2013-2018"
+    population_evidence: unknown
+    license: "none in repo; third-party re-host of other authors' data"
+    restrictions: "no data licence; tweet text redistribution conflicts with X terms; upstream authors' conditions not reproduced"
+    auth_or_payment: none
+    inspected: api_sample
+    status: unresolved
+    suitability: "The accompanying *_tweet_ids.txt files are the legitimate artefact: they could be hydrated via the X API and screened for bereavement."
+    limitations: "Sampled by emotion hashtags, not bereavement; text copy should not be used."
+
+  - key: github::SanketSonu/LREC-2022_Publication_NLP_Identifying_Emotions_in_Code_Mixed_Hindi-English_Tweets
+    title: "Identifying Emotions in Code-Mixed Hindi-English Tweets (WILDRE-6 @ LREC 2022)"
+    url: https://github.com/SanketSonu/LREC-2022_Publication_NLP_Identifying_Emotions_in_Code_Mixed_Hindi-English_Tweets
+    paper: "http://www.lrec-conf.org/proceedings/lrec2022/workshops/WILDRE6/pdf/2022.wildre6-1.7.pdf"
+    languages: [hi-Latn (Hinglish)]
+    genre: tweets
+    material_type: tweet_ids
+    reported_size: "not stated in README"
+    verified_size: "one data file: \"Dataset (Tweet's ID only).xlsx\" (not opened; IDs only by file name and README)"
+    personal_bereavement: "not established"
+    dates_context: "collected via Tweepy, c. 2021-22"
+    population_evidence: unknown
+    license: "none stated"
+    restrictions: "hydration requires authorised X API access"
+    auth_or_payment: "X API credentials (paid)"
+    inspected: listing_only
+    status: blocked_on_access
+    suitability: "Minor; emotion-sampled."
+    limitations: "Attrition of 2021-22 tweet IDs likely substantial."
+
+  - key: huggingface::shae2977/hinglish-youtube-sentiments-dataset
+    title: "shae2977/hinglish-youtube-sentiments-dataset"
+    url: https://huggingface.co/datasets/shae2977/hinglish-youtube-sentiments-dataset
+    languages: [hi-Latn (Hinglish)]
+    genre: YouTube comments with video_id
+    material_type: downloadable_text
+    reported_size: "3,190 comments"
+    verified_size: "3,190 rows; columns video_id, comment, likes, sentiment"
+    personal_bereavement: "not established; sampled rows are cooking-video comments"
+    dates_context: "video IDs present (context recoverable); no comment dates"
+    population_evidence: unknown
+    license: "CC BY 4.0 (uploader)"
+    restrictions: "same YouTube-text caveat as HinEmo-9"
+    auth_or_payment: none
+    inspected: api_sample
+    status: not_suitable
+    suitability: "Shows the comment+video_id schema we should keep."
+    limitations: "Topic unrelated to bereavement."
+
+  - key: github::thepanacealab/covid19_twitter
+    title: "Covid-19 Twitter chatter dataset for scientific use (Banda et al.)"
+    url: https://github.com/thepanacealab/covid19_twitter
+    doi: 10.3390/epidemiologia2030024
+    languages: [multilingual; per-tweet 'lang' column incl. en, hi]
+    genre: tweets (IDs + date, time, lang, country_code)
+    material_type: tweet_ids
+    reported_size: ">1.3 billion tweet IDs (v162, to 2023-04-15)"
+    verified_size: "5,601 files, 13.9 GB in repo tree; sampled daily TSV confirms columns tweet_id/date/time/lang/country_code"
+    personal_bereavement: "unknown until hydrated; COVID chatter includes bereavement during India's 2021 second wave, proportion unmeasured"
+    dates_context: "2020-01 to 2023-04; country_code present only where the tweet was geotagged (mostly NULL)"
+    population_evidence: "explicit per tweet only where country_code=IN (platform geotag), else unknown"
+    license: "README: 'non-commercial research use'; no licence file"
+    restrictions: "IDs only, to comply with X terms; hydration needs authorised API access; deleted/protected tweets must stay uncollected"
+    auth_or_payment: "X API credentials (paid, pay-per-use credits)"
+    inspected: api_sample
+    status: blocked_on_access
+    suitability: "Best ID-based route to BOTH languages from one sampling frame: filter lang in {en,hi} and, for the India-internal comparison, country_code=IN, then hydrate and screen."
+    limitations: "Pandemic-specific deaths only; keyword-sampled on COVID terms, not grief; geotagged subset is small and unrepresentative; ID attrition since 2020-23."
+
+  - key: github::echen102/COVID-19-TweetIDs
+    title: "COVID-19-TweetIDs (Chen, Lerman, Ferrara)"
+    url: https://github.com/echen102/COVID-19-TweetIDs
+    doi: 10.2196/19273
+    languages: [multilingual]
+    genre: tweets (IDs only)
+    material_type: tweet_ids
+    reported_size: "billions of IDs, 2020-01-21 onward"
+    verified_size: "26,920 files, 55.5 GB in repo tree; sample file = bare IDs, one per line"
+    personal_bereavement: "unknown until hydrated"
+    dates_context: "2020-01 to 2023"
+    population_evidence: unknown
+    license: "license.md: non-commercial research use, per X terms (GitHub reports NOASSERTION)"
+    restrictions: "as above; no language or country column, so every ID must be hydrated before filtering"
+    auth_or_payment: "X API credentials (paid)"
+    inspected: api_sample
+    status: blocked_on_access
+    suitability: "Inferior to thepanacealab for this study because it lacks lang/country columns."
+    limitations: "Hydration cost scales with the whole collection."
+
+  - key: zenodo::18405251
+    title: "Nt-Grief: A Spanish Dataset for Non-Traumatic Grief Detection"
+    url: https://zenodo.org/records/18405251
+    doi: 10.5281/zenodo.18405251
+    paper: "10.1109/ACCESS.2023.3343149"
+    languages: [es]
+    genre: tweets labelled grief / not grief
+    material_type: tweet_ids
+    reported_size: "2,000 tweets (605 grief)"
+    verified_size: "3 TSV files, 253,027 bytes; sampled file has columns id,label only"
+    personal_bereavement: "yes (label=1), COVID-19 deaths"
+    dates_context: "March-May 2020 by ID range"
+    population_evidence: unknown
+    license: "CC BY-NC 4.0"
+    restrictions: "IDs only; hydration via X API"
+    auth_or_payment: "X API credentials (paid)"
+    inspected: api_sample
+    status: reference_only
+    suitability: "Closest methodological precedent (grief-tweet annotation scheme)."
+    limitations: "Spanish; out of scope."
+
+  - key: github::naitian/Condolence-Empathy-Online-Communities
+    also_covers: ["github::naitian/condolence-models"]
+    title: "Condolence and Empathy in Online Communities (Zhou & Jurgens, EMNLP 2020)"
+    url: https://github.com/naitian/Condolence-Empathy-Online-Communities
+    doi: 10.18653/v1/2020.emnlp-main.45
+    languages: [en]
+    genre: Reddit comments (distress posts and condolence replies), 2018
+    material_type: code_without_data
+    reported_size: "paper-scale Reddit 2018 corpus"
+    verified_size: "83 files, 1.6 MB; only aggregate daily counts are in the repo"
+    personal_bereavement: "partly - distress/condolence includes but is not limited to bereavement"
+    dates_context: "Reddit, 2018"
+    population_evidence: unknown
+    license: "no licence; README: data 'available upon request to researchers' due to sensitivity"
+    restrictions: "request to authors; terms unknown until granted; Reddit's current data terms also apply"
+    auth_or_payment: "author approval"
+    inspected: api_sample
+    status: restricted
+    suitability: "Possible English comparison material and a tested condolence/distress classifier (naitian/condolence-models, MIT) usable as a screening aid."
+    limitations: "No Hindi counterpart; Reddit user base is not an Indian online context."
+
+  - key: github::jselmani/grief-analysis
+    title: "jselmani/grief-analysis (coursework; ~3,000 r/GriefSupport posts)"
+    url: https://github.com/jselmani/grief-analysis
+    languages: [en]
+    genre: Reddit posts (raw API JSON)
+    material_type: downloadable_text
+    reported_size: "~3,000 posts"
+    verified_size: "55 files, 61.4 MB; data/raw/grief_support_posts.json is raw Reddit JSON including 'author' usernames (first bytes sampled only)"
+    personal_bereavement: "yes"
+    dates_context: "repo created 2026-04-28"
+    population_evidence: unknown
+    license: "none"
+    restrictions: "no licence; includes usernames; Reddit Data API terms restrict redistribution and require honouring deletions"
+    auth_or_payment: none
+    inspected: api_sample
+    status: unresolved
+    suitability: "None as-is. Confirms r/GriefSupport is a viable English source if collected ourselves under Reddit's research terms."
+    limitations: "Not downloaded beyond the first 6 KB used for classification."
+
+  - key: huggingface::AIMH/SWMH
+    title: "AIMH/SWMH (Reddit SuicideWatch and Mental Health collection)"
+    url: https://huggingface.co/datasets/AIMH/SWMH
+    languages: [en]
+    genre: Reddit posts from mental-health subreddits
+    material_type: restricted
+    reported_size: "not stated on the accessible part of the card"
+    verified_size: "5 files, 51,964,099 bytes; gated=auto, contents not viewable without login"
+    personal_bereavement: "not a bereavement collection"
+    dates_context: unknown
+    population_evidence: unknown
+    license: "CC BY-NC 4.0 + gate"
+    restrictions: "Hugging Face login and acceptance of access conditions"
+    auth_or_payment: "HF account + gate acceptance"
+    inspected: listing_only
+    status: not_suitable
+    suitability: "Off-target."
+    limitations: "Gate not accepted on the user's behalf."
+
+  - key: zenodo::3457467
+    also_covers: ["github::midas-research/bhaav"]
+    title: "BHAAV - A Text Corpus for Emotion Analysis from Hindi Stories"
+    url: https://zenodo.org/records/3457467
+    doi: 10.5281/zenodo.3457467
+    paper: "arXiv:1910.04073"
+    languages: [hi]
+    genre: published short fiction (sentence level)
+    material_type: downloadable_text
+    reported_size: "20,304 sentences from 230 stories"
+    verified_size: "1 zip, 15,855,982 bytes (not downloaded)"
+    personal_bereavement: "no - fiction"
+    dates_context: "2019 release"
+    population_evidence: not applicable
+    license: "Zenodo tag CC BY 4.0, but authors' terms (github.com/midas-research/bhaav): research use, cite, do not redistribute, commercial use by permission"
+    restrictions: "research-only, no redistribution (the stricter authors' terms govern)"
+    auth_or_payment: none
+    inspected: listing_only
+    status: not_suitable
+    suitability: "None - using fiction would silently substitute genre."
+    limitations: "github.com/midas-research/bhaav itself is code/docs without data (verified: 0 data files)."
+
+  - key: huggingface::iam-tsr/hindi-sentiments
+    title: "iam-tsr/hindi-sentiments"
+    url: https://huggingface.co/datasets/iam-tsr/hindi-sentiments
+    languages: [hi, en]
+    genre: sentiment sentences; Hindi column parallel to an English column
+    material_type: synthetic_or_translated
+    reported_size: "-"
+    verified_size: "126,640 rows; columns eng_text, label, hindi_text"
+    personal_bereavement: "no"
+    license: "MIT (uploader)"
+    restrictions: "-"
+    auth_or_payment: none
+    inspected: api_sample
+    status: not_suitable
+    suitability: "None."
+    limitations: "Hindi text is a translation of English source sentences, not native Hindi writing."
+
+  - key: huggingface::SmallScale/Simple-Stories-Hindi
+    title: "SmallScale/Simple-Stories-Hindi"
+    url: https://huggingface.co/datasets/SmallScale/Simple-Stories-Hindi
+    languages: [hi]
+    genre: translated synthetic stories for LM training
+    material_type: synthetic_or_translated
+    verified_size: "train.jsonl, 6.7 GB"
+    personal_bereavement: "no"
+    license: "MIT"
+    auth_or_payment: none
+    inspected: listing_only
+    status: not_suitable
+    limitations: "Card states it is a Hindi translation of the (model-generated) Simple Stories dataset."
+
+  - key: huggingface::Abhishek4896/hindi-english-code-mixed-tweets-sentiment
+    title: "Abhishek4896/hindi-english-code-mixed-tweets-sentiment"
+    url: https://huggingface.co/datasets/Abhishek4896/hindi-english-code-mixed-tweets-sentiment
+    languages: [hi-Latn]
+    genre: labelled 'tweets'
+    material_type: synthetic_or_translated
+    verified_size: "498 rows"
+    personal_bereavement: "no"
+    license: "MIT (uploader)"
+    auth_or_payment: none
+    inspected: api_sample
+    status: not_suitable
+    limitations: "No provenance, no IDs, no handles/hashtags/URLs in sampled rows; uniformly clean one-line sentences. Treated as probably constructed text (our inference, not stated by the uploader)."
+
+  - key: huggingface::ryandsilva/erc-hinglish
+    title: "ryandsilva/erc-hinglish"
+    url: https://huggingface.co/datasets/ryandsilva/erc-hinglish
+    languages: [hi-Latn]
+    genre: scripted TV-dialogue utterances with emotion labels
+    material_type: downloadable_text
+    verified_size: "19,720 rows"
+    personal_bereavement: "no - scripted dialogue"
+    license: "none"
+    auth_or_payment: none
+    inspected: api_sample
+    status: not_suitable
+    limitations: "Fictional dialogue; no licence."
+
+  - key: huggingface::ketav/hindi-youtube-asr-transcripts
+    title: "ketav/hindi-youtube-asr-transcripts"
+    url: https://huggingface.co/datasets/ketav/hindi-youtube-asr-transcripts
+    languages: [hi, en]
+    genre: auto-generated subtitles of 21 channels' videos
+    material_type: downloadable_text
+    reported_size: "109,981 videos"
+    verified_size: "2.92 GB"
+    personal_bereavement: "no - creator monologue/news, machine transcription"
+    license: "CC BY 4.0 (uploader; channel owners' rights not addressed)"
+    auth_or_payment: none
+    inspected: listing_only
+    status: not_suitable
+    limitations: "Its per-channel manifests could help YouTube *video* discovery, nothing more."
+
+  - key: huggingface::diwank/hinglish-dump
+    title: "diwank/hinglish-dump"
+    url: https://huggingface.co/datasets/diwank/hinglish-dump
+    languages: [hi-Latn, hi, en]
+    genre: transliteration / parallel corpora
+    material_type: downloadable_text
+    verified_size: "607.8 MB (.h5)"
+    personal_bereavement: "no"
+    license: "MIT (uploader)"
+    auth_or_payment: none
+    inspected: listing_only
+    status: not_suitable
+    limitations: "Normalisation resources only."
+
+  - key: huggingface::dgTNpwVOVgi/My-Oldest-Paternal-Aunt-s-Funeral
+    also_covers: ["huggingface::dgTNpwVOVgi/My-materal-oldest-grandaunt-s-funeral-ceremony"]
+    title: "dgTNpwVOVgi/My-Oldest-Paternal-Aunt-s-Funeral (+ ...grandaunt-s-funeral-ceremony)"
+    url: https://huggingface.co/datasets/dgTNpwVOVgi/My-Oldest-Paternal-Aunt-s-Funeral
+    languages: [unknown]
+    genre: private family funeral video
+    material_type: non_text
+    verified_size: "27 files, 40.2 GB (mp4); gated=manual; sibling repo holds no data files"
+    personal_bereavement: "not text"
+    license: "none"
+    auth_or_payment: "manual gate"
+    inspected: listing_only
+    status: not_suitable
+    limitations: "Private family material behind a manual gate; not requested."
+
+  - key: huggingface::Gopher-Lab/huberman_lab_The_Science__Process_of_Healing_from_Grief
+    title: "Gopher-Lab/huberman_lab_The_Science__Process_of_Healing_from_Grief"
+    url: https://huggingface.co/datasets/Gopher-Lab/huberman_lab_The_Science__Process_of_Healing_from_Grief
+    languages: [en]
+    genre: podcast transcript
+    material_type: downloadable_text
+    verified_size: "1 row"
+    personal_bereavement: "no - expert talk"
+    license: "none; third-party copyrighted podcast"
+    auth_or_payment: none
+    inspected: api_sample
+    status: not_suitable
+
+  - key: huggingface::Gr3en/MIlo_Rau_Grief_and_Beauty
+    title: "Gr3en/MIlo_Rau_Grief_and_Beauty"
+    url: https://huggingface.co/datasets/Gr3en/MIlo_Rau_Grief_and_Beauty
+    genre: theatre production images
+    material_type: non_text
+    verified_size: "7 images"
+    personal_bereavement: "no"
+    license: "artistic-2.0 (card)"
+    inspected: api_sample
+    status: not_suitable
+
+  - key: zenodo::22308396
+    title: "HingCB: A Multi-Domain Hinglish Benchmark for Cyberbullying Detection"
+    url: https://zenodo.org/records/22308396
+    doi: 10.5281/zenodo.22308396
+    languages: [hi-Latn]
+    genre: YouTube comments (described)
+    material_type: docs_without_data
+    reported_size: "20,327 comments"
+    verified_size: "2 files: annotation manual PDF + Readme.txt; NO data file in the record"
+    personal_bereavement: "no"
+    license: "none stated"
+    inspected: api_sample
+    status: not_suitable
+
+  - key: zenodo::14437349
+    title: "Swallowing the Pain: The Effect of Condolence Culture on Trauma and Grief Experience"
+    url: https://zenodo.org/records/14437349
+    doi: 10.21474/IJAR01/19730
+    languages: [en (article); interviews in Turkish]
+    genre: journal article typed as 'dataset'
+    material_type: docs_without_data
+    verified_size: "1 PDF, 397,673 bytes"
+    personal_bereavement: "quotes only"
+    license: "CC BY 4.0"
+    inspected: listing_only
+    status: not_suitable
+
+  - key: zenodo::18727203
+    title: "Grief Profiles Following the Death of a Child - research study data"
+    url: https://zenodo.org/records/18727203
+    doi: 10.5281/zenodo.18727203
+    genre: questionnaire scores
+    material_type: quantitative_only
+    verified_size: "1 xlsx, 56,262 bytes"
+    personal_bereavement: "bereaved sample, no narrative text described"
+    license: "CC BY 4.0"
+    inspected: listing_only
+    status: not_suitable
+
+  - key: dataverse::doi:10.7910/DVN/8YRTTX
+    title: "Perceptions of internal and external continuing bonds in bereaved individuals with and without PGD"
+    url: https://doi.org/10.7910/DVN/8YRTTX
+    genre: questionnaire data
+    material_type: quantitative_only
+    verified_size: "1 .tab, 64,816 bytes"
+    personal_bereavement: "bereaved sample, no narrative text"
+    license: "CC0 1.0"
+    inspected: listing_only
+    status: reference_only
+    suitability: "Operationalisation of continuing bonds (internalised vs externalised) is relevant to the codebook."
+
+  - key: github::syedshareefa/Hindi_Emotion_Dataset
+    title: "syedshareefa/Hindi_Emotion_Dataset"
+    url: https://github.com/syedshareefa/Hindi_Emotion_Dataset
+    languages: [hi]
+    genre: acted emotional speech (.wav)
+    material_type: non_text
+    verified_size: "1,000+ .wav files, 169 MB, no README"
+    personal_bereavement: "no"
+    license: "none"
+    inspected: listing_only
+    status: not_suitable
+
+  - key: github::lasyatummala11/multilingual_datasets_for-emotion-detection
+    title: "lasyatummala11/multilingual_datasets_for-emotion-detection"
+    url: https://github.com/lasyatummala11/multilingual_datasets_for-emotion-detection
+    languages: [hi, te]
+    genre: scraped business news + NRC lexicon copies
+    material_type: downloadable_text
+    verified_size: "26 files, 9.5 MB"
+    personal_bereavement: "no"
+    license: "none; re-hosts third-party news text"
+    inspected: api_sample
+    status: not_suitable
+
+  - key: osf::gmn3z
+    title: "Virtual Mourning: How Filipinos Utilize Facebook to Express Grief and Seek Support"
+    url: https://osf.io/gmn3z/
+    languages: [en]
+    genre: accepted manuscript only
+    material_type: docs_without_data
+    verified_size: "4 files (manuscript PDF, licence text, 2 images)"
+    personal_bereavement: "quotes only"
+    license: "CC BY-NC 4.0 (manuscript)"
+    inspected: api_sample
+    status: reference_only
+    suitability: "Closest published design to ours in an Asian social-media setting."
+
+  - key: osf::rj23b
+    title: "Examining Cultural Differences in Bereavement"
+    url: https://osf.io/rj23b/
+    material_type: docs_without_data
+    verified_size: "1 PDF report, 400,560 bytes; no data"
+    license: none stated
+    inspected: listing_only
+    status: reference_only
+
+  - key: osf::tm7a8
+    title: "WP1: Data Resource Audit and Mapping Review of Bereavement-Related Archives"
+    url: https://osf.io/tm7a8/
+    material_type: docs_without_data
+    verified_size: "0 files in osfstorage at inspection"
+    license: none stated
+    inspected: listing_only
+    status: reference_only
+    suitability: "A planned audit of UK/Irish bereavement data holdings; re-check later for its catalogue."
+
+  - key: osf::sp3ur
+    title: "Continuing bonds, social support and coping as predictors of complicated grief and post-traumatic growth"
+    url: https://osf.io/sp3ur/
+    material_type: quantitative_only
+    verified_size: "Raw Data Set.csv, 40,281 bytes; header shows scale items (ICG_1...) and categorical fields"
+    license: none stated
+    inspected: api_sample
+    status: not_suitable
+
+  - key: osf::5tzbu
+    title: "Assessing meaning made and continuing bonds in grief: measure development"
+    url: https://osf.io/5tzbu/
+    material_type: quantitative_only
+    verified_size: "3 SPSS .sav files, 4.07 MB"
+    license: none stated
+    inspected: listing_only
+    status: not_suitable
+
+  - key: osf::mnep8
+    title: "Qualitative exploration of barriers and facilitators of social support in bereavement"
+    url: https://osf.io/mnep8/
+    material_type: docs_without_data
+    verified_size: "Codebook.pdf only"
+    license: none stated
+    inspected: listing_only
+    status: reference_only
+    suitability: "Published codebook on social support in bereavement - relevant to 'collective coping' codes."
+
+  - key: osf::a2udy
+    title: "How social media is being used to research the experience of mourning: scoping review protocol"
+    url: https://osf.io/a2udy/
+    material_type: docs_without_data
+    verified_size: "1 PDF"
+    inspected: listing_only
+    status: reference_only
+
+  - key: osf::q5gvb
+    title: "Collective Digital Grief: A Scoping Review"
+    url: https://osf.io/q5gvb/
+    material_type: docs_without_data
+    verified_size: "protocol PDF + key-papers list + xlsx appendix"
+    inspected: listing_only
+    status: reference_only
+    suitability: "Key-paper list is a lead for further paper-supplement searches."
+
+  - key: platform::x_api
+    title: "X (Twitter) API v2 - recent / full-archive search"
+    url: https://docs.x.com/x-api/getting-started/about-x-api
+    languages: [en, hi, hi-Latn]
+    genre: posts
+    material_type: api_platform
+    reported_size: "n/a"
+    verified_size: "no access: no X credentials exist in this environment (checked environment variables only)"
+    personal_bereavement: "to be established by screening"
+    population_evidence: "only where a post carries an explicit place/country field"
+    license: "X Developer Agreement and Policy"
+    restrictions: "Stage 3 update: docs.x.com/x-api/getting-started/pricing (fetched 2026-09-19) states pay-per-usage at $0.005 per post read, capped at 3 million post reads per billing cycle; search-endpoint surcharges and minimum credit purchase are NOT on that page (only in the Developer Console). At $0.005/read, hydrating or searching 100,000 posts costs about $500; see docs/access_and_cost_report.md. Redistribution limited to post IDs; deletions must be honoured; no re-identification or sensitive-category inference about individuals."
+    auth_or_payment: "developer account + purchased credits"
+    inspected: landing_page
+    status: blocked_on_access
+    suitability: "The only legitimate route to the 20,000-post target. Collector will be built to take a bearer token from the environment."
+    limitations: "Until credentials are supplied, raw retrieved = 0 and eligible = 0. No scraping fallback will be used."
+
+  - key: platform::youtube_data_api
+    title: "YouTube Data API v3 - search.list, videos.list, commentThreads.list"
+    url: https://developers.google.com/youtube/terms/developer-policies
+    languages: [en, hi, hi-Latn]
+    genre: video comments
+    material_type: api_platform
+    verified_size: "no access: no API key in this environment"
+    personal_bereavement: "to be established in the 200-comment pilot"
+    population_evidence: "unknown per commenter; channel country is channel-level metadata only"
+    license: "YouTube API Services Terms + Developer Policies"
+    restrictions: "III.E.4.c/d: stored API data must be deleted or refreshed after 30 days; III.E.6: no scraping and no use of scraped YouTube data; III.E.2: aggregation limits; III.E.3.b: no onward access for third parties. Longer retention for research needs the YouTube Researcher Program or a documented exception."
+    auth_or_payment: "Google Cloud API key (free). Quota page fetched 2026-09-19: 10,000 units/day for most endpoints, commentThreads.list = 1 unit per page, search.list limited to 100 calls/day. YouTube Researcher Program (research.youtube) offers more quota to applicants affiliated with accredited degree-granting institutions; its terms keep the 30-day refresh rule until data are frozen for final analysis."
+    inspected: landing_page
+    status: blocked_on_access
+    suitability: "Pilot is feasible at no cost once a key is supplied."
+    limitations: "The 30-day rule conflicts with keeping an annotation corpus; this must be resolved before scaling, exactly as the brief anticipates."
+
+  - key: web::hindi_condolence_template_sites
+    title: "Hindi 'shok sandesh' / 'shraddhanjali' message sites (top web results for Hindi grief queries)"
+    url: "see docs/source_register.md notes"
+    languages: [hi]
+    genre: ready-made condolence message templates
+    material_type: urls_only
+    personal_bereavement: "no - formulaic messages written for copying, not accounts of a loss"
+    license: "all rights reserved (commercial blogs)"
+    inspected: landing_page
+    status: not_suitable
+    limitations: "Recorded because they dominate Hindi-language search results and would be an easy but invalid way to fill the Hindi quota."
+
+  - key: web::blogs_direct_fetch
+    title: "Hindi and English personal blogs / personal-essay pages, fetched directly (robots.txt honoured)"
+    url: "data/candidates/blog_candidates_{hi,en}.jsonl"
+    languages: [hi (Devanagari), en, "mixed (1 page)"]
+    genre: blog posts, sansmaran / personal essays, death-anniversary posts
+    material_type: downloadable_text
+    reported_size: "107 URLs verified by opening (51 hi, 56 en) incl. 18 deliberately typed non-disclosure pages"
+    verified_size: "112 fetch attempts logged: 109 fetched with main body extracted, 1 fetched but extraction <80 words, 2 refused by robots.txt (not fetched)"
+    personal_bereavement: "yes for 89 candidates typed personal_disclosure by the searchers (machine-typed, provisional)"
+    dates_context: "publication dates 2007-2026 where visible; title, domain, body; relation of deceased usually stated"
+    population_evidence: "English: explicit Indian-context statement on page/site for 44 of 48 disclosures (8 of these diaspora); Hindi: not recorded - language is not treated as evidence"
+    license: "all rights reserved by authors/sites unless stated"
+    restrictions: "local research copy for analysis only; no redistribution of text; excerpts only in shared files; author names never stored"
+    auth_or_payment: none
+    inspected: files_opened
+    status: candidate
+    suitability: "Primary long-form route; the only route giving traceable, dated, full-context Hindi disclosures."
+    limitations: "Found through web search, so coverage is what a US-based search index surfaces; Hindi material skews to the 2007-2017 blogosphere and literary webzines, English to news-site essay sections - a genre difference that travels with language."
+
+  - key: zenodo::15678816
+    title: "YTCommentVerse: A Multi-Category Multi-Lingual YouTube Comment Corpus"
+    url: https://zenodo.org/records/15678816
+    doi: 10.5281/zenodo.15678816
+    languages: ["50+ languages per authors; Hindi/English share unverified until download completes"]
+    genre: YouTube comments with hashed video, comment, commenter and channel IDs, votes, category
+    material_type: downloadable_text
+    reported_size: ">32 million comments, 178,000 videos, >20 million users, 15 categories"
+    verified_size: "1 file YT-30M.db, 10,843,156,480 bytes (md5 on record); download started 2026-09-19 at ~340 kB/s"
+    personal_bereavement: "unknown until screened"
+    dates_context: "no timestamps described; IDs are hashed so video title/topic cannot be recovered; thread = hashed videoID; author grouping = hashed commenter ID"
+    population_evidence: unknown
+    license: "CC BY 4.0 (compilers); underlying comments belong to commenters; YouTube API policy caveat as for HinEmo-9"
+    restrictions: "authors state PII removed; we additionally drop commenterName and keep only hashed grouping keys"
+    auth_or_payment: none
+    inspected: listing_only
+    status: candidate_with_caveats
+    suitability: "Only open YouTube-comment corpus found that is large, multilingual and keeps thread + author grouping; lets both languages be drawn from one sampling frame."
+    limitations: "No video context, no dates, no reply structure described; sampling design of the 178k videos is the authors', not ours."
+
+  - key: huggingface::SocialGrep/one-million-reddit-confessions
+    title: "SocialGrep/one-million-reddit-confessions"
+    url: https://huggingface.co/datasets/SocialGrep/one-million-reddit-confessions
+    languages: [en]
+    genre: Reddit posts from r/trueoffmychest, r/confession, r/confessions, r/offmychest
+    material_type: downloadable_text
+    reported_size: "1,000,000 posts"
+    verified_size: "CSV 779,132,647 bytes downloaded; datasets-server reports 1,000,000 rows; columns id, subreddit, created_utc, permalink, selftext, title, score (no author field)"
+    personal_bereavement: "to be measured in the Stage 4 pilot"
+    dates_context: "created_utc and permalink per post; posts only, no comment threads"
+    population_evidence: unknown
+    license: "CC BY 4.0 (compiler SocialGrep/Lexyr)"
+    restrictions: "Reddit's own terms name Reddit for Researchers as the only authorised research route; this third-party compilation pre-dates that. Use for exploratory English-side work; honour deletions by dropping [removed]/[deleted]."
+    auth_or_payment: none
+    inspected: files_opened
+    status: candidate_with_caveats
+    suitability: "Workable English Reddit disclosure source with dates and permalinks."
+    limitations: "English only - there is no Hindi counterpart on Reddit in any open dataset found, so it cannot anchor a bilingual comparison; no author IDs (repeat authors invisible); no replies."
+
+  - key: huggingface::DataDump1/india_reddit
+    title: "DataDump1/india_reddit"
+    url: https://huggingface.co/datasets/DataDump1/india_reddit
+    languages: [unknown (r/india is mostly English)]
+    genre: Reddit submissions + comments
+    material_type: restricted
+    verified_size: "india_comments.csv 4.97 GB + india_submissions.csv 2.05 GB; gated=manual; no card, no licence"
+    personal_bereavement: unknown
+    license: none
+    restrictions: "manual approval gate; provenance undocumented"
+    auth_or_payment: "HF account + uploader approval"
+    inspected: listing_only
+    status: restricted
+    limitations: "Not requested."
+
+  - key: huggingface::HuggingFaceGECLM/REDDIT_comments
+    title: "HuggingFaceGECLM/REDDIT_comments"
+    url: https://huggingface.co/datasets/HuggingFaceGECLM/REDDIT_comments
+    languages: [en]
+    genre: Reddit comments from 50 selected subreddits (Pushshift-derived)
+    material_type: downloadable_text
+    verified_size: "592,448,578 rows, 109 GB; includes author usernames, link_id, parent_id"
+    personal_bereavement: "no grief/support subreddit visible in file names"
+    license: "none stated"
+    restrictions: "usernames included; no licence"
+    auth_or_payment: none
+    inspected: api_sample
+    status: not_suitable
+
+  - key: huggingface::SocialGrep/the-reddit-covid-dataset
+    title: "SocialGrep/the-reddit-covid-dataset"
+    url: https://huggingface.co/datasets/SocialGrep/the-reddit-covid-dataset
+    languages: [en]
+    genre: Reddit posts + comments mentioning COVID
+    material_type: downloadable_text
+    verified_size: "4,510,178 rows via datasets-server; repo holds only a loader script, data hosted off-site"
+    personal_bereavement: "not established; sample rows are news links"
+    license: "CC BY 4.0 (compiler)"
+    inspected: api_sample
+    status: not_suitable
+    limitations: "Topic-sampled on COVID keywords; English only."
+
+  - key: huggingface::allenai/c4
+    title: "allenai/c4 multilingual (mC4) - Hindi split; en split as counterpart"
+    url: https://huggingface.co/datasets/allenai/c4
+    paper: "Xue et al. 2021 (mT5); Dodge et al. 2021 (C4 documentation)"
+    languages: [hi, en, "hi-Latn split listed in card"]
+    genre: Common Crawl web pages (url, timestamp, text)
+    material_type: downloadable_text
+    reported_size: "hi: 1,024 training shards"
+    verified_size: "hi shards ~39 MB each (3 sampled); 1 validation shard downloaded = 9,196 docs; ungated"
+    personal_bereavement: "pilot: 66 of 9,196 docs passed the broad screen (0.72%), and almost all were news reports; at most 2-3 looked like personal memoir"
+    dates_context: "crawl timestamp and source URL per document"
+    population_evidence: unknown
+    license: "ODC-BY (dataset); page text remains its authors' copyright (Common Crawl terms of use)"
+    restrictions: "local analysis copy only"
+    auth_or_payment: none
+    inspected: files_opened
+    status: candidate_with_caveats
+    suitability: "Same-frame web route for both languages, with URL traceability; useful mainly to DISCOVER blog domains."
+    limitations: "Very low precision; text is boilerplate-stripped line soup, inferior to fetching the live page."
+
+  - key: huggingface::ai4bharat/sangraha
+    title: "ai4bharat/sangraha"
+    url: https://huggingface.co/datasets/ai4bharat/sangraha
+    languages: [hi and 21 other Indian languages]
+    genre: web + PDF + synthetic (translated) pretraining text
+    material_type: downloadable_text
+    verified_size: "177,355,164 rows, 210 GB; fields doc_id, text only"
+    personal_bereavement: unknown
+    license: "CC BY 4.0"
+    inspected: api_sample
+    status: not_suitable
+    limitations: "No source URL or date per document, so nothing drawn from it would be traceable; includes a machine-translated 'synthetic' portion."
+
+  - key: zenodo::11121497
+    title: "Indian Disaster Tweets Dataset v1.0"
+    url: https://zenodo.org/records/11121497
+    languages: [multiple Indian languages]
+    genre: tweets about disasters (manually collected)
+    material_type: downloadable_text
+    verified_size: "1 zip, 306,234 bytes; 1,000 tweets per description"
+    personal_bereavement: "no - disaster reports"
+    license: "CC BY 4.0"
+    inspected: listing_only
+    status: not_suitable
+
+  - key: github::RajAnesh98/Major-Life-Event-Extraction-from-Twitter-based-on-Congratulations-Condolences-Speech-Acts
+    title: "Re-implementation of Li et al. 2014 (major life events from congratulation/condolence tweets)"
+    url: https://github.com/RajAnesh98/Major-Life-Event-Extraction-from-Twitter-based-on-Congratulations-Condolences-Speech-Acts
+    doi: 10.3115/v1/D14-1214
+    languages: [en]
+    genre: tweets (pos/neg text files)
+    material_type: downloadable_text
+    verified_size: "5 files, 20.7 MB; Dataset/pos.txt and neg.txt are raw tweet text without IDs"
+    personal_bereavement: "not established; sampled lines are news retweets"
+    license: none
+    restrictions: "tweet text without IDs or licence"
+    inspected: api_sample
+    status: not_suitable
+
+  - key: github::purvasingh96/Covhindia
+    title: "COVHINDIA (sentiment of Hindi COVID-19 tweets)"
+    url: https://github.com/purvasingh96/Covhindia
+    languages: [hi]
+    material_type: code_without_data
+    verified_size: "5 files, 1.2 MB, no data files"
+    license: none
+    inspected: api_sample
+    status: not_suitable
+
+  - key: platform::reddit_research_access
+    title: "Reddit - official research access (Reddit for Researchers, RFR)"
+    url: https://support.reddithelp.com/hc/en-us/articles/49381918834964-Reddit-for-Researchers-Program
+    languages: [en mostly]
+    genre: posts and comments with thread structure
+    material_type: api_platform
+    verified_size: "no access: robots.txt is 'Disallow: /' for all agents and the public JSON endpoint returned 403 to one identified test request"
+    personal_bereavement: "r/GriefSupport and similar exist; Hindi content not evidenced anywhere"
+    license: "Reddit Public Content Policy / RFR programme terms"
+    restrictions: "Reddit Help states RFR is the only authorised research route; applicant must be affiliated with an accredited university and apply from an institutional e-mail; access granted for at most one year; work is done in Reddit's SQL environment"
+    auth_or_payment: "institutional application (no fee stated)"
+    inspected: landing_page
+    status: blocked_on_access
+    suitability: "Right route if an English Reddit arm with reply context is wanted."
+    limitations: "Cannot supply Hindi; therefore not a bilingual source."

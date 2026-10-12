@@ -1,0 +1,32 @@
+molecule,used_in,why_unavoidable
+body,L-HI-33 P-HI-03 P-HI-15 P-HI-34 P-HI-56 P-HI-57 P-EN-03 P-EN-15 P-EN-56,"prime BODY, marked only when it is the corpse"
+broken,L-HI-29 P-HI-03 L-EN-26 P-EN-03,
+child,L-HI-22,kin term
+cries,P-HI-01 P-EN-01,
+cry,P-HI-28,weeping
+day,P-HI-17 P-EN-17,time unit
+days,P-HI-16,time unit
+eat,P-HI-49 P-EN-49,somatic symptom
+eyes,P-HI-02 P-HI-48 P-EN-02 P-EN-48,body part for tears
+family,P-HI-46 L-HI-C3 P-EN-46 P-EN-C3,kin group
+father,P-EN-C2,kin term
+home,P-HI-07 P-HI-32 P-EN-07 P-EN-32,place where the family lives
+mother,L-HI-22 P-EN-C2,kin term; NSM molecule
+shoulders,L-HI-33,body part (कंधा देना)
+sleep,P-HI-49 P-EN-49,somatic symptom
+sleeping,P-HI-50 P-EN-50,
+son,P-HI-15,kin term (mukhagni)
+tree,L-HI-32,banyan-shade image
+water,P-HI-02 P-HI-48 P-EN-02 P-EN-48,tears
+year,P-HI-16 P-HI-17 P-EN-17,time unit
+years,P-HI-17 P-EN-17,time unit
+(tolerated) towards,L-HI-22 L-HI-23 L-HI-24 L-EN-21,NSM love explications use 'feel something good towards someone'
+(tolerated) have,L-HI-12 L-HI-20 L-HI-23 P-HI-12 P-HI-15 P-HI-18 P-HI-29 P-HI-41 L-HI-C2 L-EN-23 L-EN-24 L-EN-25 L-EN-44 P-EN-12 P-EN-15 P-EN-41 P-EN-65 P-EN-67,'have to' = 'can't not' (conventional abbreviation)
+(tolerated) has,L-HI-03 L-HI-25 L-HI-26 P-HI-25 P-HI-38 L-EN-23 L-EN-42 P-EN-38,'has to'
+(tolerated) had,P-HI-21 L-EN-30 P-EN-21,'had to'
+(tolerated) respect,L-HI-12,v0.1 §3.7 verbatim line
+(tolerated) parent,L-HI-19,v0.1 §3.10 verbatim gloss in parentheses
+(tolerated) elder,L-HI-19 L-HI-23,v0.1 §3.10 verbatim gloss
+(tolerated) slowly,L-EN-34,v0.1 §3.17 verbatim
+(tolerated) finished,L-EN-33,v0.1 §3.17 verbatim
+(tolerated) thirteen,P-HI-16,number

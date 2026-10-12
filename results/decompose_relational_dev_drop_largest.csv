@@ -1,0 +1,49 @@
+variant,dropped,quantity,estimate,lo,hi
+all,,r_hi,21.9169,18.4688,25.3966
+all,,f_hi,8.3075,6.4469,9.9481
+all,,q_hi,26.4706,23.1936,30.694
+all,,p_hi,0.5141,0.4718,0.5509
+all,,r_en,12.5658,10.8571,14.2089
+all,,f_en,0.0,0.0,0.0
+all,,q_en,41.44,37.9748,45.1097
+all,,p_en,0.3032,0.2593,0.3501
+all,,delta,9.3512,5.7242,13.1933
+all,,forced_share,8.3075,6.4469,9.9481
+all,,opportunity_share,-6.1177,-8.0572,-3.8935
+all,,choice_share,7.1613,4.8458,9.3583
+drop_largest_hi,hi:blogs:blog_5aa741918356,r_hi,22.3344,18.4082,26.2601
+drop_largest_hi,hi:blogs:blog_5aa741918356,f_hi,8.3219,6.2912,10.219
+drop_largest_hi,hi:blogs:blog_5aa741918356,q_hi,27.6121,24.0245,31.7707
+drop_largest_hi,hi:blogs:blog_5aa741918356,p_hi,0.5075,0.4649,0.5483
+drop_largest_hi,hi:blogs:blog_5aa741918356,r_en,12.5658,10.9107,14.2971
+drop_largest_hi,hi:blogs:blog_5aa741918356,f_en,0.0,0.0,0.0
+drop_largest_hi,hi:blogs:blog_5aa741918356,q_en,41.44,37.9851,45.0589
+drop_largest_hi,hi:blogs:blog_5aa741918356,p_en,0.3032,0.26,0.3481
+drop_largest_hi,hi:blogs:blog_5aa741918356,delta,9.7686,5.4735,14.053
+drop_largest_hi,hi:blogs:blog_5aa741918356,forced_share,8.3219,6.2912,10.219
+drop_largest_hi,hi:blogs:blog_5aa741918356,opportunity_share,-5.6052,-7.6295,-3.4103
+drop_largest_hi,hi:blogs:blog_5aa741918356,choice_share,7.052,4.7357,9.3689
+drop_largest_en,en:blogs:blog_fe5e0b9034fd,r_hi,21.9169,18.4688,25.3966
+drop_largest_en,en:blogs:blog_fe5e0b9034fd,f_hi,8.3075,6.4469,9.9481
+drop_largest_en,en:blogs:blog_fe5e0b9034fd,q_hi,26.4706,23.1936,30.694
+drop_largest_en,en:blogs:blog_fe5e0b9034fd,p_hi,0.5141,0.4718,0.5509
+drop_largest_en,en:blogs:blog_fe5e0b9034fd,r_en,12.9037,11.1939,14.534
+drop_largest_en,en:blogs:blog_fe5e0b9034fd,f_en,0.0,0.0,0.0
+drop_largest_en,en:blogs:blog_fe5e0b9034fd,q_en,41.6706,37.8619,45.5531
+drop_largest_en,en:blogs:blog_fe5e0b9034fd,p_en,0.3097,0.265,0.355
+drop_largest_en,en:blogs:blog_fe5e0b9034fd,delta,9.0132,5.1584,13.0378
+drop_largest_en,en:blogs:blog_fe5e0b9034fd,forced_share,8.3075,6.4469,9.9481
+drop_largest_en,en:blogs:blog_fe5e0b9034fd,opportunity_share,-6.2608,-8.2249,-3.9396
+drop_largest_en,en:blogs:blog_fe5e0b9034fd,choice_share,6.9665,4.7152,9.2822
+drop_largest_both,hi:blogs:blog_5aa741918356; en:blogs:blog_fe5e0b9034fd,r_hi,22.3344,18.4082,26.2601
+drop_largest_both,hi:blogs:blog_5aa741918356; en:blogs:blog_fe5e0b9034fd,f_hi,8.3219,6.2912,10.219
+drop_largest_both,hi:blogs:blog_5aa741918356; en:blogs:blog_fe5e0b9034fd,q_hi,27.6121,24.0245,31.7707
+drop_largest_both,hi:blogs:blog_5aa741918356; en:blogs:blog_fe5e0b9034fd,p_hi,0.5075,0.4649,0.5483
+drop_largest_both,hi:blogs:blog_5aa741918356; en:blogs:blog_fe5e0b9034fd,r_en,12.9037,11.1501,14.5489
+drop_largest_both,hi:blogs:blog_5aa741918356; en:blogs:blog_fe5e0b9034fd,f_en,0.0,0.0,0.0
+drop_largest_both,hi:blogs:blog_5aa741918356; en:blogs:blog_fe5e0b9034fd,q_en,41.6706,38.0203,45.6569
+drop_largest_both,hi:blogs:blog_5aa741918356; en:blogs:blog_fe5e0b9034fd,p_en,0.3097,0.2651,0.3566
+drop_largest_both,hi:blogs:blog_5aa741918356; en:blogs:blog_fe5e0b9034fd,delta,9.4307,5.0939,13.9043
+drop_largest_both,hi:blogs:blog_5aa741918356; en:blogs:blog_fe5e0b9034fd,forced_share,8.3219,6.2912,10.219
+drop_largest_both,hi:blogs:blog_5aa741918356; en:blogs:blog_fe5e0b9034fd,opportunity_share,-5.7439,-7.831,-3.5363
+drop_largest_both,hi:blogs:blog_5aa741918356; en:blogs:blog_fe5e0b9034fd,choice_share,6.8527,4.5404,9.2523

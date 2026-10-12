@@ -1,0 +1,618 @@
+entry_id,headword_deva,headword_roman_variants,headword_en,pos,corpus_freq_hi,corpus_freq_en,nsm_explication,component_vector,orientation,process,function,register,cultural_script,idiom_flag,grammar_forced,counterpart,overlap,source_notes,pattern,lang,status
+L-HI-01,दुख / दुःख,dukh; dukkh; dukhi (adj.),sadness / pain / grief,noun (adj. दुखी),,,"someone feels something bad
+because this someone thinks like this:
+  ""something bad happened to me; I don't want this; I cannot do anything now""
+when this someone thinks like this, this someone feels something bad because of it; this someone feels it like something bad in the body
+like people can feel when they think like this",FEEL_BAD; HAPPEN_TO; BODY,I,L,NA,colloquial,grief-as-misfortune,N,N,L-EN-01,partial,"v0.1 §3.1 (seed count 18 + दुखी 2). All four v0.1 lines kept; 'I cannot do anything now' added per the 2026-09-26 instruction (Wierzbicka's sad). Broader than any English grief word: no 'someone died' line, bodily line present. Counterpart sadness lacks the body line; grief adds 'someone died'.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:दु[ःख]?ख(?:ी|ों|द)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-02,शोक,shok; shok sabha,mourning,noun,,,"someone died
+because of this, people who were with this person (this person's people) feel something very bad for some time
+people know this; people do some things for some time because of this
+it is good if people do these things",FEEL_BAD; WITH_OTHERS; KIN; DO_BECAUSE,C,L,NA,literary,public-mourning-period,N,N,L-EN-04,partial,"v0.1 §3.2 (seed 2). Only Hindi grief word with a built-in collective, public, timed component. 'people say these words at this time' added to make the R reading traceable (शोक सभा is a formula event). English mourning keeps period and acts, has lost the inner state.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:शोक(?:ाकुल|ग्रस्त|मग्न|\s+सभा|\s+संतप्त)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-03,श्रद्धांजलि,shraddhanjali; vinamra shraddhanjali; bhavbheeni shraddhanjali,tribute,formula,,,"someone died
+I say these words because of this
+when I say them I think like this: ""this person did many very good things; I want people to know this""
+people say these words when someone has died; it is good to say them",RITUAL_WORDS; HONOUR,R,NA,Of,ritual,public-tribute-formula,Y,N,L-EN-42,partial,"Split out of v0.1 §3.2 (counted there under शोक, seed 3) because its thought is honouring, not mourning. English tribute lacks the fixed-formula line.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:विनम्र\s+|भावभीनी\s+|हार्दिक\s+)?श्रद्धा[ंँ]जलि)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-04,ग़म / गम,gham; gam,sorrow,noun,,,"someone feels something bad
+because this someone thinks like this:
+  ""something bad happened (or: someone is not here now); I think about it many times; I can't not think about it""
+when this someone thinks like this, this someone feels something bad inside for a long time because of it
+like people can feel when they think like this",FEEL_BAD; NOT_HERE; THINK_OF; LONG_TIME,I,L,NA,literary,sorrow-of-separation,N,N,L-EN-05,full,"v0.1 §3.3 (seed 2). Persian-derived, poetic; separation from a beloved more than death. v0.1 overlap 'near-full' recorded as full: line-by-line the explications match.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:ग़?म(?:ों|गीन|ज़दा)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-05,पीड़ा / तकलीफ़ / कष्ट,peeda; takleef; kasht,pain,noun,,,"someone feels something bad
+because this someone thinks like this: ""something bad is happening to me""
+when this someone thinks like this, this someone feels something bad because of it; this someone feels it in the body, like when something bad happens to the body
+like people can feel when they think like this",FEEL_BAD; HAPPEN_TO; BODY,I,L,NA,colloquial,grief-as-bodily-pain,N,N,L-EN-02,full,"v0.1 §3.4 (seed 3, 2, 1). Explication written here (v0.1 gave a register note only). Bodily and inner pain alike; English pain does the same work.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:पीड़?ा|तकलीफ़?|तकलीफ|कष्ट)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-06,वेदना / व्यथा / संताप,vedna; vyatha; santaap,anguish,noun,,,"someone feels something very bad
+because this someone thinks like this: ""something very bad happened; I cannot not think about it""
+when this someone thinks like this, this someone feels something very bad inside because of it, not in the body
+like people can feel when they think like this",FEEL_BAD; THINK_OF,I,L,NA,literary,inner-anguish,N,N,L-EN-06,full,"v0.1 §3.4 (seed 0, 1, 0). Explication written here; differs from L-HI-05 by the 'inside, not in the body' line. Sanskritic register; anguish almost absent from Indian English corpus.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:वेदना|व्यथा|संताप)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-07,याद आना,yaad aana; yaad aati hai; yaad aate hain; yaad aayi,(memory comes to me) ~ miss / remember,construction (dative),,,"I think about this person now
+not because I want to think about this person now; it happens to me
+when I think about this person, I feel something; I feel something good and something bad at the same time
+this person is not here now",THINK_OF; HAPPEN_TO; NOT_HERE,I,L,NA,colloquial,memory-as-arrival,N,Y,L-EN-07,partial,"v0.1 §3.5 (seed: याद आती/आता/आते 17). Verbatim. Most important non-overlap: miss adds 'I want this person to be here' (WANT_BE_WITH); याद आना asserts arrival of memory, dative experiencer (HAPPEN_TO is grammar-forced here). The 'good and bad at the same time' line has no component; left uncovered on purpose.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:[ऀ-ॿ]+\s+की\s+|आपकी\s+|उनकी\s+|उसकी\s+|तुम्हारी\s+|तेरी\s+)?(?:बहुत\s+)?याद\s+(?:आ|आती|आते|आता|आया|आयी|आई|आएगी|आएगा)[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-08,याद / यादें,yaad; yaadein; yaadon; smriti,memory / memories,noun,,,"I think about this person now
+I think about things that happened before, when this person was here
+when I think about these things, I feel something good and something bad at the same time",THINK_OF; NOT_HERE,I,L,NA,colloquial,memory-as-possession,N,N,L-EN-09,full,"v0.1 §3.5 (seed याद 47, यादें/यादों 14). Split from L-HI-07 because the noun has no dative-arrival line.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:याद(?:ें|ों)?|स्मृति(?:याँ|यों)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-09,याद करना,yaad karna; yaad karte hain,remember (agentive),verb,,,"I think about this person now because I want to think about this person
+I do this; it does not happen to me
+this person is not here now",THINK_OF; NOT_HERE; DO_BECAUSE,I,L,NA,colloquial,memory-as-act,N,N,L-EN-08,full,"v0.1 §3.5 note (agentive form, less common). Differs from L-HI-07 by 'I do this; it does not happen to me'.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:याद\s+(?:कर|करत|किय|करेंग|करूँग|करेग)[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-10,कमी,kami; kami khalti hai; kami mehsoos hoti hai,absence / lack,noun (dative with महसूस होना),,,"before, this person was here; now this person is not here
+because of this, something is not here now that was here before
+I feel this; I feel something bad because of this",NOT_HERE; FEEL_BAD,I,L,NA,colloquial,grief-as-lack,N,context,L-EN-10,full,v0.1 §3.6 (seed 3). Verbatim. Lack metaphor (something missing from a whole). 'कमी महसूस होना' is dative → grammar_forced = context.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:कमी(?:\s+(?:महसूस|खल)[ऀ-ॿ]*)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-11,खालीपन / खाली,khaalipan; khaali; khaalapan,emptiness / void,noun / adj.,,,"before, this person was here; now this person is not here
+because of this it is like this: inside me (in this place) there is nothing where there was something before
+I feel something bad because of this",NOT_HERE; FEEL_BAD,I,L,NA,colloquial,self-as-empty-container,N,N,L-EN-11,full,"v0.1 §3.6 (seed 2 + खाली 3). Container metaphor (Kövecses); same components as कमी, different image line.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:खाली(?:पन|-खाली)?|खालापन|रिक्तता)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-12,नहीं रहे / नहीं रहीं,nahi rahe; nahin rahe; nahi rahi; ab nahi rahe,is no more,"construction (negated existence, honorific plural)",,,"this person is not living now
+I don't say the word ""die"" about this person
+I say it like this because I think of this person as someone above me, someone I have to say things about with respect",NOT_HERE; AVOID_DIE; KIN,F,L,NA,colloquial,indirect-death-reference; respect,Y,context,L-EN-13,partial,"v0.1 §3.7 (inside रहे 50 / रही 55). Verbatim. Honorific plural is grammar-forced for a parent (KIN + respect flag); a choice for a younger deceased → context. English 'is no more' has lines 1–2, not 3.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:नहीं\s+रह(?:े|ीं|ी|ा))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-13,चले गए / चली गईं,chale gaye; chali gayi; chale gaye hain,gone / left,construction (motion euphemism),,,"this person moved from here to some other place
+this person will not be here again
+I don't say where this person is now; I don't say the word ""die""",NOT_HERE; AVOID_DIE,I,L,NA,colloquial,indirect-death-reference (motion; deceased keeps agency),Y,N,L-EN-14,full,"v0.1 §3.8 (चले 13, चली 15). Lines 1–3 verbatim; the AVOID_DIE clause added to line 3 so the component is traceable. Deceased is the mover in both languages.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:चल[ेीा]\s+ग(?:ए|ये|यी|ईं|ई|या))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-14,छोड़ कर चले गए / हमें छोड़ गए,chhod kar chale gaye; humein chhod gaye; hamein chhodkar,left us,"construction (motion euphemism, relational object)",,,"this person was with me and with some other people (my people) before
+this person moved from here to some other place; this person will not be here again
+now I am not with this person; these people are not with this person
+I don't say the word ""die""",NOT_HERE; AVOID_DIE; KIN; WITH_OTHERS,F,L,NA,colloquial,indirect-death-reference (motion; left-behind object),Y,N,L-EN-15,full,v0.1 §3.8 lists छोड़ कर जाना with चले गए; split here because the object 'us' adds a KIN/WITH_OTHERS line and shifts orientation to F.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:हमें|हमको|मुझे|मुझको|सबको|हम\s+सबको)\s+छोड़?(?:कर)?\s*(?:चल[ेीा]\s+)?ग(?:ए|ये|यी|ईं|ई|या))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-15,देहांत / निधन,dehant; nidhan; dehavsaan,passing / demise,noun (event),,,"something happened to this person; after this, this person is not living
+I say what happened with a word for the thing that happened, not with the word ""die""
+people say this word when they say it to many people",NOT_HERE; AVOID_DIE,I,L,NA,literary,indirect-death-reference (event noun; formal notice),N,N,L-EN-16,full,"v0.1 §3.8, §4 event nouns (देहांत 7, निधन 2). Explication written here. Names the event, not the act; removes the agent like English 'passed away'.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:देहा[ंँ]त|देहावसान|निधन|मृत्यु|मौत|इंतक़ाल|इंतकाल)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-16,स्वर्गवास / स्वर्ग सिधारना / स्वर्गवासी,swargvaas; swarg sidhar gaye; swargvasi,went to heaven,construction (motion euphemism with goal),,,"this person moved from here to a place above
+good things happen to people in this place; God[m] is in this place
+this person is in this place now; this person will not be here again
+I don't say the word ""die""",NOT_HERE; AVOID_DIE; ABOVE,I,L,NA,ritual,ascent; divine-place,Y,N,L-EN-31,partial,v0.1 §3.8 (स्वर्गवास 3). Explication written here. Adds a destination that 'passed away' leaves unsaid. Not R: not a fixed formula. Replaces provisional P-HI-10.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:स्वर्ग(?:वास(?:ी)?|\s+सिधार|\s+गमन|लोक)[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-17,खोना,khona; kho diya; khoya; khone ke baad,lose / lost,verb,,,"before, this person was mine (was with me); now this person is not with me
+I did not want this; I could not do anything
+I feel something very bad because of this",NOT_HERE; HAPPEN_TO; FEEL_BAD,I,L,NA,colloquial,grief-as-loss,N,N,L-EN-17,full,"v0.1 §3.9 (seed 17). Verbatim. English also nominalises the whole experience as 'the loss' (L-EN-18), which Hindi does not.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:खो(?:ना|या|यी|ई|ए|ने|कर|\s+दिया|\s+दी|\s+दिये|\s+बैठ)[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-18,बिछड़ना,bichhadna; bichhad gaye,(parting),verb,,,"before, this person and I were with each other; we were two people who are with each other
+now this person is not with me; I cannot be with this person
+I feel something very bad because of this",NOT_HERE; WANT_BE_WITH; FEEL_BAD,I,L,NA,literary,separation-of-a-pair,N,N,none,none,v0.1 §3.9 (seed 2). Explication written here. A love-poetry separation word applied to death; English parted/separated lack the 'two who belong together' line.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:बिछ[ड़ुड]़?[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-19,सेवा,seva; seva karna; seva ka avsar,(care as duty; serve),noun,,,"this person is above me (a parent, an elder)
+for a long time I do good things for this person, because of this and because I want to
+it is good to do this; people know it is good",KIN; DUTY_DONE; BOND,F,Rs,Of,colloquial,love-as-service,N,N,L-EN-20,none,"v0.1 §3.10 (seed 13). Verbatim. No English counterpart in the grief context; 'care/look after' lack the 'it is good; people know it is good' line and the 'above me' line. When negated (सेवा का अवसर नहीं मिला) the clause carries DUTY_UNDONE, not DUTY_DONE: matcher rule in constructions.yaml.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:सेवा(?:\s+(?:कर|की|किया|करने|का\s+अवसर|का\s+मौक़ा|का\s+मौका))?[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-20,ज़िम्मेदारी / कर्तव्य / फ़र्ज़,zimmedari; kartavya; farz,responsibility / duty,noun,,,"there are some things I have to do for my people (for this person)
+if I do not do them, something bad happens; people know this
+I do these things because of this",KIN; DUTY_DONE; DO_BECAUSE,F,Rs,NA,colloquial,duty-to-kin,N,N,L-EN-44,partial,"v0.1 §3.10 (ज़िम्मेदारी 4, कर्तव्य 1). Explication written here. English responsibility lacks the 'my people' line unless the object supplies it.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:ज़?िम्मेदारी|जिम्मेदारी|कर्तव्य|फ़?र्ज़?|फर्ज)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-21,त्याग,tyaag,sacrifice,noun,,,"this person did not do some things this person wanted to do
+this person did this because of me (because of this person's people); this person wanted good things to happen to me
+I know this now; I think good things about this person because of it",BOND; KIN; HONOUR,F,NA,NA,literary,love-as-sacrifice,N,N,L-EN-45,full,v0.1 §3.10 (seed 3). Explication written here.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:त्याग(?:ा|ी|ना|ने|कर)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-22,ममता,mamta,a mother's love,noun,,,"a mother[m] feels something very good towards her child[m]
+because of this she does many good things for the child[m]
+she does not think about it before she does it; it is like a part of her",BOND; KIN,F,NA,NA,literary,kin-specific-love,N,N,L-EN-21,partial,v0.1 §3.11 (seed 6). Verbatim. Kind-specific love word; English needs love + modifier.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:ममता|वात्सल्य)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-23,स्नेह,sneh,affection (elder to younger),noun,,,"someone above me (an elder) feels something very good towards me
+because of this this someone does good things for me
+this someone does not have to do this",BOND; KIN,F,NA,NA,literary,downward-affection,N,N,L-EN-21,partial,"v0.1 §3.11 (seed 5). Explication written here: affection downward, elder to younger.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:स्नेह(?:ी|िल)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-24,प्रेम / प्यार / मोहब्बत,prem; pyaar; pyar; mohabbat,love,noun,,,"someone feels something very good towards this person
+because of this this someone wants good things to happen to this person; this someone wants to be with this person
+this someone does good things for this person because of this",BOND,I,NA,NA,colloquial,love-general,N,N,L-EN-21,full,"v0.1 §3.11 (प्रेम 14, प्यार 11). Explication written here. General terms; the English corpus's heavy love is not more love, it is one word for a system.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:प्रेम|प्यार|मोहब्बत|मुहब्बत|इश्क़?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-25,आशीर्वाद / दुआ,aashirwad; ashirvad; dua; duaen,blessing,noun,,,"someone above me wants good things to happen to me and says so
+because this person says this, I think good things can happen to me
+this can be so after this person has died",BLESSING; BOND; KIN,F,Rs,NA,ritual,continuing-bond-as-blessing,N,N,L-EN-22,partial,"v0.1 §3.12 (seed 5, 1). Verbatim. Ongoing transfer from the dead to the living (Klass). English 'blessed' in the corpus mostly = fortunate; 'blessing' partial.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:आशीर्वाद|आशीष|दुआ(?:एँ|ओं|एं)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-26,आत्मा को शांति / ॐ शांति,aatma ko shanti; om shanti; bhagwan unki aatma ko shanti de,rest in peace,formula,,,"the part of this person that does not die is now somewhere else
+I want nothing bad to happen to it now; I want it to be as if nothing is happening to it
+I say this to God[m] (someone above all people)
+people say these words when someone has died",BLESSING; ABOVE; RITUAL_WORDS,R,NA,Of,ritual,atma-shanti,Y,N,L-EN-23,partial,"v0.1 §3.13 (आत्मा 2, शांति 4). Lines 1–3 verbatim; line 4 added so R is read off a formula line, per the 2026-09-26 rule. Replaces provisional P-HI-11/12.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:ॐ|ओम्?|ओ३म्)\s*शा[ंँ]ति(?:\s*ॐ)?|आत्मा\s+को\s+(?:शांति|शान्ति)|आत्मा\s+को\s+(?:सद्गति|मोक्ष|मुक्ति))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-27,अधूरा,adhoora; adhoore; adhuri,unfinished (~ regret),adj.,,,"I wanted to do some things with this person (for this person) after some time
+now I cannot do these things, because this person is not here
+because of this I feel something very bad",DUTY_UNDONE; NOT_HERE; FEEL_BAD,I,L,NA,colloquial,unfinished-plan,N,N,L-EN-24,partial,v0.1 §3.14 (seed 4). Verbatim. Not fault (regret/guilt); a plan that cannot be completed. Mesquita OURS vs MINE.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:अधूर[ाेी](?:\s+रह)?[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-28,अरमान,armaan,cherished wish,noun,,,"for a long time I wanted something very much: I wanted to do some things with this person
+now I know it cannot be
+because of this I feel something very bad",DUTY_UNDONE; WANT_BE_WITH; FEEL_BAD,I,L,NA,literary,unfulfilled-wish,N,N,L-EN-25,partial,v0.1 §3.14 (seed 1). Explication written here; Urdu register.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:अरमान(?:ों)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-29,टूटना,tootna; toot gaya; toot gayi; toota,broken,verb,,,"something inside me is now like something broken[m]
+it was not like this before this happened
+I cannot do anything so that it is like before",BROKEN; HAPPEN_TO,I,L,NA,colloquial,self-as-broken-object,N,N,L-EN-26,full,v0.1 §3.15 (seed 3). Line 1 verbatim; lines 2–3 added to reach template length.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:टूट(?:ना|\s+ग(?:ए|ये|यी|ईं|ई|या)|\s+चुक|ा|ी|े)[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-30,बिखरना,bikharna; bikhar gaya; bikhar gayi,fell apart / scattered,verb,,,"something inside me is now like many small parts in many places
+before, it was one thing; now it is not
+I cannot do anything so that it is one thing again",BROKEN,I,L,NA,colloquial,self-as-scattered,N,N,L-EN-27,full,v0.1 §3.15 (seed 2). Same metaphor family as टूटना with dispersal.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:बिखर(?:ना|\s+ग(?:ए|ये|यी|ईं|ई|या)|ा|ी|े)[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-31,सहारा,sahara; sahara tha; besahara,support (person as),noun,,,"when something bad happens, this person does things because of which nothing very bad happens to me
+now this person is not here
+now when something bad happens nothing like this can happen",BOND; NOT_HERE,F,L,NA,colloquial,deceased-as-support,N,N,L-EN-28,partial,"v0.1 §3.16 (seed 3). Verbatim. BOND not SUPPORT: the care is the deceased's, in the past.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:सहार[ाे]|बेसहारा)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-32,छाया / साया,chhaya; saaya; sir se saaya uth gaya,shade (of a tree) over me,noun,,,"this person was like something big above me (like a big tree[m] above someone)
+because of this nothing bad could happen to me
+now this is not above me; now bad things can happen to me",BOND; NOT_HERE; KIN,F,L,NA,literary,shade-of-the-banyan,Y,N,none,none,v0.1 §3.16 (seed 1). Explication written here; specifically Indian figure. 'सिर से साया उठना' is the idiom form.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:सिर\s+से\s+)?(?:साया|छाया|छाँव|छाँह)(?:\s+(?:हट|उठ)[ऀ-ॿ]*)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-33,कंधा,kandha; kandha dena; kandhe par,shoulder (to lean on / to carry),noun,,,"when I feel something bad, I can be with this person; because of this I feel something less bad
+now this person is not here; I cannot do this now
+(also: people move the body[m] of this person on their shoulders[m]; it is good if I do this)",BOND; NOT_HERE; DO_BECAUSE,F,L,NA,colloquial,shoulder-to-lean-on / shoulder-to-carry,Y,N,L-EN-29,partial,v0.1 §3.16 (seed 1). Explication written here. Two senses; the funeral sense (कंधा देना) is a ritual duty and needs split_senses.py to separate.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:कंध[ाे](?:\s+द[ेिी][ऀ-ॿ]*)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-01,रोना / रोते रहना,rona; roya; royi; rote rahe; ro pada,cry,verb,,,"someone feels something very bad
+because of this this someone cries[m]; this someone cannot not do this
+other people can see this",FEEL_BAD; BODY,I,L,NA,colloquial,grief-as-weeping,N,N,P-EN-01,full,Bodily expression; the corpus's commonest grief verb. Same lines as English cry.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:रो(?:ना|ते|ता|ती|या|यी|ई|ए|कर|\s+पड़|\s+रह|\s+दिय)[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-02,आँसू,aansu; aansoo; ansoo,tears,noun,,,"there is water[m] in someone's eyes[m] because this someone feels something very bad
+this someone does not do this; it happens to this someone",FEEL_BAD; BODY; HAPPEN_TO,I,L,NA,colloquial,grief-as-weeping,N,N,P-EN-02,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:आ[ँं]सू|अश्रु)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-03,दिल टूटना / दिल बैठ जाना,dil toot gaya; dil baith gaya; dil dehal gaya,heartbreak,idiom,,,"someone feels something very bad
+because this someone thinks like this: ""something very bad happened to me; I did not want this""
+when this someone thinks like this, this someone feels it like something in the body, like something inside the body[m] is now broken[m]
+like people can feel when they think like this",FEEL_BAD; HAPPEN_TO; BODY; BROKEN,I,L,NA,colloquial,heart-as-breakable,Y,N,P-EN-03,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:दिल\s+(?:टूट|बैठ|दहल|फट)[ऀ-ॿ]*|कलेजा\s+(?:फट|मुँह\s+को)[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-04,मन भारी / मन नहीं लगता / मन उदास,man bhari; man nahi lagta; man udaas,heavy heart / listless,idiom (dative),,,"someone feels something bad for some time
+because of this this someone does not want to do anything; this someone feels it like something heavy inside
+it happens to this someone; this someone does not do it",FEEL_BAD; HAPPEN_TO; LONG_TIME,I,L,NA,colloquial,mind-as-locus,Y,Y,P-EN-04,partial,Dative/impersonal construction (मन as subject); English needs a first-person subject.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:मन\s+(?:भारी|नहीं\s+लगता|नहीं\s+लगा|उदास|बेचैन|व्याकुल)[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-05,सदमा / धक्का,sadma; dhakka; sadma laga,shock,noun (dative with लगना),,,"something very bad happened to me at one moment
+I did not know before that it could happen; because of this for some time I could not think
+I feel something very bad because of this",HAPPEN_TO; FEEL_BAD,I,L,NA,colloquial,grief-as-blow,N,Y,P-EN-05,full,Dative: मुझे सदमा लगा.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:सदम[ाे](?:\s+लग)?[ऀ-ॿ]*|धक्का\s+लग[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-06,सुन्न / सन्न रह जाना,sunn; sann reh gaya; stabdh,numb,adj.,,,"something very bad happened
+after this, for some time I did not feel anything; I could not think anything; I could not do anything
+it was like this because it was too much",HAPPEN_TO,I,L,NA,colloquial,grief-as-numbness,N,N,P-EN-06,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:सुन्न|सन्न(?:\s+रह)?[ऀ-ॿ]*|स्तब्ध)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-07,सूना / सूनापन / सन्नाटा,soona; soonapan; sannata; ghar soona,desolate / silence,adj. / noun,,,"before, this person was in this place; now this person is not in this place
+because of this, in this place (in my home[m]) there is no one; no one says anything; nothing can be heard like before
+I feel something bad because of this",NOT_HERE; FEEL_BAD,I,L,NA,colloquial,home-as-emptied,N,N,P-EN-07,full,"Place-based emptiness, distinct from खालीपन (inside me).",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:सून[ाी](?:पन)?|सन्नाटा|वीरान)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-08,अकेला / अकेलापन / तन्हा,akela; akelapan; tanha; tanhai,alone / loneliness,adj. / noun,,,"before, this person was with me; now this person is not with me
+now no one is with me like this person was with me
+I feel something bad because of this",NOT_HERE; FEEL_BAD; WANT_BE_WITH,I,L,NA,colloquial,grief-as-aloneness,N,N,P-EN-08,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:अकेल[ाेी](?:पन)?|तन्हा(?:ई)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-09,जी नहीं लगता / जीने का मन नहीं,jee nahi lagta; jeene ka man nahi,don't feel like living,idiom (dative),,,"someone feels something very bad for a long time
+because this someone thinks like this: ""this person is not here; I don't want to do anything now; I don't want anything now""
+it happens to this someone; this someone does not do it",FEEL_BAD; NOT_HERE; HAPPEN_TO; LONG_TIME,I,L,NA,colloquial,loss-of-will,Y,Y,P-EN-09,partial,"Flag for review, not a research category: coded as an idiom of distress only. Dative/impersonal.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:जी\s+नहीं\s+लग[ऀ-ॿ]*|जीने\s+का\s+मन\s+नहीं)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-10,सब्र / धैर्य / धीरज,sabr; dhairya; dheeraj; sabr rakho,patience / forbearance,noun,,,"something very bad happened; I feel something very bad
+I do not say it; I do not do anything because of it for some time
+it is good to be like this; people say it is good",FEEL_BAD; OTHERS_SAY; AFTER_GOOD,I,Rs,Of,colloquial,forbearance-script,N,N,P-EN-10,partial,Often said to the bereaved (Of); English 'be strong' is the nearest but lacks the waiting line.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:सब्र|धैर्य|धीरज|संयम)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-11,हिम्मत / हौसला,himmat; hausla; himmat rakho,courage / strength,noun,,,"something very bad happened to me
+I can do things after this; I want to do things after this
+people say to me: ""you can do this""",AFTER_GOOD; OTHERS_SAY,I,Rs,Of,colloquial,be-strong-script,N,N,P-EN-11,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:हिम्मत|हौसल[ाे])(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-12,संभलना / संभालना,sambhalna; sambhal gaya; khud ko sambhala,pull oneself together / steady,verb,,,"for some time after this I could not do anything
+now I can do some things; I do this because I have to (because of my people)
+after some time it can be like before, not in all things",AFTER_GOOD; DO_BECAUSE; KIN,F,Rs,NA,colloquial,steadying-for-others,N,N,P-EN-12,partial,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:स[ंँ]भ(?:ल|ाल)[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-13,साथ देना / साथ खड़े रहना,saath dena; saath diya; saath khade rahe,stand by (someone),verb phrase,,,"when something bad happened to me, these people were with me
+they did good things for me because of it; because of this nothing very bad happened to me
+I know this; I feel something good because of it",SUPPORT; WITH_OTHERS,C,Rs,NA,colloquial,communal-support,N,N,P-EN-13,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:साथ\s+(?:दिया|दी|देना|दे|खड़[ेा]|निभा)[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-14,ढाँढस / सांत्वना / दिलासा,dhaadhas; santvana; dilasa,consolation,noun,,,"someone feels something very bad because someone died
+other people say something to this someone because of it: ""we are with you; something good can happen after this""
+they want this someone to feel something less bad",SUPPORT; OTHERS_SAY; WITH_OTHERS,C,Rs,Of,literary,consolation,N,N,P-EN-14,partial,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:ढा[ँं]ढस|सांत्वना|सान्त्वना|दिलासा|तसल्ली)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-15,अंतिम संस्कार / दाह संस्कार / अंत्येष्टि,antim sanskar; dah sanskar; antyeshti,last rites / cremation,noun,,,"someone died; after this people do some things with this person's body[m]
+it is good to do these things; people have to do them; a son[m] does some of them
+people say some words at this time",RITUAL_WORDS; DO_BECAUSE; KIN,R,NA,NA,ritual,funeral-rite,N,N,P-EN-15,partial,English funeral lacks the 'a son does some of them' line (mukhagni).,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:अंतिम\s+संस्कार|दाह\s*संस्कार|अंत्येष्टि|मुखाग्नि|चिता)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-16,तेरहवीं / श्राद्ध / पिंडदान,terahvin; shraddh; pind daan,thirteenth-day rite / shraddh,noun,,,"some time after someone died (thirteen days[m]; a year[m]), this person's people do some things because of it
+they do them for this person: they think good things can happen to this person because they do them
+it is good to do these things; people know this",RITUAL_WORDS; DO_BECAUSE; KIN; BLESSING,R,Rs,NA,ritual,post-death-rite,N,N,none,none,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:तेरहवीं|तेरहवी|श्राद्ध|पिंड\s*दान|पिण्ड\s*दान|अस्थि\s*विसर्जन)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-17,पुण्यतिथि / बरसी,punyatithi; barsi,death anniversary,noun,,,"one year[m] (some years[m]) after someone died, on the same day[m], this person's people think about this person
+they do some things because of it; they say some words
+it is good to do this",THINK_OF; DO_BECAUSE; RITUAL_WORDS; LONG_TIME,R,Rs,NA,ritual,anniversary-remembrance,N,N,P-EN-17,partial,Structures many Hindi blog posts (v0.1 seed audit).,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:पुण्य\s*तिथि|बरसी|वर्षी)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-18,मोक्ष / मुक्ति / सद्गति,moksh; mukti; sadgati,liberation (of the soul),noun,,,"the part of this person that does not die is somewhere now
+I want it to be like this: nothing more can happen to this part; it does not have to be anywhere again
+I say this to God[m] (someone above all people)",BLESSING; ABOVE,I,NA,Of,ritual,moksha,N,N,none,none,Not R unless in a formula (see L-HI-26 pattern).,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:मोक्ष|मुक्ति|सद्गति)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-19,भगवान ने बुला लिया / ऊपर वाले ने बुला लिया,bhagwan ne bula liya; upar wale ne bula liya,God called him/her,construction (divine agency),,,"this person is not here now
+God[m] (someone above all people) wanted this person to be where God[m] is; because of this it happened
+I don't say the word ""die""; I don't say that this is bad",NOT_HERE; ABOVE; AVOID_DIE,I,L,NA,colloquial,divine-agency,Y,N,P-EN-19,full,"Script = divine-agency, target = God; not R (not a fixed closing formula).",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:भगवान|ईश्वर|ऊपर\s+वाल[ेा]|प्रभु|अल्लाह|ख़?ुदा)\s+ने\s+(?:उन्हें|उसे|उनको|उसको)?\s*(?:अपने\s+पास\s+)?बुला\s+लिया)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-20,ईश्वर की इच्छा / भगवान की मर्ज़ी / ऊपर वाले की मर्ज़ी,ishwar ki ichchha; bhagwan ki marzi; upar wale ki marzi,God's will,noun phrase,,,"this happened because someone above all people (God[m]) wanted it
+people cannot do anything about this
+because of this I cannot say it is bad",ABOVE; HAPPEN_TO,I,Rs,Of,colloquial,divine-will,N,N,P-EN-20,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:ईश्वर|भगवान|ऊपर\s+वाले|प्रभु|अल्लाह|ख़?ुदा)\s+की\s+(?:इच्छा|मर्ज़?ी|मरज़ी))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-21,नियति / किस्मत / होनी,niyati; kismat; honi; honi ko kaun taal sakta hai,fate,noun,,,"this had to happen; it could not not happen
+no one could do anything about it
+because of this I do not say it happened because of someone",HAPPEN_TO,I,Rs,NA,colloquial,fate,N,N,P-EN-21,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:नियति|क़?िस्मत|किस्मत|होनी|तक़दीर|तकदीर|भाग्य)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-22,सबको जाना है / सबके साथ होता है,sabko jaana hai; sabke saath hota hai; ek din sabko jana hai,everyone has to go,construction,,,"this happens to all people: all people die
+I know this; because of this I do not say: ""it is bad that this happened""
+I don't say the word ""die""",EVERYONE; AVOID_DIE,C,Rs,Of,colloquial,universality-script,Y,N,P-EN-22,full,Carrier of the proposed EVERYONE component.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:एक\s+दिन\s+)?सब(?:को|के\s+साथ)\s+(?:जाना\s+है|होता\s+है|यही\s+होना\s+है))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-23,जीवन-मृत्यु / जन्म-मरण,jeevan-mrityu; janam-maran; aana-jaana,life and death (cycle),noun,,,"all people live for some time; after this all people die; this is how it is for all people
+it is like this because it cannot be otherwise
+when I think like this I feel something less bad",EVERYONE; AFTER_GOOD,C,Rs,NA,literary,cycle-of-life,N,N,P-EN-23,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:जीवन[-\s]मृत्यु|जन्म[-\s]मरण|आना[-\s]जाना)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-24,विदा / अलविदा / अंतिम विदाई,vida; alvida; antim vidai,farewell,noun / formula,,,"this person is not here anymore after this moment; this person will not be here again
+I say something to this person now because of this; I say it as if this person can hear it
+people say these words at this time",NOT_HERE; SPEAK_TO_DEAD; RITUAL_WORDS,R,L,Of,ritual,farewell-formula,Y,N,P-EN-24,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:अलविदा|विदा(?:ई)?|अंतिम\s+विदाई)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-25,सादर नमन / प्रणाम / नमन,sadar naman; pranam; naman,(respectful salutation to the dead),formula,,,"I say this to this person now
+when I say this I think: this person is someone above me; I want this person to know I think this
+people say these words to someone above them; people say them when someone has died",SPEAK_TO_DEAD; KIN; RITUAL_WORDS,R,NA,Of,ritual,respect-salutation,Y,N,none,none,Vocative address to the dead in v0.1 §4 uses this.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:सादर\s+)?(?:नमन|प्रणाम|चरण\s+स्पर्श))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-26,"आप जहाँ भी हों / जहाँ भी हो, खुश रहो",aap jahan bhi hon; jahan bhi ho khush raho,wherever you are,construction (address),,,"I say this to this person now, as if this person can hear
+I don't know where this person is; I think this person is somewhere
+I want good things to happen to this person there",SPEAK_TO_DEAD; BLESSING; NOT_HERE,I,Rs,Of,colloquial,continuing-bond-address,Y,N,P-EN-26,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:जहा[ँं]\s+भी\s+ह(?:ों|ो|ैं))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-27,आपके बिना / उनके बिना,aapke bina; unke bina,without you / without him,construction,,,"this person is not with me now
+because of this, when I do things now it is not like before
+I feel something bad because of this",NOT_HERE; FEEL_BAD,I,L,NA,colloquial,life-without,N,N,P-EN-27,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:आपके|उनके|उसके|तुम्हारे|तेरे|माँ\s+के|पापा\s+के)\s+बिना)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-28,मातम / मातम मनाना,maatam; matam manana,mourning (Urdu register),noun,,,"someone died
+because of this people are with each other for some time; they do some things because of it; they cry[m]; they feel something very bad
+it is good if people do this",WITH_OTHERS; DO_BECAUSE; FEEL_BAD,C,L,NA,literary,public-mourning-period,N,N,L-EN-04,partial,Urdu-register twin of शोक; adds the crying line.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:मातम(?:\s+मना)?[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-29,अफ़सोस / पछतावा / मलाल,afsos; pachhtava; malaal,regret,noun,,,"someone feels something bad
+because this someone thinks like this: ""I did something (I did not do something) before; because of this something bad happened; I could have done something else""
+when this someone thinks like this, this someone feels something bad because of it
+like people can feel when they think like this",FEEL_BAD; DUTY_UNDONE,I,L,NA,colloquial,regret-as-fault,N,N,L-EN-24; L-EN-25,full; full,"Fills v0.1's gap ('Hindi has अधूरा and no fault word'): अफ़सोस/पछतावा are fault words, rarer than अधूरा in the seed but present in the annotation queue; corpus will decide.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:अफ़?सोस|अफसोस|पछताव[ाे]|पछता[ऀ-ॿ]*|मलाल)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-30,काश,kaash; kash,if only,particle,,,"I want it to be like this: something is not like it is
+I know it cannot be like this
+I feel something bad because of this",WANT_BE_WITH; FEEL_BAD,I,L,NA,colloquial,counterfactual-wish,N,N,P-EN-30,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:काश)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-31,अपने / अपनों,apne; apnon; apno ka,one's own people,noun (plural),,,"these people are my people; I am one of these people
+what happens to one of us happens to all of us
+I feel something good when I am with these people",KIN; WITH_OTHERS,F,NA,NA,colloquial,own-people,N,N,P-EN-31,partial,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:अपन(?:े|ों)(?:\s+(?:का|के|को|से))?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-32,परिवार / घर वाले / घर,parivaar; ghar wale; ghar,family / home,noun,,,"these people live in one place (one home[m]); they are my people
+I am one of them; what happens to one of us happens to all of us",KIN; WITH_OTHERS,F,NA,NA,colloquial,family-as-unit,N,N,P-EN-32,full,"Headword for kin-noun matching; the mother/father nouns are in constructions.yaml as a kin lexicon, not entries.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:परिवार|घर\s+वाल[ेों]|कुटुंब|ख़?ानदान)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-33,बड़े / बुज़ुर्ग,bade; buzurg; bade-buzurg,elders,noun,,,"these people are above me: they lived before I lived; they know many things
+it is good to do what they say; it is good to do things for them
+when they are not here, something is not here for all of us",KIN; NOT_HERE,F,NA,NA,colloquial,elder-respect,N,N,P-EN-33,partial,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:बुज़?ुर्ग(?:ों)?|बड़े[-\s]बुज़?ुर्ग|बड़ों)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-34,जान / जिगर का टुकड़ा / लख़्त-ए-जिगर,jaan; jigar ka tukda; lakht-e-jigar,(my life; piece of my liver),idiom,,,"this person is like a part of me (like a part of my body[m])
+because of this, when something happens to this person it happens to me
+now this part is not here",KIN; BOND; NOT_HERE,F,L,NA,literary,child-as-body-part,Y,N,none,none,Typical of child loss.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:जिगर\s+का\s+टुकड़ा|लख़?्त-ए-जिगर|मेरी\s+जान)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-35,अनाथ / बेसहारा,anath; besahara,orphaned / without support,adj.,,,"before, this person did things because of which nothing bad could happen to me
+now this person is not here; now no one does this for me
+because of this bad things can happen to me now",NOT_HERE; BOND; KIN,F,L,NA,colloquial,left-unprotected,N,N,P-EN-35,partial,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:अनाथ|बेसहारा|निराश्रित)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-36,उनकी सीख / उनकी बातें,unki seekh; unki baatein; unki baaton ko yaad,his teachings / her words,noun phrase,,,"before, this person said many things to me
+I think about these things now; I do some things because of them
+because of this it is like this person is with me in some way",THINK_OF; DO_BECAUSE; BOND,F,Rs,NA,colloquial,continuing-bond-as-guidance,N,N,P-EN-36,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:उनकी|उसकी|आपकी|माँ\s+की|पापा\s+की)\s+(?:सीख|बात(?:ें|ों)?|शिक्षा|सिखाई))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-37,याद में / स्मृति में / नाम पर,yaad mein; smriti mein; naam par,in memory of,construction,,,"I do this now because of this person
+I do it because I want people to think about this person when they see it
+it is like this person is here in some way because of it",DO_BECAUSE; THINK_OF; HONOUR,I,Rs,NA,colloquial,memorial-act,N,N,P-EN-37,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:[\u0900-\u097F]*(?:की|के)\s+(?:याद|स्मृति|नाम)\s+(?:में|पर))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-38,अमर / अमर रहें / हमेशा ज़िंदा,amar; amar rahen; hamesha zinda rahenge,immortal / lives on,adj. / formula,,,"this person died
+I say: ""this person did not die"", because I think like this: ""people will think about this person for a long time; what this person did is here""
+people say these words when someone has died",HONOUR; THINK_OF; RITUAL_WORDS; AVOID_DIE,C,Rs,Of,ritual,immortality-through-memory,Y,N,P-EN-38,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:अमर(?:\s+रह[ऀ-ॿ]*)?|हमेशा\s+(?:ज़?िंदा|जिंदा|जीवित)\s+रह[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-39,प्रेरणा / आदर्श,prerna; aadarsh,inspiration / ideal,noun,,,"this person did many very good things
+I want to do things like this person did; I do some things because of this
+I want people to know that this person did these things",HONOUR; DO_BECAUSE,I,Rs,NA,literary,deceased-as-model,N,N,P-EN-39,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:प्रेरणा(?:स्रोत)?|आदर्श)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-40,वक़्त सब भर देता है / समय सब ठीक कर देता है,waqt sab bhar deta hai; samay sab theek kar deta hai,time heals,construction,,,"people say to me: ""after a long time you will not feel like this""
+I do not say that this is true for me now
+I feel something bad now",OTHERS_SAY; AFTER_GOOD; LONG_TIME,I,Rs,Of,colloquial,time-heals-script,Y,N,P-EN-40,full,"In the corpus this is almost always reported speech (OTHERS_SAY), unlike English healing which is the self's process.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:वक़?्त|वक्त|समय)\s+(?:सब|हर\s+घाव|सब\s+कुछ)\s+(?:भर|ठीक\s+कर)[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-41,ज़िंदगी / जीवन / जीना (चलता रहता है),zindagi chalti rehti hai; jeevan chalta rehta hai; jeena padta hai,life goes on,construction,,,"after this, things happen like before for other people
+I have to do things like before; I do them because I have to
+I do not want this now; after some time it can be otherwise",AFTER_GOOD; DO_BECAUSE,I,Rs,Of,colloquial,life-goes-on,Y,N,P-EN-41,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:ज़?िंदगी|जिंदगी|जीवन)\s+(?:चलती|चलता|तो\s+चलती)\s+(?:रहती|रहता|है)[ऀ-ॿ]*|जीना\s+(?:पड़ता|तो\s+पड़ेगा|है))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-42,भरोसा / विश्वास (कि सब ठीक होगा),bharosa; vishwas,trust / faith,noun,,,"I think like this: ""something good can happen after this because someone above all people (God[m]) wants it""
+because of this I do not feel something very bad all the time",ABOVE; AFTER_GOOD,I,Rs,NA,colloquial,faith-as-consolation,N,N,P-EN-42,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:भरोसा|विश्वास|आस्था)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-43,बुरी ख़बर / मनहूस ख़बर,buri khabar; manhoos khabar,the bad news,noun phrase,,,"someone said something to me: ""this person died""
+when I heard it something very bad happened to me at that moment; I felt something very bad
+I did not want to hear it",HAPPEN_TO; FEEL_BAD,I,L,NA,colloquial,announcement-move,N,N,P-EN-43,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:बुरी|मनहूस)\s+ख़?बर|ख़?बर\s+(?:मिली|आई|आयी))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-44,आख़िरी बार / अंतिम बार / आख़िरी मुलाक़ात,aakhri baar; antim baar; aakhri mulaqat,the last time,construction,,,"I saw this person at that time; after that I did not see this person again
+I did not know at that time that it was like this
+I think about it many times now",THINK_OF; NOT_HERE,I,L,NA,colloquial,last-meeting-episode,N,N,P-EN-44,full,"DUTY_UNDONE dropped (decision 2026-10-10, leads): no explication line states it.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:आख़?िरी|आखिरी|अंतिम)\s+(?:बार|मुलाक़?ात|मुलाकात|दर्शन|पल))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-45,अस्पताल / आईसीयू / वेंटिलेटर,aspataal; ICU; ventilator,hospital / ICU,noun,,,"before this person died, this person was in a place where people do things so that people do not die
+I was there (I was not there)
+I think about it many times",THINK_OF; BODY,I,L,NA,colloquial,circumstances-move,N,N,P-EN-45,full,Circumstances move; carries BODY only as the deceased's body.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:अस्पताल|हॉस्पिटल|आईसीयू|आई\.सी\.यू\.|वेंटिलेटर)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-46,चाय बनाना / उनका काम करना (routine takeover),unka kaam; wo jo karte the; chai banana,doing what they used to do,construction,,,"before, this person (someone of my family[m]) did some things every day
+now I do these things, because this person is not here and because of this person
+when I do them I think about this person",DO_BECAUSE; THINK_OF; NOT_HERE; KIN,F,Rs,NA,colloquial,restoration-by-duty-takeover,N,N,P-EN-46,partial,v0.1 §5: Hindi restoration is doing what the dead did. Pattern is weak; rely on the classifier.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:जैसे|जो)\s+(?:वे|वो|माँ|पापा|पिताजी)\s+(?:करत[ेी]\s+थ[ेीं]+|बनात[ेी]\s+थ[ेीं]+))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-47,बोझ / भार,bojh; bhaar; man par bojh,burden / weight,noun,,,"something is on me now like something heavy
+because of this I cannot do things like before; I feel something bad all the time
+it happened to me; I did not want it",FEEL_BAD; HAPPEN_TO; BODY,I,L,NA,colloquial,grief-as-burden,N,N,P-EN-47,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:बोझ|भार(?:ी)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-48,आँखें भर आना / गला भर आना,aankhen bhar aayi; gala bhar aaya,eyes welled up / choked up,idiom (dative),,,"when I think about this person, something happens in my body: there is water[m] in my eyes[m]; I cannot say words
+I do not do this; it happens to me",BODY; HAPPEN_TO; THINK_OF,I,L,NA,colloquial,grief-as-weeping,Y,Y,P-EN-48,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:आ[ँं]ख(?:ें|ों)|गला)\s+भर\s+(?:आ|आई|आया|आयी|आती|आता)[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-49,नींद नहीं आती / खाना नहीं खाया,neend nahi aati; khana nahi khaya,can't sleep / can't eat,construction (dative),,,"because of this something happens in my body: I cannot sleep[m]; I do not want to eat[m]
+it happens to me; I do not do it",BODY; HAPPEN_TO,I,L,NA,colloquial,somatic-grief,N,Y,P-EN-49,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:नींद\s+नहीं\s+(?:आती|आई|आयी|आता)|खाना\s+नहीं\s+(?:खाया|खाती|खाता|गया))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-50,सपने में आना / सपने में दिखना,sapne mein aana; sapne mein dikhe,came in a dream,construction,,,"this person is not here; I saw this person when I was sleeping[m]
+it happened to me; I did not do it
+when it happened I felt something good and something bad",THINK_OF; HAPPEN_TO; NOT_HERE,I,L,NA,colloquial,dream-visit,N,Y,P-EN-50,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:सपन[ेों]+\s+में\s+(?:आ|दिख|मिल)[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-51,साथ छूटना / साथ छूट गया,saath chhoot gaya; saath chhootna,companionship ended,idiom,,,"before, this person was with me for a long time
+now this is not so; it cannot be so again
+I feel something very bad because of this",NOT_HERE; WANT_BE_WITH; LONG_TIME,I,L,NA,colloquial,companionship-lost,Y,N,none,none,Typical of spouse loss.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:साथ\s+छूट[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-52,गुज़र गए / गुज़र जाना,guzar gaye; gujar gaye; guzar gayi,passed away,construction (motion euphemism),,,"this person moved on from here, like someone moves from one place to another place
+this person will not be here again
+I don't say the word ""die""",NOT_HERE; AVOID_DIE,I,L,NA,colloquial,indirect-death-reference (motion),Y,N,L-EN-12,full,Urdu-register twin of चले गए; the closest structural match to 'passed away'.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:गुज़?र\s+ग(?:ए|ये|यी|ईं|ई|या))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-53,चल बसे / चल बसीं,chal base; chal basi,went and settled (elsewhere),construction (motion euphemism),,,"this person moved from here to some other place; this person lives there now
+this person will not be here again
+I don't say the word ""die""",NOT_HERE; AVOID_DIE,I,L,NA,literary,indirect-death-reference (relocation),Y,N,none,none,Adds a continuing-existence line absent from चले गए.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:चल\s+बस(?:े|ीं|ी|ा))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-54,दुनिया छोड़ गए / संसार से चले गए,duniya chhod gaye; sansar se chale gaye; is duniya mein nahi,left this world,construction (motion euphemism),,,"this person moved from this place (the place where all people live) to some other place
+this person is not in this place now
+I don't say the word ""die""",NOT_HERE; AVOID_DIE,I,L,NA,colloquial,indirect-death-reference (world-departure),Y,N,P-EN-54,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:दुनिया|संसार|जहान)\s+(?:छोड़?|से\s+चल[ेी]|में\s+नहीं)[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-55,हमारे बीच नहीं रहे,hamare beech nahi rahe; hamare beech nahin,no longer among us,construction,,,"this person was with me and with many people before
+this person is not with these people now; this person is not living now
+I don't say the word ""die""",NOT_HERE; AVOID_DIE; WITH_OTHERS,C,L,NA,colloquial,indirect-death-reference (communal frame),Y,N,P-EN-55,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:हमारे\s+बीच\s+नहीं\s+रह(?:े|ीं|ी|ा))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-56,साँस थम गई / प्राण निकल गए / दम तोड़ दिया,saans tham gayi; praan nikal gaye; dam tod diya,breathed his last,idiom,,,"at one moment something happened in this person's body[m]: after this, this person was not living
+I say what happened in the body[m], not the word ""die""",NOT_HERE; AVOID_DIE; BODY,I,L,NA,literary,indirect-death-reference (bodily event),Y,N,P-EN-56,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:सा[ँं]स(?:ें)?\s+(?:थम|रुक|टूट)[ऀ-ॿ]*|प्राण\s+(?:निकल|त्याग|छूट)[ऀ-ॿ]*|दम\s+तोड़?[ऀ-ॿ]*|आ[ँं]खें\s+मूंद\s+ल[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-57,देह त्याग / शरीर छोड़ना / पंचतत्व में विलीन,deh tyaag; sharir chhod diya; panchtatva mein vileen,left the body,construction (ritual euphemism),,,"the part of this person that does not die moved out of this person's body[m]
+the body[m] is not this person; after this the body[m] is like other things, not like someone
+I don't say the word ""die""; people say these words at this time",NOT_HERE; AVOID_DIE; RITUAL_WORDS,R,L,NA,ritual,body-as-vessel,Y,N,none,none,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:देह\s*त्याग|शरीर\s+छोड़?[ऀ-ॿ]*|पंच\s*तत्व\s+में\s+विलीन|ब्रह्मलीन)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-58,उनके जाने के बाद,unke jaane ke baad; aapke jaane ke baad,after he left (after his death),construction,,,"this person moved from here at that time
+after that time things were not like before
+I don't say the word ""die""",NOT_HERE; AVOID_DIE,I,L,NA,colloquial,indirect-death-reference (time anchor),Y,N,P-EN-58,full,The commonest time anchor in the Hindi blogs.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:उनके|उसके|आपके|माँ\s+के|पापा\s+के|पिताजी\s+के)\s+जाने\s+के\s+बाद)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-59,साथ नहीं हैं / अब साथ नहीं,saath nahi hain; ab saath nahi,not with us anymore,construction,,,"this person was with me before; this person is not with me now
+I don't say the word ""die""",NOT_HERE; AVOID_DIE,I,L,NA,colloquial,indirect-death-reference (co-presence),Y,N,P-EN-55,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:अब\s+)?(?:हमारे\s+|मेरे\s+)?साथ\s+नहीं\s+(?:हैं|रहे|है))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+P-HI-60,मर गए / मृत्यु हो गई (direct),mar gaye; mrityu ho gayi; maut ho gayi,died (direct),verb / noun,,,"this person died
+I say it with the word ""die""",NOT_HERE,I,L,NA,colloquial,direct-death-reference,N,N,P-EN-60,full,Control entry for indirect_death_reference: matches direct forms so the matcher can compute the indirect share. मरना is almost absent from the seed (v0.1 §3.7).,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:मर\s+ग(?:ए|ये|यी|ईं|ई|या)|मृत्यु\s+हो\s+ग[ऀ-ॿ]*|मौत\s+हो\s+ग[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-C1,मुझे X हुआ / लगता है / महसूस होता है (dative experiencer),mujhe dukh hua; mujhe lagta hai; mujhe mehsoos hota hai; mujhe yaad aati hai,"(to me, X happened)",construction,,,"something happens to me
+because of this I feel something
+I did not do this; it was not because I wanted it",HAPPEN_TO; FEEL_BAD,I,NA,NA,colloquial,dative-experiencer,N,Y,none,none,"v0.1 §4 (13 + याद आती है 17). Verbatim; H2 construction. Coding rule: mark whether a nominative alternative existed (मैं दुखी हूँ, मैं रोया) and whether the writer used it elsewhere. FEEL_BAD is carried only when the noun is negative (दुख, तकलीफ़, ग़म, बुरा); with याद the vector is THINK_OF + HAPPEN_TO.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:मुझे|मुझको|हमें|हमको|उसे|उन्हें|उनको|[ऀ-ॿ]+\s+को)\s+(?:बहुत\s+|बड़ा\s+|गहरा\s+)?(?:दुख|दुःख|तकलीफ़?|तकलीफ|बुरा|ग़?म|पीड़?ा|सदमा|धक्का|अफ़?सोस|अफसोस)\s+(?:हो|लग|है|था|थी|हुआ|हुई|पहुँच)[ऀ-ॿ]*)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),hi,proposed
+L-HI-C2,उन्होंने / उनकी / नहीं रहे (honorific plural for the deceased),unhone; unki; unka; unhe; ve; nahi rahe,(plural agreement for a singular deceased),construction,,,"I say things about this person as about many people, because this person is above me
+I say it like this because I have to say it like this about someone above me; people know this",KIN,F,NA,NA,colloquial,respect (honorific number),N,context,none,none,v0.1 §4 (≈170). Verbatim. Grammar-forced for a parent/elder (Y); a choice for a younger deceased (context). Sub-flag respect = Y; counted separately from chosen relational language. Pattern matches the pronoun forms; whether the referent is singular needs the parse (P7) or a human.,"(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:वे|वो|उन्होंने|उनका|उनकी|उनके|उन्हें|उनको|उनसे|आप(?:ने|का|की|के|को)?))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?=[^।\n]{0,80}[\u0900-\u097F]+(?:थे|थीं|ए|ये|ईं|या|ते|ती|हैं))",hi,proposed
+L-HI-C3,"माँ, ... / पिताजी, ... (vocative address to the dead)","maa, ...; papa, ...; pitaji, sadar pranam",(address to the deceased),construction,,,"I say something to this person (someone of my family[m]) now, as if this person can hear it
+I know this person cannot hear it
+I say it because I want to say it to this person, not to other people",SPEAK_TO_DEAD; KIN,F,L,NA,colloquial,letter-to-the-dead,N,N,P-EN-C3,full,"v0.1 §4. Explication written here. Structures whole Hindi texts (letters, anniversary entries). Pattern: sentence-initial kin vocative followed by comma or 2nd-person form.","(?:^|[।!?\n]\s*)(?:माँ|मम्मी|माँ\s+जी|पापा|पिताजी|बाबूजी|दादी|दादा|नानी|नाना|भैया|दीदी|बेटा|बेटी)(?:\s*[,!]|\s+(?:आप|तुम|तू)(?![\u0900-\u097F]))",hi,proposed
+L-EN-01,,,sadness / sad,noun / adj.,,,"someone feels something bad
+because this someone thinks like this:
+  ""something bad happened; I don't want things like this to happen; I can't do anything""
+when this someone thinks like this, this someone feels something bad because of it
+like people can feel when they think like this",FEEL_BAD; HAPPEN_TO,I,L,NA,colloquial,grief-as-sadness,N,N,L-HI-01,partial,"Wierzbicka (1999) sad, cited in v0.1 §3.1. Lacks दुख's body line; no 'someone died' line.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:sad(?:ness|der|dest|ly)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-02,,,pain / painful / hurt,noun / adj. / verb,,,"someone feels something bad
+because this someone thinks like this: ""something bad is happening to me""
+when this someone thinks like this, this someone feels something bad because of it; this someone feels it in the body, like when something bad happens to the body
+like people can feel when they think like this",FEEL_BAD; HAPPEN_TO; BODY,I,L,NA,colloquial,grief-as-bodily-pain,N,N,L-HI-05,full,v0.1 §3.4 (seed 22). Does the work of the whole Hindi pain ladder in Indian English.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:pain(?:ful|s)?|hurt(?:s|ing)?|ache(?:s|d)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-03,,,grief / grieve / grieving,noun / verb,,,"someone feels something very bad
+because this someone thinks like this:
+  ""someone died; this someone was someone very good for me; I cannot be with this someone anymore; I don't want this""
+when this someone thinks like this, this someone feels something very bad for a long time because of it
+like people can feel when they think like this",FEEL_BAD; NOT_HERE; BOND; LONG_TIME,I,L,NA,colloquial,grief-named,N,N,L-HI-01,partial,"After Wierzbicka (1999) grief, cited in v0.1 §3.1 (seed 69). Contains 'someone died', which दुख does not. Nearest Hindi on the death line is शोक, but शोक is collective and public.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:griev(?:e|es|ed|ing)|grief(?:-stricken)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-04,,,mourning / mourn,noun / verb,,,"someone died
+because of this, people who were with this person do some things for some time
+people know this
+it is good if people do these things",WITH_OTHERS; DO_BECAUSE,C,L,NA,literary,public-mourning-period,N,N,L-HI-02,partial,"v0.1 §3.2: mourning has the period and the acts but has lost most of the inner-state meaning; hence no FEEL_BAD line here, unlike शोक.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:mourn(?:s|ed|ing|ers?|ful)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-05,,,sorrow,noun,,,"someone feels something bad
+because this someone thinks like this:
+  ""something bad happened (or: someone is not here now); I think about it many times; I can't not think about it""
+when this someone thinks like this, this someone feels something bad inside for a long time because of it
+like people can feel when they think like this",FEEL_BAD; NOT_HERE; THINK_OF; LONG_TIME,I,L,NA,literary,sorrow,N,N,L-HI-04,full,v0.1 §3.3: closest to ग़म in tone; both literary. Same lines.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:sorrow(?:s|ful)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-06,,,anguish / agony,noun,,,"someone feels something very bad
+because this someone thinks like this: ""something very bad happened; I cannot not think about it""
+when this someone thinks like this, this someone feels something very bad inside because of it, not in the body
+like people can feel when they think like this",FEEL_BAD; THINK_OF,I,L,NA,literary,inner-anguish,N,N,L-HI-06,full,v0.1 §3.4: almost never appears in the Indian English corpus.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:anguish(?:ed)?|agony)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-07,,,miss / missed / missing (someone),verb,,,"I think about this person many times
+I want this person to be here; this person is not here; I know this cannot be
+because of this I feel something bad",THINK_OF; WANT_BE_WITH; NOT_HERE; FEEL_BAD,I,L,NA,colloquial,miss,N,N,L-HI-07,partial,"v0.1 §3.5 (seed 9): asserts a want; agentive subject. याद आना asserts memory arriving, dative, no want line. Pavlenko: no exact equivalent in many languages.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:miss(?:es|ed|ing)?\s+(?:him|her|you|them|my|our|dad|mom|mum|mummy|papa|amma|appa|nana|nani|dada|dadi|ma|maa|the\s+way))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-08,,,remember / remembering,verb,,,"I think about this person now because I want to think about this person
+I do this; it does not happen to me
+I think about things that happened before, when this person was here",THINK_OF; NOT_HERE; DO_BECAUSE,I,L,NA,colloquial,memory-as-act,N,N,L-HI-09,full,v0.1 §3.5 (seed 42): agentive; Hindi याद करना is the rarer agentive form.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:remember(?:s|ed|ing)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-09,,,memory / memories,noun,,,"I think about this person now
+I think about things that happened before, when this person was here
+when I think about these things, I feel something good and something bad at the same time",THINK_OF; NOT_HERE,I,L,NA,colloquial,memory-as-possession,N,N,L-HI-08,full,v0.1 §3.5 (seed 24).,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:memor(?:y|ies))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-10,,,absence / absent,noun / adj.,,,"before, this person was here; now this person is not here
+because of this, something is not here now that was here before
+I feel this; I feel something bad because of this",NOT_HERE; FEEL_BAD,I,L,NA,colloquial,grief-as-lack,N,N,L-HI-10,full,v0.1 §3.6 (seed 5).,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:absen(?:ce|t))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-11,,,void / emptiness / empty / hole,noun / adj.,,,"before, this person was here; now this person is not here
+because of this it is like this: inside me (in this place) there is nothing where there was something before
+I feel something bad because of this",NOT_HERE; FEEL_BAD,I,L,NA,colloquial,self-as-empty-container,N,N,L-HI-11,full,"v0.1 §3.6 (void 9, empty/emptiness 10). Container metaphor.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:void|empt(?:y|iness)|hollow|a\s+hole\s+in)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-12,,,passed away / passed / passed on,verb phrase,,,"this person moved on from here, like someone moves from one place to another place
+this person will not be here again
+I don't say the word ""die""; I don't say that this person did something",NOT_HERE; AVOID_DIE,I,L,NA,colloquial,"indirect-death-reference (motion, agent removed)",Y,N,P-HI-52,full,"v0.1 §3.7–3.8 (passed 33): removes the agent, unlike left/gone. Bare 'passed' over-matches (passed the exam); review.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:pass(?:ed|es|ing)\s+(?:away|on)|passed(?!\s+(?:the|an?|his|her|my|out|by|through|over)))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-13,,,is no more,verb phrase,,,"this person is not living now
+I don't say the word ""die"" about this person",NOT_HERE; AVOID_DIE,I,L,NA,colloquial,indirect-death-reference (negated existence),Y,N,L-HI-12,partial,"v0.1 §3.7 (seed 6). Indian English calque of नहीं रहे; lacks the honorific line, which English cannot carry.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:is|are|was|were)\s+no\s+more)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-14,,,gone / is gone,adj. / verb phrase,,,"this person moved from here to some other place
+this person will not be here again
+I don't say where this person is now; I don't say the word ""die""",NOT_HERE; AVOID_DIE,I,L,NA,colloquial,indirect-death-reference (motion result),Y,N,L-HI-13,full,v0.1 §3.8 (gone 22).,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:is|was|are|were|being|[A-Za-z]+['’]s)\s+gone|gone\s+(?:too\s+soon|forever|now))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-15,,,left us / left me / left this world,verb phrase,,,"this person was with me and with some other people (my people) before
+this person moved from here to some other place; this person will not be here again
+now I am not with this person; these people are not with this person
+I don't say the word ""die""",NOT_HERE; AVOID_DIE; KIN; WITH_OTHERS,F,L,NA,colloquial,indirect-death-reference (motion; left-behind object),Y,N,L-HI-14,full,v0.1 §3.8 (left 42): deceased keeps agency; 'us' supplies the relational object.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:left\s+(?:us|me|this\s+world|the\s+world|our\s+family))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-16,,,passing / demise / death (of),noun (event),,,"something happened to this person; after this, this person is not living
+I say what happened with a word for the thing that happened, not with the word ""die""
+people say this word when they say it to many people",NOT_HERE; AVOID_DIE,I,L,NA,literary,indirect-death-reference (event noun),N,N,L-HI-15,full,v0.1 §4 event nouns. 'death' is included as the direct noun and flagged names_direct in constructions.yaml.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:his|her|their|the|my|dad['’]?s|mom['’]?s|father['’]?s|mother['’]?s)\s+(?:passing|demise|death))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-17,,,lose / lost (someone),verb,,,"before, this person was mine (was with me); now this person is not with me
+I did not want this; I could not do anything
+I feel something very bad because of this",NOT_HERE; HAPPEN_TO; FEEL_BAD,I,L,NA,colloquial,grief-as-loss,N,N,L-HI-17,full,"v0.1 §3.9 (lose/lost/loss 66). Individual subject, relational object: the codebook's 'I lost my father' case.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:los(?:e|es|t|ing)\s+(?:my|our|his|her|their|a|the)\s+(?:mother|father|mom|mum|dad|papa|amma|appa|nana|nani|dada|dadi|brother|sister|husband|wife|son|daughter|child|baby|grand\w+|best\s+friend|friend|parent))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-18,,,loss / the loss,noun,,,"something happened to me: someone who was mine is not with me now
+I say all of it with one word, like a thing that happened to me
+I feel something very bad because of this",NOT_HERE; HAPPEN_TO; FEEL_BAD,I,L,NA,colloquial,loss-nominalised,N,N,L-HI-17,partial,"v0.1 §3.9 (loss 34): English names the whole experience as 'the loss', a nominalisation Hindi does not reach for.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:the|my|our|his|her|their|this|a)\s+loss|loss\s+of)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-19,,,departed / the departed,adj. / noun,,,"this person moved from here to some other place; this person will not be here again
+I don't say the word ""die""; people say this word when they say something to many people",NOT_HERE; AVOID_DIE; RITUAL_WORDS,R,L,NA,ritual,indirect-death-reference (formal),Y,N,L-HI-15,partial,v0.1 §3.8 list. Formal-register motion word; Indian English 'departed soul' is formulaic.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:departed(?:\s+soul)?|dearly\s+departed)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-20,,,took care of / looked after / cared for,verb phrase,,,"for some time I did things for this person because this person could not do them
+I did this because I wanted to
+now I cannot do this",DUTY_DONE; BOND,I,Rs,NA,colloquial,caregiving,N,N,L-HI-19,none,v0.1 §3.10: nearest to सेवा but lacks 'this person is above me' and 'it is good; people know it is good'. Recorded as none per v0.1's overlap map; the lacking lines are the finding.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:took|take|taking|taken)\s+care\s+of|look(?:ed|ing)?\s+after|car(?:ed|ing)\s+for)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-21,,,love / loved,noun / verb,,,"someone feels something very good towards this person
+because of this this someone wants good things to happen to this person; this someone wants to be with this person
+this someone says this",BOND,I,NA,NA,colloquial,love-said,N,N,L-HI-24,full,v0.1 §3.11 (love 72 + loved 29): one word where Hindi has a system; 'this someone says this' is the line that separates love-said from सेवा (love-done).,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:lov(?:e|ed|es|ing))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-22,,,blessing / blessed,noun / adj.,,,"something very good happened to me: this person was with me
+I think: someone above all people (God[m]) wanted this
+I feel something good when I think about this",BOND; ABOVE,I,Rs,NA,colloquial,blessed-as-fortunate,N,N,L-HI-25,partial,"v0.1 §3.12 (blessing 2, blessed 5): mostly 'fortunate'; lacks आशीर्वाद's ongoing transfer from the dead (BLESSING).",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:bless(?:ed|ing|ings)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-23,,,rest in peace / RIP / may his soul rest in peace,formula,,,"this person does not have to do anything now; nothing is happening to this person now
+I want it to be like this for this person
+I say this to God[m] (someone above all people); people say these words when someone has died",BLESSING; ABOVE; RITUAL_WORDS,R,NA,Of,ritual,rest-in-peace,Y,N,L-HI-26,partial,v0.1 §3.13: asks for rest; the Hindi formula asks for shanti for the atma. Both stripped in the H1 ritual run.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:r\.?i\.?p\.?|rest\s+in\s+(?:peace|power)|may\s+(?:his|her|their|your)\s+soul\s+rest)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-24,,,regret,noun / verb,,,"someone feels something bad
+because this someone thinks like this: ""I did something (I did not do something) before; because of this something bad happened; I could have done something else""
+when this someone thinks like this, this someone feels something bad because of it
+like people can feel when they think like this",FEEL_BAD; DUTY_UNDONE,I,L,NA,colloquial,regret-as-fault,N,N,L-HI-27; P-HI-29,partial; full,v0.1 §3.14 (seed 7): about something I did or did not do; अधूरा is about a plan that cannot be completed.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:regret(?:s|ted|ting|ful)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-25,,,I wish I had / I should have / could have,construction,,,"I did not do something before; I could have done it
+now I cannot do it, because this person is not here
+I feel something very bad because of this",DUTY_UNDONE; NOT_HERE; FEEL_BAD,I,L,NA,colloquial,counterfactual-fault,N,N,P-HI-29; L-HI-28,full; partial,"v0.1 §3.14. Fault counterfactual; the Hindi twin is अफ़सोस/पछतावा, not काश (which is a wish without fault).",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:i|we)\s+(?:wish|wished)\s+(?:i|we)\s+had|(?:i|we)\s+should\s+have|(?:i|we)\s+could\s+have)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-26,,,broken / shattered / heartbroken,adj.,,,"something inside me is now like something broken[m]
+it was not like this before this happened
+I cannot do anything so that it is like before",BROKEN; HAPPEN_TO,I,L,NA,colloquial,self-as-broken-object,N,N,L-HI-29,full,v0.1 §3.15 (broken 5).,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:broken|shattered|heartbroken|heart\s+(?:is\s+)?broke(?:n)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-27,,,fell apart / my world came crashing down,idiom,,,"something inside me is now like many small parts in many places
+before, it was one thing; now it is not
+I cannot do anything so that it is one thing again",BROKEN,I,L,NA,colloquial,self-as-scattered,Y,N,L-HI-30,full,v0.1 §3.15.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:f(?:ell|all|alling)\s+apart|crash(?:ed|ing)\s+down|world\s+(?:ended|collapsed))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-28,,,rock / anchor / bedrock / pillar (person as),noun,,,"when something bad happens, this person does things because of which nothing very bad happens to me
+now this person is not here
+now when something bad happens nothing like this can happen",BOND; NOT_HERE,F,L,NA,colloquial,deceased-as-support,Y,N,L-HI-31,partial,"v0.1 §3.16 (bedrock 1, strength 9): overlapping metaphors; Hindi adds the shade image (L-HI-32).",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:my|our|the)\s+(?:rock|anchor|bedrock|pillar|backbone))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-29,,,shoulder to cry on / lean on,idiom,,,"when I feel something bad, I can be with this person; because of this I feel something less bad
+now this person is not here; I cannot do this now",BOND; NOT_HERE,F,L,NA,colloquial,shoulder-to-lean-on,Y,N,L-HI-33,partial,v0.1 §3.16. Lacks the funeral-carrying sense of कंधा देना.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:shoulder\s+to\s+cry\s+on|lean(?:ed)?\s+on|someone\s+to\s+lean\s+on)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-30,,,guilt / guilty,noun / adj.,,,"someone feels something bad
+because this someone thinks like this: ""I did something bad (I did not do something I had to do); because of this something bad happened to this person; it happened because of me""
+when this someone thinks like this, this someone feels something bad because of it
+like people can feel when they think like this",FEEL_BAD; DUTY_UNDONE,I,L,NA,colloquial,guilt-as-inner-fault,N,N,none,none,"v0.1 §3.14, §5 (seed 9): no Hindi counterpart in the seed; 'it happened because of me' is the line Hindi lacks (अफ़सोस has fault but not causation of the death). Mesquita MINE emotion.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:guilt(?:y)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-31,,,heaven / in a better place / up there,noun / idiom,,,"this person is in a place above now
+good things happen to people in this place; nothing bad happens to them there
+this person will not be here again; I don't say the word ""die""",NOT_HERE; ABOVE; AVOID_DIE,I,L,NA,colloquial,divine-place,Y,N,L-HI-16,partial,v0.1 §3.13 (heaven 2). Lacks the motion line of स्वर्गवास when used as a state.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:heaven|(?:a|the)\s+better\s+place|up\s+there|the\s+other\s+side)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-32,,,soul,noun,,,"there is a part of this person that does not die
+this part is somewhere now
+I say this when I say something about this person after this person died",,I,NA,NA,ritual,soul,N,N,L-HI-26,partial,v0.1 §3.13 (seed 3).,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:souls?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-33,,,closure,noun,,,"for a long time I felt something very bad because of this
+now I don't feel it like before; I think: this is finished, nothing more can happen because of it
+I wanted this to happen; I did some things because I wanted it",LONG_TIME; AFTER_GOOD; DO_BECAUSE,I,Rs,NA,therapeutic,therapeutic-recovery,N,N,none,none,v0.1 §3.17 (seed 1). Lines 1–2 verbatim ('this is finished' kept; 'nothing more can happen because of it' added as its prime paraphrase); line 3 added (agentive). No Hindi counterpart in ordinary speech; loan in Hinglish.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:closure)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-34,,,healing / heal,noun / verb,,,"something bad happened to me
+after some time it is as if this bad thing is not there any more; this happens slowly
+it is like when something bad happens to someone's body and after some time it is not there",HAPPEN_TO; AFTER_GOOD; LONG_TIME; BODY,I,Rs,NA,therapeutic,therapeutic-recovery (wound),N,N,P-HI-40,partial,"v0.1 §3.17 (seed 2). Lines 1–2 verbatim; line 3 added (the wound image). Hindi has the proverb (P-HI-40) as OTHERS_SAY, not as the self's process.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:heal(?:ing|ed|s)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-35,,,journey (grief journey),noun,,,"I feel something bad because something bad happened to me
+I think about it like this: it is like when someone moves from one place to another place for a long time; at some times it is like this, at other times it is not like this
+after a long time I can be somewhere else; I will not feel like this",FEEL_BAD; LONG_TIME; AFTER_GOOD,I,Rs,NA,therapeutic,therapeutic-recovery (path),N,N,none,none,"v0.1 §3.17, §5 (seed 6): the griever's journey; Hindi's journey is the dead person's (चले गए).",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:grief|grieving|healing|my|this)\s+journey|journey\s+(?:of|through)\s+grief)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-36,,,process (grief is a process),noun,,,"something is happening to me because something bad happened to me
+it happens for some time; many things happen, one after another
+I cannot do it in a short time; I know this",HAPPEN_TO; LONG_TIME,I,Rs,NA,therapeutic,therapeutic-recovery (stages),N,N,none,none,v0.1 §3.17 (seed 6).,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:grief|grieving|healing)\s+(?:is\s+a\s+)?process|process\s+(?:of\s+)?(?:grief|grieving)|processing\s+(?:the\s+|my\s+)?(?:grief|loss)|the\s+process)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-37,,,cope / coping,verb / noun,,,"something bad happened to me; I feel something bad because of it
+I do some things because of this so that I can do other things like before
+I can do this; some people cannot",FEEL_BAD; DO_BECAUSE; AFTER_GOOD,I,Rs,NA,therapeutic,therapeutic-recovery (agentive),N,N,P-HI-12,partial,v0.1 §3.17 (seed 7). Agentive; Hindi संभलना is nearest but adds 'because of my people'.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:cop(?:e|ed|es|ing)(?:\s+with)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-38,,,therapy / therapist / counselling,noun,,,"I feel something bad because of this for a long time
+I am with someone because of this; this someone knows many things about people who feel like this; this someone says things to me
+I do this because I think: after this I will not feel like this",FEEL_BAD; LONG_TIME; SUPPORT; AFTER_GOOD,I,Rs,Sk,therapeutic,therapeutic-recovery (professional),N,N,none,none,v0.1 §3.17 (seed 4). Support-seeking from a professional; no Hindi counterpart in the seed.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:therap(?:y|ist|ists)|counsel(?:l)?(?:ing|or|ors)|psychologist|psychiatrist)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-39,,,move on / moving forward / let go,verb phrase,,,"for some time I could not do things like before because of this
+now I do things like before; I do not think about it all the time
+I do this because I want to; people say it is good to do this",AFTER_GOOD; DO_BECAUSE; OTHERS_SAY,I,Rs,NA,therapeutic,therapeutic-recovery (forward motion),Y,N,P-HI-41,partial,v0.1 §5: English restores by working on the self; Hindi by taking over the dead's duties (P-HI-46).,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:mov(?:e|ed|ing)\s+(?:on|forward)|let(?:ting)?\s+(?:go|it\s+go)|get(?:ting)?\s+over\s+it)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-40,,,hero / superhero / my hero,noun,,,"this person did many very good things; not many people can do things like this
+I think about this person like this; I want people to know this
+this person did these things for me (for my people)",HONOUR; BOND; KIN,F,NA,NA,colloquial,heroic-idealisation,N,N,none,none,"v0.1 §3.18 (seed 4, 9): heroic nouns; Hindi idealises through acts and epithets of place.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:super)?hero(?:es)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-41,,,legacy / live on,noun / verb phrase,,,"this person died
+what this person did is here now; because of it people will think about this person for a long time
+I say: it is like this person did not die; I want people to know this",HONOUR; THINK_OF; AVOID_DIE,C,Rs,NA,colloquial,immortality-through-works,N,N,P-HI-38,full,v0.1 §3.18 (legacy 1).,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:legac(?:y|ies)|liv(?:e|es)\s+on\s+(?:in|through))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-42,,,tribute / in tribute to,noun,,,"someone died
+I say these words because of this; when I say them I think: this person did many very good things; I want people to know this
+people say words like this when someone has died",HONOUR; RITUAL_WORDS,C,NA,Of,ritual,public-tribute,N,N,L-HI-03,partial,Counterpart of श्रद्धांजलि; lacks the fixed-formula status.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:tribute(?:s)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-43,,,north star / guiding light,idiom,,,"when I did not know what to do, I thought about what this person would say; because of this I knew what to do
+now this person is not here; I think about this person when I do not know what to do",BOND; THINK_OF; NOT_HERE; DO_BECAUSE,I,Rs,NA,colloquial,deceased-as-guide,Y,N,P-HI-36,partial,v0.1 §3.18.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:north\s+star|guiding\s+(?:light|star|force)|compass)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-44,,,responsibility / responsibilities,noun,,,"there are some things I have to do now
+if I do not do them, something bad happens; people know this
+I do these things because of this",DUTY_DONE; DO_BECAUSE,I,Rs,NA,colloquial,duty,N,N,L-HI-20,partial,Lacks ज़िम्मेदारी's 'for my people' line unless the object supplies it.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:responsibilit(?:y|ies)|dut(?:y|ies))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-45,,,sacrifice / sacrificed,noun / verb,,,"this person did not do some things this person wanted to do
+this person did this because of me (because of this person's people); this person wanted good things to happen to me
+I know this now; I think good things about this person because of it",BOND; KIN; HONOUR,F,NA,NA,colloquial,love-as-sacrifice,N,N,L-HI-21,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:sacrific(?:e|ed|es|ing))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+L-EN-46,,,peace / at peace / find peace,noun / idiom,,,"nothing bad is happening to this person now; this person does not feel anything bad now
+I want it to be like this for this person
+I feel something less bad when I think this",BLESSING; AFTER_GOOD,I,Rs,NA,colloquial,peace-for-the-dead,N,N,L-HI-26,partial,v0.1 §3.13 (peace 8).,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:at\s+peace|find(?:s|ing)?\s+peace|peace(?:ful)?(?:ly)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-01,,,cry / cried / crying,verb,,,"someone feels something very bad
+because of this this someone cries[m]; this someone cannot not do this
+other people can see this",FEEL_BAD; BODY,I,L,NA,colloquial,grief-as-weeping,N,N,P-HI-01,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:cr(?:y|ies|ied|ying)|wept|weep(?:ing)?|sob(?:bed|bing)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-02,,,tears,noun,,,"there is water[m] in someone's eyes[m] because this someone feels something very bad
+this someone does not do this; it happens to this someone",FEEL_BAD; BODY; HAPPEN_TO,I,L,NA,colloquial,grief-as-weeping,N,N,P-HI-02,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:tears?|teary)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-03,,,heartbreak / my heart broke / heart sank,idiom,,,"someone feels something very bad
+because this someone thinks like this: ""something very bad happened to me; I did not want this""
+when this someone thinks like this, this someone feels it like something in the body, like something inside the body[m] is now broken[m]
+like people can feel when they think like this",FEEL_BAD; HAPPEN_TO; BODY; BROKEN,I,L,NA,colloquial,heart-as-breakable,Y,N,P-HI-03,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:heartbreak(?:ing)?|heart\s+(?:sank|broke|shattered|dropped))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-04,,,heavy heart / heaviness,idiom,,,"someone feels something bad for some time
+because of this this someone does not want to do anything; this someone feels it like something heavy inside
+this someone does not say why",FEEL_BAD; LONG_TIME,I,L,NA,colloquial,heart-as-locus,Y,N,P-HI-04,partial,Lacks the impersonal/dative line of मन नहीं लगता.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:heavy\s+heart|heaviness|heavy-hearted)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-05,,,shock / shocked,noun / adj.,,,"something very bad happened to me at one moment
+I did not know before that it could happen; because of this for some time I could not think
+I feel something very bad because of this",HAPPEN_TO; FEEL_BAD,I,L,NA,colloquial,grief-as-blow,N,N,P-HI-05,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:shock(?:ed|ing)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-06,,,numb / numbness,adj. / noun,,,"something very bad happened
+after this, for some time I did not feel anything; I could not think anything; I could not do anything
+it was like this because it was too much",HAPPEN_TO,I,L,NA,colloquial,grief-as-numbness,N,N,P-HI-06,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:numb(?:ness)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-07,,,quiet / silence (of the house),noun / adj.,,,"before, this person was in this place; now this person is not in this place
+because of this, in this place (in my home[m]) there is no one; no one says anything; nothing can be heard like before
+I feel something bad because of this",NOT_HERE; FEEL_BAD,I,L,NA,colloquial,home-as-emptied,N,N,P-HI-07,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:the\s+)?(?:house|home|room|kitchen)\s+(?:is|was|feels|felt)\s+(?:so\s+)?(?:quiet|silent|empty|still)|silence)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-08,,,alone / lonely / loneliness,adj. / noun,,,"before, this person was with me; now this person is not with me
+now no one is with me like this person was with me
+I feel something bad because of this",NOT_HERE; FEEL_BAD; WANT_BE_WITH,I,L,NA,colloquial,grief-as-aloneness,N,N,P-HI-08,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:alone|lonel(?:y|iness))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-09,,,don't want to live / no point living,idiom,,,"someone feels something very bad for a long time
+because this someone thinks like this: ""this person is not here; I don't want to do anything now; I don't want anything now""",FEEL_BAD; NOT_HERE; LONG_TIME,I,L,NA,colloquial,loss-of-will,Y,N,P-HI-09,partial,Flag for review only; not a research category.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:don['’]t|didn['’]t|do\s+not)\s+(?:want|feel\s+like)\s+(?:to\s+)?liv(?:e|ing)|no\s+point\s+(?:in\s+)?living|see\s+the\s+point)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-10,,,bear it / endure / be patient,verb phrase,,,"something very bad happened; I feel something very bad
+I do not say it; I do not do anything because of it for some time
+it is good to be like this; people say it is good",FEEL_BAD; OTHERS_SAY; AFTER_GOOD,I,Rs,Of,colloquial,forbearance-script,N,N,P-HI-10,partial,Rare in Indian English grief prose; सब्र is the living script.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:bear\s+(?:it|this|the)|endur(?:e|ed|ing)|be\s+patient|patience)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-11,,,be strong / stay strong / strength,idiom / noun,,,"something very bad happened to me
+I can do things after this; I want to do things after this
+people say to me: ""you can do this""",AFTER_GOOD; OTHERS_SAY,I,Rs,Of,colloquial,be-strong-script,Y,N,P-HI-11,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:be|stay|staying|being|remain)\s+strong|strength|strong\s+for)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-12,,,hold it together / hold on / pull myself together,idiom,,,"for some time after this I could not do anything
+now I can do some things; I do this because I have to (because of my people)
+after some time it can be like before, not in all things",AFTER_GOOD; DO_BECAUSE; KIN,F,Rs,NA,colloquial,steadying-for-others,Y,N,P-HI-12,partial,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:h(?:o|e)ld(?:ing)?\s+(?:it|myself|things)\s+together|hold(?:ing)?\s+on|pull(?:ed|ing)?\s+(?:myself|it)\s+together)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-13,,,stood by us / there for me / held me up / showed up,verb phrase,,,"when something bad happened to me, these people were with me
+they did good things for me because of it; because of this nothing very bad happened to me
+I know this; I feel something good because of it",SUPPORT; WITH_OTHERS,C,Rs,NA,colloquial,communal-support,N,N,P-HI-13,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:stood|stand|standing)\s+by\s+(?:me|us)|(?:there|here)\s+for\s+(?:me|us)|held\s+(?:me|us)\s+up|showed\s+up|had\s+(?:my|our)\s+back)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-14,,,condolences / console / sorry for your loss / thoughts and prayers,formula,,,"someone feels something very bad because someone died
+I say these words to this someone because of it; when I say them I think: ""I want you to know I know this; I want you to feel something less bad""
+people say these words at this time",SUPPORT; RITUAL_WORDS; WITH_OTHERS,R,Rs,Of,ritual,condolence-formula,Y,N,P-HI-14,partial,"The English condolence formula; Hindi सांत्वना is the act, not a fixed formula.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:condolences?|consol(?:e|ed|ing|ation)|sorry\s+for\s+your\s+loss|thoughts\s+and\s+prayers|deepest\s+sympath(?:y|ies))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-15,,,funeral / cremation / last rites,noun,,,"someone died; after this people do some things with this person's body[m]
+it is good to do these things; people have to do them
+people say some words at this time",RITUAL_WORDS; DO_BECAUSE,R,NA,NA,ritual,funeral-rite,N,N,P-HI-15,partial,Lacks the 'a son does some of them' line.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:funeral|cremat(?:ion|ed)|last\s+rites|burial|buried)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-17,,,death anniversary / a year since / one year today,construction,,,"one year[m] (some years[m]) after someone died, on the same day[m], I think about this person
+I do some things because of it; I say some words
+it is good to do this",THINK_OF; DO_BECAUSE; LONG_TIME,I,Rs,NA,colloquial,anniversary-remembrance,N,N,P-HI-17,partial,English marks the date individually; पुण्यतिथि is a household rite with kin.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:death\s+anniversary|(?:a|one|two|three|\d+)\s+years?\s+(?:since|ago\s+today|today)|(?:it['’]s|it\s+has)\s+been\s+(?:a|one|\d+)\s+years?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-19,,,God called him home / God took her / taken from us,construction,,,"this person is not here now
+God[m] (someone above all people) wanted this person to be where God[m] is; because of this it happened
+I don't say the word ""die""; I don't say that this is bad",NOT_HERE; ABOVE; AVOID_DIE,I,L,NA,colloquial,divine-agency,Y,N,P-HI-19,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:god\s+(?:called|took|needed|wanted)|called\s+(?:him|her|them)\s+home|taken\s+(?:from\s+us|away|too\s+soon))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-20,,,God's will / God's plan,noun phrase,,,"this happened because someone above all people (God[m]) wanted it
+people cannot do anything about this
+because of this I cannot say it is bad",ABOVE; HAPPEN_TO,I,Rs,Of,colloquial,divine-will,N,N,P-HI-20,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:god['’]s\s+(?:will|plan|wish)|(?:the\s+)?will\s+of\s+god|allah['’]s\s+will|inshallah)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-21,,,meant to be / fate / destiny,idiom / noun,,,"this had to happen; it could not not happen
+no one could do anything about it
+because of this I do not say it happened because of someone",HAPPEN_TO,I,Rs,NA,colloquial,fate,N,N,P-HI-21,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:meant\s+to\s+be|fate|destiny|destined|written)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-22,,,everyone goes through this / we all have to go / part of life,construction,,,"this happens to all people: all people die
+I know this; because of this I do not say: ""it is bad that this happened""",EVERYONE,C,Rs,Of,colloquial,universality-script,Y,N,P-HI-22,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:everyone\s+(?:goes|has\s+to\s+go|loses|dies)|we\s+all\s+(?:have\s+to\s+go|die|lose)|part\s+of\s+life|nobody\s+lives\s+forever)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-23,,,circle of life,idiom,,,"all people live for some time; after this all people die; this is how it is for all people
+it is like this because it cannot be otherwise
+when I think like this I feel something less bad",EVERYONE; AFTER_GOOD,C,Rs,NA,colloquial,cycle-of-life,Y,N,P-HI-23,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:circle\s+of\s+life|cycle\s+of\s+life|natural\s+order)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-24,,,goodbye / farewell / never got to say goodbye,noun / formula,,,"this person is not here anymore after this moment; this person will not be here again
+I say something to this person now because of this; I say it as if this person can hear it
+people say these words at this time",NOT_HERE; SPEAK_TO_DEAD; RITUAL_WORDS,R,L,Of,colloquial,farewell-formula,Y,N,P-HI-24,full,The negated form ('never got to say goodbye') carries DUTY_UNDONE; matcher rule in constructions.yaml.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:good-?bye|farewell|say\s+bye)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-26,,,wherever you are / I hope you can see this / watching over us,construction (address),,,"I say this to this person now, as if this person can hear
+I don't know where this person is; I think this person is somewhere
+I want good things to happen to this person there; I think this person can see me",SPEAK_TO_DEAD; BLESSING; NOT_HERE,I,Rs,Of,colloquial,continuing-bond-address,Y,N,P-HI-26,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:wherever\s+you\s+are|hope\s+you\s+(?:can\s+)?(?:see|hear|know)|watching\s+(?:over|down\s+on)\s+(?:us|me)|looking\s+down\s+on)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-27,,,without you / without him / life without,construction,,,"this person is not with me now
+because of this, when I do things now it is not like before
+I feel something bad because of this",NOT_HERE; FEEL_BAD,I,L,NA,colloquial,life-without,N,N,P-HI-27,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:without\s+(?:you|him|her|them|dad|mom|mum|papa|amma|my\s+\w+))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-30,,,if only,particle,,,"I want it to be like this: something is not like it is
+I know it cannot be like this
+I feel something bad because of this",WANT_BE_WITH; FEEL_BAD,I,L,NA,colloquial,counterfactual-wish,N,N,P-HI-30,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:if\s+only)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-31,,,my people / our own,noun phrase,,,"these people are my people; I am one of these people
+what happens to one of us happens to all of us
+I feel something good when I am with these people",KIN; WITH_OTHERS,F,NA,NA,colloquial,own-people,N,N,P-HI-31,partial,Rare in English; अपने is the living term.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:my\s+people|our\s+own\s+people|your\s+own\s+people|loved\s+ones)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-32,,,family / the family / as a family / at home,noun,,,"these people live in one place (one home[m]); they are my people
+I am one of them; what happens to one of us happens to all of us",KIN; WITH_OTHERS,F,NA,NA,colloquial,family-as-unit,N,N,P-HI-32,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:the|my|our|whole|entire)\s+family|as\s+a\s+family|famil(?:y|ies))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-33,,,elders / the elders,noun,,,"these people are above me: they lived before I lived; they know many things
+it is good to do what they say; it is good to do things for them
+when they are not here, something is not here for all of us",KIN; NOT_HERE,F,NA,NA,colloquial,elder-respect,N,N,P-HI-33,partial,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:elders?|the\s+older\s+generation)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-35,,,orphaned / orphan,adj. / noun,,,"before, this person did things because of which nothing bad could happen to me
+now this person is not here; now no one does this for me
+because of this bad things can happen to me now",NOT_HERE; BOND; KIN,F,L,NA,colloquial,left-unprotected,N,N,P-HI-35,partial,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:orphan(?:ed|s)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-36,,,her words / his teachings / what he taught me,noun phrase,,,"before, this person said many things to me
+I think about these things now; I do some things because of them
+because of this it is like this person is with me in some way",THINK_OF; DO_BECAUSE; BOND,F,Rs,NA,colloquial,continuing-bond-as-guidance,N,N,P-HI-36,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:his|her|their|dad['’]?s|mom['’]?s)\s+(?:words|teachings|lessons|advice|voice\s+in\s+my\s+head)|(?:what|everything|all)\s+(?:he|she|they)\s+taught\s+(?:me|us))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-37,,,in memory of / in her name / in his honour,construction,,,"I do this now because of this person
+I do it because I want people to think about this person when they see it
+it is like this person is here in some way because of it",DO_BECAUSE; THINK_OF; HONOUR,I,Rs,NA,colloquial,memorial-act,N,N,P-HI-37,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:in\s+(?:his|her|their|loving)\s+memory|in\s+memory\s+of|in\s+(?:his|her|their)\s+(?:name|honou?r))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-38,,,live on in our hearts / forever in our hearts / always with us,formula,,,"this person died
+I say: ""this person did not die"", because I think like this: ""people will think about this person for a long time; it is like this person is with us""
+people say these words when someone has died",HONOUR; THINK_OF; RITUAL_WORDS; AVOID_DIE,C,Rs,Of,ritual,immortality-through-memory,Y,N,P-HI-38,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:forever|always)\s+in\s+(?:our|my)\s+hearts?|liv(?:e|es)\s+on\s+in\s+(?:our|my)\s+hearts?|always\s+with\s+(?:us|me)|gone\s+but\s+not\s+forgotten)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-39,,,inspiration / role model,noun,,,"this person did many very good things
+I want to do things like this person did; I do some things because of this
+I want people to know that this person did these things",HONOUR; DO_BECAUSE,I,Rs,NA,colloquial,deceased-as-model,N,N,P-HI-39,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:inspiration|inspir(?:ed|ing)|role\s+model)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-40,,,time heals / it gets easier / one day at a time,construction,,,"people say to me: ""after a long time you will not feel like this""
+I do not say that this is true for me now
+I feel something bad now",OTHERS_SAY; AFTER_GOOD; LONG_TIME,I,Rs,Of,colloquial,time-heals-script,Y,N,P-HI-40,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:time\s+heals|it\s+gets\s+(?:easier|better)|one\s+day\s+at\s+a\s+time|time\s+is\s+a\s+(?:great\s+)?healer)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-41,,,life goes on / life must go on,construction,,,"after this, things happen like before for other people
+I have to do things like before; I do them because I have to
+I do not want this now; after some time it can be otherwise",AFTER_GOOD; DO_BECAUSE,I,Rs,Of,colloquial,life-goes-on,Y,N,P-HI-41,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:life\s+(?:goes|must\s+go|has\s+to\s+go|went)\s+on)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-42,,,faith / trust in God,noun,,,"I think like this: ""something good can happen after this because someone above all people (God[m]) wants it""
+because of this I do not feel something very bad all the time",ABOVE; AFTER_GOOD,I,Rs,NA,colloquial,faith-as-consolation,N,N,P-HI-42,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:faith|trust\s+in\s+god|prayer(?:s)?|pray(?:ed|ing)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-43,,,the call / the news / the phone rang,construction,,,"someone said something to me: ""this person died""
+when I heard it something very bad happened to me at that moment; I felt something very bad
+I did not want to hear it",HAPPEN_TO; FEEL_BAD,I,L,NA,colloquial,announcement-move,N,N,P-HI-43,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:the|that)\s+(?:call|phone\s+call|news)\s+(?:came|that)|got\s+(?:the|a)\s+call|phone\s+rang|broke\s+the\s+news)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-44,,,the last time / last words / last conversation,construction,,,"I saw this person at that time; after that I did not see this person again
+I did not know at that time that it was like this
+I think about it many times now",THINK_OF; NOT_HERE,I,L,NA,colloquial,last-meeting-episode,N,N,P-HI-44,full,"DUTY_UNDONE dropped (decision 2026-10-10, leads): no explication line states it.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:the|our|his|her)\s+last\s+(?:time|words|conversation|call|goodbye|breath|days?))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-45,,,hospital / ICU / ventilator,noun,,,"before this person died, this person was in a place where people do things so that people do not die
+I was there (I was not there)
+I think about it many times",THINK_OF; BODY,I,L,NA,colloquial,circumstances-move,N,N,P-HI-45,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:hospital|i\.?c\.?u\.?|ventilator|oxygen|ward)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-46,,,doing what she used to do / the way he did,construction,,,"before, this person (someone of my family[m]) did some things every day
+now I do these things, because this person is not here and because of this person
+when I do them I think about this person",DO_BECAUSE; THINK_OF; NOT_HERE; KIN,F,Rs,NA,colloquial,restoration-by-duty-takeover,N,N,P-HI-46,partial,Weak pattern; rely on the classifier.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:the\s+way\s+(?:he|she|dad|mom|mum|papa|amma)\s+(?:used\s+to|did|always\s+did|would)|like\s+(?:he|she)\s+used\s+to)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-47,,,weight / burden / heavy,noun / adj.,,,"something is on me now like something heavy
+because of this I cannot do things like before; I feel something bad all the time
+it happened to me; I did not want it",FEEL_BAD; HAPPEN_TO; BODY,I,L,NA,colloquial,grief-as-burden,N,N,P-HI-47,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:weight\s+on|burden|heav(?:y|iness))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-48,,,welled up / choked up / lump in my throat,idiom,,,"when I think about this person, something happens in my body: there is water[m] in my eyes[m]; I cannot say words
+I do not do this; it happens to me",BODY; HAPPEN_TO; THINK_OF,I,L,NA,colloquial,grief-as-weeping,Y,N,P-HI-48,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:well(?:ed|ing)?\s+up|chok(?:ed|ing)\s+up|lump\s+in\s+(?:my|the)\s+throat)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-49,,,can't sleep / can't eat / couldn't eat,construction,,,"because of this something happens in my body: I cannot sleep[m]; I do not want to eat[m]
+it happens to me; I do not do it",BODY; HAPPEN_TO,I,L,NA,colloquial,somatic-grief,N,N,P-HI-49,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:can['’]t|couldn['’]t|cannot|could\s+not|not)\s+(?:sleep|eat|sleeping|eating)|insomnia|no\s+appetite)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-50,,,came to me in a dream / dreamt of,construction,,,"this person is not here; I saw this person when I was sleeping[m]
+it happened to me; I did not do it
+when it happened I felt something good and something bad",THINK_OF; HAPPEN_TO; NOT_HERE,I,L,NA,colloquial,dream-visit,N,N,P-HI-50,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:in|had)\s+a\s+dream|dream(?:t|ed)\s+(?:of|about)|came\s+to\s+me\s+in)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-54,,,left this world / no longer in this world,construction,,,"this person moved from this place (the place where all people live) to some other place
+this person is not in this place now
+I don't say the word ""die""",NOT_HERE; AVOID_DIE,I,L,NA,colloquial,indirect-death-reference (world-departure),Y,N,P-HI-54,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:left\s+(?:this|the)\s+world|no\s+longer\s+(?:in|of)\s+this\s+world|not\s+in\s+this\s+world)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-55,,,no longer with us / not with us anymore,construction,,,"this person was with me and with many people before
+this person is not with these people now; this person is not living now
+I don't say the word ""die""",NOT_HERE; AVOID_DIE; WITH_OTHERS,C,L,NA,colloquial,indirect-death-reference (communal frame),Y,N,P-HI-55,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:no\s+longer\s+(?:with|among)\s+us|not\s+with\s+us\s+(?:anymore|any\s+more)|isn['’]t\s+with\s+us)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-56,,,breathed his last / took her last breath / stopped breathing,idiom,,,"at one moment something happened in this person's body[m]: after this, this person was not living
+I say what happened in the body[m], not the word ""die""",NOT_HERE; AVOID_DIE; BODY,I,L,NA,literary,indirect-death-reference (bodily event),Y,N,P-HI-56,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:breathed\s+(?:his|her|their)\s+last|last\s+breath|stopped\s+breathing|heart\s+stopped|flatlined)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-58,,,after he was gone / after she passed / since he left,construction,,,"this person moved from here at that time
+after that time things were not like before
+I don't say the word ""die""",NOT_HERE; AVOID_DIE,I,L,NA,colloquial,indirect-death-reference (time anchor),Y,N,P-HI-58,full,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:after|since|once)\s+(?:he|she|they|dad|mom|mum|papa)\s+(?:was|were)\s+gone|(?:after|since)\s+(?:he|she|they)\s+(?:passed|left))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-60,,,died / death (direct),verb / noun,,,"this person died
+I say it with the word ""die""",NOT_HERE,I,L,NA,colloquial,direct-death-reference,N,N,P-HI-60,full,Control entry for indirect_death_reference (seed: died 13 vs passed 33).,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:die(?:d|s)?|dying|death)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-61,,,devastated / destroyed / wrecked,adj.,,,"something very bad happened to me at one moment
+after this it is like nothing in me is like it was before
+I feel something very bad; I cannot do anything",HAPPEN_TO; BROKEN; FEEL_BAD,I,L,NA,colloquial,self-as-destroyed,N,N,L-HI-29,partial,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:devastat(?:ed|ing|ion)|destroyed|wrecked|crushed)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-62,,,bereaved / bereavement,adj. / noun,,,"someone of this someone's people died
+because of this this someone feels something very bad for some time
+people say this word about this someone",NOT_HERE; FEEL_BAD; KIN,I,L,NA,therapeutic,bereavement-named,N,N,none,none,"Institutional/therapeutic noun; no Hindi lexeme (शोकाकुल is the adjective, under L-HI-02).",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:bereave(?:d|ment))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-63,,,acceptance / accept / come to terms,noun / verb,,,"for a long time I thought: ""I don't want this to be so""
+now I think: ""it is so; I cannot do anything; I do not say anymore that I don't want it""
+after this I feel something less bad",LONG_TIME; AFTER_GOOD; HAPPEN_TO,I,Rs,NA,therapeutic,therapeutic-recovery (acceptance),N,N,P-HI-10,partial,Nearest Hindi is सब्र/स्वीकार; lacks the waiting-as-virtue line.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:accept(?:ance|ed|ing)?|com(?:e|ing)\s+to\s+terms|made\s+peace\s+with)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-64,,,stages of grief / denial / bargaining,noun,,,"people who know many things about this say: when someone dies, the people who feel something bad because of it feel some things one after another
+I think about what I feel like this: ""now I am at this one""",OTHERS_SAY; LONG_TIME,I,Rs,NA,therapeutic,therapeutic-recovery (stages),N,N,none,none,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:stages?\s+of\s+grief|denial|bargaining|five\s+stages|kübler|kubler)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-65,,,grief work / work through it,noun / verb phrase,,,"I feel something bad because something bad happened to me
+I do something for a long time because of this
+I think: if I do this, after some time I will not feel like this; I have to do it; other people cannot do it for me",FEEL_BAD; DO_BECAUSE; AFTER_GOOD; LONG_TIME,I,Rs,NA,therapeutic,therapeutic-recovery (agentive),N,N,none,none,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:grief\s+work|work(?:ed|ing)?\s+through\s+(?:it|this|the\s+grief|my\s+grief|the\s+loss))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-66,,,self-care / take care of myself / be kind to yourself,noun / idiom,,,"I feel something bad because of this
+I do some good things for myself now because of this; people say it is good to do this
+I do this so that after some time I will not feel like this",DO_BECAUSE; OTHERS_SAY; AFTER_GOOD,I,Rs,NA,therapeutic,therapeutic-recovery (self-directed care),N,N,none,none,Contrast with सेवा: care directed at the self rather than at the elder.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:self-?care|take\s+care\s+of\s+(?:myself|yourself)|be\s+kind\s+to\s+(?:yourself|myself)|gentle\s+with\s+(?:myself|yourself))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-67,,,trauma / traumatic / breakdown,noun / adj.,,,"something very bad happened to me
+because of this, for a long time after, something inside me is not like it was before; I cannot do some things like before
+people who know many things about this have a word for this",HAPPEN_TO; LONG_TIME; BROKEN,I,L,NA,therapeutic,clinical-framing,N,N,P-HI-05,partial,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:trauma(?:tic|tised|tized)?|breakdown|ptsd)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-68,,,a part of me died / a piece of me went with him,idiom,,,"this person was like a part of me
+when this person died, it was like this part of me died
+this part is not here now",BOND; NOT_HERE; BROKEN,I,L,NA,colloquial,deceased-as-part-of-self,Y,N,P-HI-34,partial,,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:a\s+)?(?:part|piece)\s+of\s+me\s+(?:died|went|left|is\s+gone))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-69,,,gone too soon / taken too soon / too young,idiom,,,"this person died before the time when people die
+I say: it is bad that it happened at this time
+I feel something very bad because of this",NOT_HERE; AVOID_DIE; FEEL_BAD,I,L,NA,colloquial,untimely-death,Y,N,none,none,Hindi has असमय/अकाल (formal) — not in the seed; check corpus.,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:(?:gone|taken|left\s+us)\s+too\s+soon|too\s+young|before\s+(?:his|her|their)\s+time|untimely)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-70,,,angel / my angel / our angel,noun,,,"this person is somewhere above now
+this person is someone very good; this person can see me from there and can do good things for me
+I say this about this person because I want it to be so",ABOVE; BOND; SPEAK_TO_DEAD,I,Rs,NA,colloquial,deceased-as-angel,Y,N,none,none,Christian/Anglophone figure; no Hindi counterpart in the seed (देवता/फ़रिश्ता possible; check).,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:angel(?:s)?)(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-71,,,our loss / we lost / our mother (family frame),construction (first-person plural),,,"someone who was one of us (my people) is not with us now
+what happened, happened to all of us, not to me only
+we feel something very bad because of this",NOT_HERE; KIN; WITH_OTHERS; FEEL_BAD,F,L,NA,colloquial,family-frame,N,N,P-HI-32,full,The plural-subject frame; counts as chosen relational marking (a singular alternative existed).,(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:we\s+lost|our\s+(?:loss|mother|father|mom|mum|dad|papa|amma|grandmother|grandfather|nani|nana|dadi|dada|brother|sister))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-C1,,,I feel / I felt + adjective (nominative state),construction,,,"I feel something
+I say it like this: I am the one who feels it; I do not say that something happened to me",FEEL_BAD,I,NA,NA,colloquial,nominative-state,N,N,L-HI-C1,none,"Counterpart frame for the dative experiencer (v0.1 §4: 'I feel' 10, 'I felt' 24). FEEL_BAD only when the adjective is negative. Overlap none: English cannot carry the 'it happened to me; I did not do it' lines.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:i\s+(?:feel|felt|am\s+feeling|was\s+feeling|have\s+been\s+feeling)\s+(?:so\s+|very\s+|completely\s+|utterly\s+)?(?:sad|empty|lost|numb|broken|alone|hollow|devastated|heartbroken|guilty|angry|hopeless))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-C2,,,"I lost my X (individual subject, relational object)",construction,,,"something happened to me: someone who was mine (my mother[m], my father[m]) is not with me now
+I say it like this: I am the one it happened to; this person is mine",NOT_HERE; KIN; HAPPEN_TO,I,L,NA,colloquial,individual-subject-relational-object,N,N,L-HI-17,full,"Codebook case: subject self, target kin. Orientation I with relational target; do not count as F.",(?<![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_'])(?:i\s+lost\s+my\s+(?:mother|father|mom|mum|dad|papa|amma|appa|nana|nani|dada|dadi|brother|sister|husband|wife|son|daughter|baby|child|grand\w+|best\s+friend))(?![ऀ-ॣ०-९ॱ-ॿ‌‍A-Za-z0-9_']),en,proposed
+P-EN-C3,,,"Papa, ... / Mom, I ... (vocative address to the dead)",construction,,,"I say something to this person (someone of my family[m]) now, as if this person can hear it
+I know this person cannot hear it
+I say it because I want to say it to this person, not to other people",SPEAK_TO_DEAD; KIN,F,L,NA,colloquial,letter-to-the-dead,N,N,L-HI-C3,full,v0.1 §4. Sentence-initial kin vocative followed by comma or second person.,"(?:^|[.!?\n]\s*)(?:papa|dad|daddy|mom|mum|mummy|amma|appa|ma|maa|nani|nana|dadi|dada|grandma|grandpa|bhai|didi)(?:\s*[,!]|\s+(?:you|i)(?![a-z]))",en,proposed
